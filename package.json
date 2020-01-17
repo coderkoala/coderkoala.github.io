@@ -1,16 +1,16 @@
 {
-	"name": "nobel's realm of oddities",
-	"version": "1.0",
-	"description": "A minimal landing page for showing off what I can do.",
+	"name": "Nobel Portfolio",
+	"version": "0.0.1",
+	"description": "A portfolio website for me.",
 	"main": "./dist/your-main-js-file.js",
 	"author": {
 		"name": "Nobel Dahal",
-		"url": "https://nobeldahal.ml"
+		"url": "http://nobeldahal.com.np"
 	},
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/coderkoala/portfolio"
+		"url": "http://link-to-your-git-repo.com"
 	},
 	"boilerplate": {
 		"version": "2.2.6",
@@ -42,29 +42,5 @@
 		"autoprefixer": "9.6.1",
 		"gulp-svgmin": "2.1.0",
 		"browser-sync": "2.26.7"
-	},
-	"dependencies": {
-		"node-sass": "4.13.0",
-		"gulp": "4.0.2",
-		"del": "3.0.0",
-		"lazypipe": "1.0.1",
-		"gulp-flatmap": "1.0.2",
-		"gulp-header": "2.0.5",
-		"gulp-rename": "1.4.0",
-		"jshint": "2.9.6",
-		"gulp-jshint": "2.1.0",
-		"jshint-stylish": "2.2.1",
-		"gulp-concat": "2.6.1",
-		"gulp-terser": "1.1.7",
-		"gulp-optimize-js": "1.1.0",
-		"gulp-sass": "4.0.2",
-		"gulp-postcss": "8.0.0",
-		"cssnano": "4.1.10",
-		"autoprefixer": "9.6.1",
-		"gulp-svgmin": "2.1.0",
-		"browser-sync": "2.26.7"
-	},
-	"gulp-dependencies": {
-	    "params": "gulp node-sass del lazypipe gulp-flatmap gulp-header gulp-rename jshint gulp-jshint jshint-stylish gulp-concat gulp-terser gulp-optimize-js gulp-sass gulp-postcss cssnano autoprefixer gulp-svgmin browser-sync",
 	}
 }

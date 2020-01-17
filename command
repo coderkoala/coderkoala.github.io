@@ -1,0 +1,2 @@
+npm i -g gulp-cli
+npm i -s node-sass gulp del lazypipe gulp-flatmap gulp-header gulp-rename jshint gulp-jshint jshint-stylish gulp-concat gulp-terser gulp-optimize-js gulp-sass gulp-postcss cssnano autoprefixer gulp-svgmin browser-sync
