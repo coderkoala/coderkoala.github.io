@@ -2,6 +2,7 @@
 
 # Redirect domain aliases to primary domain
 https://nobeldahal.ml/* https://www.nobeldahal.com.np/:splat 301!
+https://www.nobeldahal.ml/* https://www.nobeldahal.com.np/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://iamtribulation.netlify.com/* https://www.nobeldahal.com.np/:splat 301!
