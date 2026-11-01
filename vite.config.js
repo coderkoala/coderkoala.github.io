@@ -45,12 +45,14 @@ function writeFeed({ posts }) {
 
 export default defineConfig({
   plugins: [vue()],
+  // Stamped at every build (and the weekly scheduled build), shown in the footer and the structured data.
+  define: { __BUILT_AT__: JSON.stringify(new Date().toISOString()) },
   server: { port: 9000, strictPort: true, host: true },
   preview: { port: 9000 },
   ssgOptions: {
     dirStyle: 'flat', // work/kaede.html: GitHub Pages serves it at /work/kaede with no redirect
     formatting: 'none',
-    beastiesOptions: { preload: 'swap', pruneSource: false }, // inline critical CSS, load the rest without blocking
+    beastiesOptions: { preload: 'swap', pruneSource: false, preloadFonts: false, inlineFonts: false }, // inline critical CSS, load the rest without blocking
     includedRoutes: () => [...pages().all.map((p) => p.path), '/404'],
     onFinished() {
       const data = pages()
@@ -63,6 +65,16 @@ export default defineConfig({
       fs.writeFileSync('dist/urllist.txt', urls.join('\n') + '\n')
       fs.writeFileSync('dist/ror.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:ror="http://rorweb.com/0.1/"><channel><title>Nobel Dahal</title><link>${SITE}/</link>${urls.map((u) => `<item><link>${u}</link></item>`).join('')}</channel></rss>`)
       fs.writeFileSync('dist/sitemap.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sitemap · Nobel Dahal</title><link rel="canonical" href="${SITE}/sitemap.html"><style>body{font:16px/1.7 system-ui,sans-serif;max-width:720px;margin:48px auto;padding:0 20px;color:#141414}a{color:inherit}h1{font-size:28px}</style></head><body><h1>Sitemap</h1><ul>${data.all.map((p) => `<li><a href="${p.path}">${esc(p.path === '/' ? 'Home' : p.title)}</a></li>`).join('')}<li><a href="/download/resume.pdf">Résumé (PDF)</a></li><li><a href="/download/resume.docx">Résumé (Word)</a></li></ul></body></html>`)
+      // Preload the two fonts the first screen paints with, on every page.
+      const fonts = fs.readdirSync('dist/assets').filter((f) => /ibm-plex-sans-latin-(400|700)-normal-.*\.woff2$/.test(f))
+      // Paint the right ground before any CSS arrives, light or dark: never a white flash.
+      const ground = `<style>html{background:#fff;color:#141414}@media (prefers-color-scheme:dark){html:not([data-theme=light]){background:#141414;color:#ecebe8;color-scheme:dark}}html[data-theme=dark]{background:#141414;color:#ecebe8;color-scheme:dark}</style>`
+      const tags = ground + fonts.map((f) => `<link rel="preload" href="/assets/${f}" as="font" type="font/woff2" crossorigin>`).join('')
+      const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(`${d}/${e.name}`) : e.name.endsWith('.html') || e.name.endsWith('.htm') ? [`${d}/${e.name}`] : [])
+      for (const f of walk('dist').filter((f) => !f.includes('/download/'))) {
+        const html = fs.readFileSync(f, 'utf8')
+        if (html.includes('<head>') && !html.includes('html:not([data-theme=light])')) fs.writeFileSync(f, html.replace('<head>', `<head>${tags}`))
+      }
       fs.writeFileSync('dist/.nojekyll', '') // serve .well-known and friends as-is
     },
   },

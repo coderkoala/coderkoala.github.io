@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-padding-top: 80px; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 80px; background: var(--ui-surface); }
 body {
-  margin: 0; background: var(--ui-surface); color: var(--ui-ink);
+  margin: 0; background: transparent; color: var(--ui-ink);   /* the page colour lives on <html>, so the backdrop can sit behind <body> */
   font: 400 16px/1.6 var(--ui-font-sans);
   -webkit-font-smoothing: antialiased;
 }

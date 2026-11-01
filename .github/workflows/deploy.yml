@@ -6,6 +6,8 @@ on:
   push:
     branches: [vue-rewrite]
   workflow_dispatch:
+  schedule:
+    - cron: '15 0 * * 1'   # every Monday 05:45 Kathmandu: a fresh build keeps the dates current
 
 permissions:
   contents: write
@@ -19,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: vue-rewrite
       - uses: actions/setup-node@v4
         with:
           node-version: 24

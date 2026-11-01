@@ -39,8 +39,10 @@
   --ui-duration: 120ms;
   --ui-ease: cubic-bezier(0.2, 0, 0, 1);
   --ui-ring: 0 0 0 2px var(--ui-surface), 0 0 0 4px var(--ui-primary);
-  --ui-backdrop-opacity: .16;
-  --ui-backdrop-filter: grayscale(1) contrast(1.1) brightness(1.08);
+  --ui-backdrop-ink: #141414;
+  --ui-backdrop-far: .07;
+  --ui-backdrop-land: .16;
+  --ui-backdrop-mist: rgb(255 255 255 / .85);
   color-scheme: light;
 }
 
@@ -57,8 +59,10 @@
     --ui-primary-hover: #ffffff;
     --ui-primary-soft: #202020;
     --ui-on-fill: #0c0c0c;
-    --ui-backdrop-opacity: .22;
-    --ui-backdrop-filter: grayscale(1) brightness(.9);
+    --ui-backdrop-ink: #000;
+    --ui-backdrop-far: .35;
+    --ui-backdrop-land: .7;
+    --ui-backdrop-mist: rgb(20 20 20 / .85);
     color-scheme: dark;
   }
 }
@@ -74,7 +78,9 @@
   --ui-primary-hover: #ffffff;
   --ui-primary-soft: #202020;
   --ui-on-fill: #0c0c0c;
-  --ui-backdrop-opacity: .22;
-  --ui-backdrop-filter: grayscale(1) brightness(.9);
+  --ui-backdrop-ink: #000;
+  --ui-backdrop-far: .35;
+  --ui-backdrop-land: .7;
+  --ui-backdrop-mist: rgb(20 20 20 / .85);
   color-scheme: dark;
 }

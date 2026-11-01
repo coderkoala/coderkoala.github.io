@@ -4,7 +4,10 @@ import AppIcon from './AppIcon.vue'
 import { site } from '../lib/site.js'
 
 const dark = ref(false)
+const mod = ref('Ctrl ')
+function openPalette() { window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true, metaKey: true })) }
 onMounted(() => {
+  if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) mod.value = '⌘'
   const t = document.documentElement.dataset.theme
   dark.value = t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
 })
@@ -31,6 +34,9 @@ function toggle() {
       </nav>
       <div class="nav__end">
         <RouterLink class="btn btn--solid btn--sm nav__cta" to="/hire">Hire me</RouterLink>
+        <button class="kbtn" type="button" @click="openPalette" aria-label="Go to (Ctrl K)" title="Go to (Ctrl K)">
+          <AppIcon name="search" /><kbd class="kbtn__k">{{ mod }}K</kbd>
+        </button>
         <button class="iconbtn" type="button" @click="toggle" :aria-label="dark ? 'Use light theme' : 'Use dark theme'">
           <AppIcon :name="dark ? 'sun' : 'moon'" />
         </button>
@@ -57,6 +63,10 @@ function toggle() {
 .links a { color: var(--ui-ink-soft); text-decoration: none; font-size: 15px; }
 .links a:hover, .links a.router-link-active { color: var(--ui-ink); }
 .nav__end { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+.kbtn { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 10px 0 12px; border: 1px solid var(--ui-border); border-radius: 999px; background: var(--ui-surface); color: var(--ui-ink-soft); cursor: pointer; }
+.kbtn:hover { color: var(--ui-ink); background: var(--ui-hover); }
+.kbtn__k { font: 11px var(--ui-font-mono); border: 1px solid var(--ui-border); border-radius: 4px; padding: 1px 5px; }
+@media (max-width: 767.98px) { .kbtn__k { display: none; } .kbtn { padding: 0; width: 36px; justify-content: center; } }
 .iconbtn {
   display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
   border: 1px solid var(--ui-border); background: var(--ui-surface); color: var(--ui-ink); cursor: pointer;

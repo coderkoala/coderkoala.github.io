@@ -80,6 +80,8 @@ export const websiteLd = {
   name: site.name,
   inLanguage: 'en',
   author: { '@id': `${site.url}/#person` },
+  // eslint-disable-next-line no-undef
+  dateModified: typeof __BUILT_AT__ !== 'undefined' ? __BUILT_AT__ : undefined,
 }
 
 export function crumbs(items) {

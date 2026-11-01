@@ -1,41 +1,79 @@
 <script setup>
 import SiteNav from './components/SiteNav.vue'
+import RouteProgress from './components/RouteProgress.vue'
+import CommandPalette from './components/CommandPalette.vue'
+import AppToast from './components/AppToast.vue'
+import { onMounted } from 'vue'
+
+// Subtle parallax: the far mountain drifts with scroll and pointer; the land barely moves.
+onMounted(() => {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  const root = document.documentElement
+  let sy = 0, mx = 0, queued = false
+  const paint = () => { queued = false; root.style.setProperty('--sy', sy); root.style.setProperty('--mx', mx) }
+  const ask = () => { if (!queued) { queued = true; requestAnimationFrame(paint) } }
+  addEventListener('scroll', () => { sy = Math.min(scrollY, 900); ask() }, { passive: true })
+  if (matchMedia('(hover: hover)').matches) addEventListener('pointermove', (e) => { mx = (e.clientX / innerWidth - 0.5) * 2; ask() }, { passive: true })
+})
 import { site } from './lib/site.js'
+/* global __BUILT_AT__ */
+const builtAt = __BUILT_AT__
+const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kathmandu' })
 </script>
 
 <template>
   <div class="backdrop" aria-hidden="true">
-    <video class="backdrop__video" autoplay muted loop playsinline disablepictureinpicture preload="auto"
-      poster="/media/backdrop/ridge-poster.jpg" tabindex="-1">
-      <source src="/media/backdrop/ridge.webm" type="video/webm" />
-    </video>
+    <div class="bd bd--far"></div>
+    <div class="bd bd--mist bd--mist-a"></div>
+    <div class="bd bd--land"></div>
+    <div class="bd bd--mist bd--mist-b"></div>
   </div>
   <a class="skip" href="#main">Skip to content</a>
+  <RouteProgress />
   <SiteNav />
   <main id="main"><RouterView /></main>
   <footer class="foot">
     <div class="wrap foot__in">
-      <span>© {{ new Date().getFullYear() }} {{ site.name }} · {{ site.place }}</span>
+      <span>© {{ new Date(builtAt).getFullYear() }} {{ site.name }} · {{ site.place }} · Updated <time :datetime="builtAt">{{ builtLabel }}</time></span>
       <span class="foot__motto" lang="el" title="Find a way, or make one.">Βρείτε έναν τρόπο ή φτιάξτε έναν</span>
     </div>
   </footer>
+  <CommandPalette />
+  <AppToast />
 </template>
 
 <style scoped>
 /* The ridge photo, faint and monochrome, behind the top of every page (Kaede-style).
    Light and dark strength live in tokens.css. */
 .backdrop {
-  position: absolute; inset: 64px 0 auto; height: min(780px, 94vh); z-index: -1; pointer-events: none;
-  background: url('/media/backdrop/ridge-poster.jpg') 100% 55% / cover no-repeat;
-  overflow: hidden;
-  filter: var(--ui-backdrop-filter);
-  opacity: var(--ui-backdrop-opacity);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
-          mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
+  position: absolute; inset: 64px 0 auto; height: min(820px, 96vh); z-index: -1; pointer-events: none; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%);
 }
-.backdrop__video { width: 100%; height: 100%; object-fit: cover; object-position: 100% 55%; display: block; }
-@media (prefers-reduced-motion: reduce) { .backdrop__video { display: none; } }
-@media (max-width: 767.98px) { .backdrop { height: 560px; background-position: 50% 62%; } .backdrop__video { object-position: 70% 55%; } }
+.bd { position: absolute; inset: -40px -40px -40px -40px; will-change: transform; }
+.bd--far, .bd--land {
+  background: var(--ui-backdrop-ink);
+  -webkit-mask: var(--m) 100% 55% / cover no-repeat; mask: var(--m) 100% 55% / cover no-repeat;
+}
+.bd--far {
+  --m: url('/media/backdrop/far.svg'); opacity: var(--ui-backdrop-far);
+  transform: translate3d(calc(var(--mx, 0) * -10px), calc(var(--sy, 0) * 0.16px), 0);
+}
+.bd--land {
+  --m: url('/media/backdrop/land.svg'); opacity: var(--ui-backdrop-land);
+  transform: translate3d(calc(var(--mx, 0) * -3px), calc(var(--sy, 0) * 0.04px), 0);
+}
+.bd--mist {
+  background:
+    radial-gradient(40% 18% at 20% 62%, var(--ui-backdrop-mist), transparent 70%),
+    radial-gradient(34% 14% at 70% 70%, var(--ui-backdrop-mist), transparent 70%),
+    radial-gradient(30% 12% at 45% 50%, var(--ui-backdrop-mist), transparent 70%);
+  animation: drift 70s ease-in-out infinite alternate;
+}
+.bd--mist-b { animation-duration: 95s; animation-direction: alternate-reverse; opacity: .22; }
+@keyframes drift { from { transform: translate3d(-6%, 0, 0); } to { transform: translate3d(6%, -1.5%, 0); } }
+@media (prefers-reduced-motion: reduce) { .bd { transform: none !important; animation: none !important; } }
+@media (max-width: 767.98px) { .backdrop { height: 600px; } .bd--far, .bd--land { -webkit-mask-position: 68% 60%; mask-position: 68% 60%; } }
 @media print { .backdrop { display: none; } }
 .skip { position: absolute; left: -999px; top: 8px; }
 .skip:focus { left: 16px; z-index: 10; background: var(--ui-surface); padding: 8px 12px; }
