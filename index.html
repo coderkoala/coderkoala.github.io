@@ -17,6 +17,10 @@
     <meta name="format-detection" content="telephone=no" />
     <script>
       try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+      if (location.pathname === '/' && location.hash) {
+        const to = { '#portfolio': '/work/', '#experience': '/about', '#education': '/about', '#skills': '/about', '#contact': '/hire', '#feedback': '/hire' }[location.hash]
+        if (to) location.replace(to)
+      }
     </script>
   </head>
   <body>

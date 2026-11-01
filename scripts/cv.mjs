@@ -156,6 +156,8 @@ ${skills.map((g) => `<dt>${g.group}</dt><dd>${g.items.join(', ')}</dd>`).join(''
 </body></html>`
 
 fs.writeFileSync('scripts/.cv-preview.html', html)
+// Same content for the Word version (scripts/cv_docx.py).
+fs.writeFileSync('scripts/.cv-data.json', JSON.stringify({ site, projects, roles, openSource, skills, certifications: featuredCerts, restCount }, null, 2))
 const browser = await chromium.launch({ executablePath: findChrome() })
 const page = await browser.newPage()
 await page.setContent(html, { waitUntil: 'load' })

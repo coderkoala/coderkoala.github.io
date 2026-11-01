@@ -56,6 +56,12 @@ export default defineConfig({
       writeSitemap(data)
       writeFeed(data)
       writeLlms(data)
+      // Old URLs from the 2019 site keep working.
+      fs.copyFileSync('dist/feed.xml', 'dist/rss.xml')
+      const urls = data.all.map((p) => SITE + p.path)
+      fs.writeFileSync('dist/urllist.txt', urls.join('\n') + '\n')
+      fs.writeFileSync('dist/ror.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:ror="http://rorweb.com/0.1/"><channel><title>Nobel Dahal</title><link>${SITE}/</link>${urls.map((u) => `<item><link>${u}</link></item>`).join('')}</channel></rss>`)
+      fs.writeFileSync('dist/sitemap.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sitemap · Nobel Dahal</title><link rel="canonical" href="${SITE}/sitemap.html"><style>body{font:16px/1.7 system-ui,sans-serif;max-width:720px;margin:48px auto;padding:0 20px;color:#141414}a{color:inherit}h1{font-size:28px}</style></head><body><h1>Sitemap</h1><ul>${data.all.map((p) => `<li><a href="${p.path}">${esc(p.path === '/' ? 'Home' : p.title)}</a></li>`).join('')}<li><a href="/download/resume.pdf">Résumé (PDF)</a></li><li><a href="/download/resume.docx">Résumé (Word)</a></li></ul></body></html>`)
       fs.writeFileSync('dist/.nojekyll', '') // serve .well-known and friends as-is
     },
   },
