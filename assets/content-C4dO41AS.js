@@ -681,7 +681,7 @@ year: 2019
 kind: CMS and backend
 tag: Websites
 image: /media/portfolio-images/portfolio6.png
-link: 
+link: https://nimbusnepal.com
 featured: false
 summary: A Laravel CMS with an applicant tracker and Analytics built in.
 ---
@@ -691,17 +691,17 @@ year: 2019
 kind: Facebook Instant game
 tag: Games
 image: /media/portfolio-images/portfolio5.png
-link: 
+link: http://fb.gg/play/464364207493058
 featured: false
 summary: Ten civil-service questions, then brag to your friends.
 ---
 `,oe=`---
 title: Debendra Manandhar
 year: 2019
-kind: Website
+kind: Website · archived copy
 tag: Websites
 image: /media/portfolio-images/portfolio4.png
-link: 
+link: https://web.archive.org/web/20200806075149/https://debendramanandhar.com/
 featured: false
 summary: A coach's site with programmes, an academy and PayPal.
 ---
@@ -718,10 +718,10 @@ summary: A builder's website, start to finish in three days.
 `,ce=`---
 title: Travel Time Nepal
 year: 2019
-kind: Website
+kind: Website · archived copy
 tag: Websites
 image: /media/portfolio-images/portfolio7.png
-link: 
+link: https://web.archive.org/web/20200122104033/http://traveltimenepal.com:80/
 featured: false
 summary: A Thamel travel agency with payments, deals and auto-replies. I wrote the copy too.
 ---
@@ -742,7 +742,7 @@ kind: Level design
 tag: Games
 image:
 cover: pixel
-link: 
+link: https://megacatstudios.com/
 featured: false
 summary: Hand-built maps for a new NES game from Mega Cat Studios.
 ---
