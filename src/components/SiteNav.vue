@@ -27,9 +27,10 @@ function toggle() {
         <RouterLink to="/work/">Work</RouterLink>
         <RouterLink to="/writing/">Writing</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/hire">Hire</RouterLink>
       </nav>
       <div class="nav__end">
-        <a class="btn btn--solid btn--sm nav__cta" :href="`mailto:${site.email}`">Get in touch</a>
+        <RouterLink class="btn btn--solid btn--sm nav__cta" to="/hire">Hire me</RouterLink>
         <button class="iconbtn" type="button" @click="toggle" :aria-label="dark ? 'Use light theme' : 'Use dark theme'">
           <AppIcon :name="dark ? 'sun' : 'moon'" />
         </button>

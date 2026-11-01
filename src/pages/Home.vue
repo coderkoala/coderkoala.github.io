@@ -7,7 +7,7 @@ import { site, personLd, websiteLd } from '../lib/site.js'
 import { useSeo } from '../lib/seo.js'
 
 useSeo({
-  description: 'Nobel Dahal, freelance software engineer and consultant in Kathmandu, Nepal. ERPs and CRMs in Laravel and Vue, including Kaede for freight forwarders.',
+  description: 'Nobel Dahal is a full-stack web developer and software engineer in Kathmandu, Nepal, building ERP, CRM and web applications in Laravel and Vue.',
   ld: [personLd, websiteLd],
 })
 const shown = ref(work[0])
@@ -17,9 +17,9 @@ const shown = ref(work[0])
   <div class="home">
     <section class="hero wrap">
       <div class="hero__copy">
-        <p class="eyebrow">Freelance software engineer and consultant · Kathmandu</p>
+        <p class="eyebrow">Full-stack developer and consultant · Kathmandu, Nepal</p>
         <h1 class="display">I build the software businesses count on.</h1>
-        <p class="lede">Mostly ERPs and CRMs, from the database up. These days that means Kaede, an ERP that learns how a freight forwarder works.</p>
+        <p class="lede">Web applications, ERPs and CRMs, from the database up. These days that means Kaede, an ERP that learns how a freight forwarder works.</p>
         <div class="hero__cta">
           <RouterLink class="btn btn--solid" :to="`/work/${work[0].slug}`">See how Kaede works <AppIcon name="arrow" /></RouterLink>
           <a class="btn" :href="site.cv" download><AppIcon name="download" /> Résumé</a>

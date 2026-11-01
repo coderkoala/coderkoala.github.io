@@ -18,7 +18,7 @@ useSeo({
       <div class="head__main">
       <h1 class="display">About</h1>
       <div class="lede intro">
-        <p>I'm Nobel. I studied computer engineering in Kathmandu and have been shipping software for businesses since 2018: WordPress plugins, a government market's website, a US brokerage's CRM, and now an ERP for air cargo.</p>
+        <p>I'm Nobel, a full-stack developer in Kathmandu, Nepal. I studied computer engineering here and have been shipping web applications and software for businesses since 2018: WordPress plugins, a government market's website, a US brokerage's CRM, and now an ERP for air cargo.</p>
         <p>I like the unglamorous parts. Migrations, audit logs, the form someone fills in two hundred times a day.</p>
       </div>
       <div class="cta">
@@ -28,7 +28,7 @@ useSeo({
       </div>
       <dl class="facts">
         <div><dt>Based in</dt><dd>Kathmandu, Nepal <span class="soft">· UTC+5:45</span></dd></div>
-        <div><dt>Working as</dt><dd>Freelance software engineer and consultant</dd></div>
+        <div><dt>Working as</dt><dd>Freelance full-stack developer and consultant</dd></div>
         <div><dt>Shipping since</dt><dd>2018</dd></div>
         <div><dt>Speaks</dt><dd>English, Nepali</dd></div>
         <div><dt>Builds with</dt><dd>Laravel, Vue, PostgreSQL</dd></div>

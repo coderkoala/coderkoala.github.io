@@ -1,7 +1,7 @@
 export const site = {
   url: 'https://nobeldahal.com.np',
   name: 'Nobel Dahal',
-  role: 'Freelance software engineer and consultant',
+  role: 'Full-stack developer and software engineer',
   place: 'Kathmandu, Nepal',
   email: 'nobel@dahal.tech',
   cv: '/download/resume.pdf',
@@ -61,14 +61,15 @@ export const personLd = {
   familyName: 'Dahal',
   url: site.url,
   image: `${site.url}/og/default.png`,
-  jobTitle: 'Freelance Software Engineer and Consultant',
-  description: 'Full-stack software engineer in Kathmandu, Nepal, building ERP and CRM systems with Laravel and Vue.',
+  jobTitle: 'Full-Stack Developer and Software Engineer',
+  hasOccupation: { '@type': 'Occupation', name: 'Full-stack web developer', occupationLocation: { '@type': 'Country', name: 'Nepal' }, skills: 'Laravel, PHP, Vue.js, Node.js, PostgreSQL, MySQL, WordPress, ERP, CRM' },
+  description: 'Full-stack web developer and software engineer in Kathmandu, Nepal, building ERP, CRM and web applications with Laravel and Vue.',
   email: `mailto:${site.email}`,
   address: { '@type': 'PostalAddress', addressLocality: 'Kathmandu', addressRegion: 'Bagmati', addressCountry: 'NP' },
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'Himalaya College of Engineering' },
   sameAs: [site.github, site.linkedin],
   knowsLanguage: ['en', 'ne'],
-  knowsAbout: ['Laravel', 'PHP', 'Vue.js', 'Node.js', 'PostgreSQL', 'ERP systems', 'CRM systems', 'Air cargo software', 'IATA Cargo-XML', 'Microsoft Dynamics 365', 'DevOps'],
+  knowsAbout: ['Full-stack web development', 'Web application development', 'WordPress plugin development', 'Payment gateway integration (eSewa, Khalti)', 'Laravel', 'PHP', 'Vue.js', 'Node.js', 'PostgreSQL', 'ERP systems', 'CRM systems', 'Air cargo software', 'IATA Cargo-XML', 'Microsoft Dynamics 365', 'DevOps'],
 }
 
 export const websiteLd = {
