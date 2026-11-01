@@ -15,6 +15,8 @@ link: https://dahal.tech/kaede/index.html
 linkLabel: dahal.tech/kaede
 cover: /media/work/kaede.jpg
 shots:
+  - /media/kaede/routing-suggest.webp :: Learned from the office's own history: its usual routings, one click away. :: 6x2
+  - /media/kaede/routing-applied.webp :: One click later: both legs, distances, flying time, the connection and what's still missing. :: 6x3
   - /media/kaede/kaede-map.webp :: Real flown legs, every hop, weighted by chargeable weight. :: 4x2
   - /media/kaede/kaede-cargomsg-panel.webp :: Cargo-IMP and Cargo-XML, built and checked line by line before they leave. :: 2x2
   - /media/kaede/kaede-outlook.webp :: Outlook: next month's forecast, customers to call, and what moved. :: 3x2
