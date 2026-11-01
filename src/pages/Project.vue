@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import AppIcon from '../components/AppIcon.vue'
 import Showcase from '../components/Showcase.vue'
+import SmartImg from '../components/SmartImg.vue'
 import NotFound from './NotFound.vue'
 import { work, writing, formatDate } from '../lib/content.js'
 import { site, crumbs } from '../lib/site.js'
@@ -72,10 +73,10 @@ if (p.value) useSeo({
     </figure>
 
     <figure v-if="!p.loop && p.cover" class="hero-shot wrap">
-      <div class="browser"><div class="shimmer shimmer--block">
+      <div class="browser">
         <div class="browser__bar" aria-hidden="true"><span class="dots"><i /><i /><i /></span><span class="browser__url mono">{{ p.linkLabel }}</span></div>
-        <img :src="p.cover" :alt="`${p.title}, the live product`" fetchpriority="high" decoding="async" width="1440" height="840" />
-      </div></div>
+        <SmartImg :src="p.cover" :alt="`${p.title}, the live product`" eager sizes="(max-width: 1200px) 100vw, 1120px" />
+      </div>
     </figure>
 
     <Showcase v-if="p.shots.length" :shots="p.shots" :title="p.title" />

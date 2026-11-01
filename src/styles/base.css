@@ -70,16 +70,24 @@ a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; 
 @media (hover: none) { .codecopy { opacity: 1; } }
 
 /* Images load over a quiet shimmer and fade in only once they have actually arrived (see main.js). */
-.shimmer, .prose p:has(> img) { position: relative; background: var(--ui-surface-sunken); }
-.shimmer::before, .prose p:has(> img)::before {
+.shimmer { position: relative; background: var(--ui-surface-sunken); }
+.shimmer::before {
   content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
   background: linear-gradient(100deg, transparent 20%, var(--ui-shimmer) 50%, transparent 80%) 0 0 / 200% 100%;
   animation: shimmer 1.4s linear infinite;
 }
-.shimmer:has(img.is-loaded)::before, .shimmer:has(video)::before, .prose p:has(> img.is-loaded)::before { content: none; }
-.shimmer img, .prose img { opacity: 0; transition: opacity 360ms var(--ui-ease); }
-.shimmer img.is-loaded, .prose img.is-loaded { opacity: 1; }
+.shimmer:has(img.is-loaded)::before, .shimmer:has(video)::before { content: none; }
+.shimmer img { opacity: 0; transition: opacity 360ms var(--ui-ease); }
+.shimmer img.is-loaded { opacity: 1; }
 .shimmer--block { line-height: 0; }
 @keyframes shimmer { from { background-position: 100% 0; } to { background-position: -100% 0; } }
-@media (prefers-reduced-motion: reduce) { .shimmer::before, .prose p:has(> img)::before { animation: none; } .shimmer img, .prose img { transition: none; } }
-.no-js .shimmer img, .no-js .prose img { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .shimmer::before { animation: none; } .shimmer img, .prose img { transition: none; } }
+.no-js .shimmer img { opacity: 1; }
+
+/* Progressive images inside posts (rendered from Markdown). */
+.psi { position: relative; display: block; overflow: hidden; border-radius: 8px; border: 1px solid var(--ui-border); background: var(--lqip) center / cover no-repeat, var(--ui-surface-sunken); }
+.psi::after { content: ''; position: absolute; inset: 0; background: inherit; filter: blur(14px); transform: scale(1.06); transition: opacity 420ms var(--ui-ease); }
+.psi img { position: relative; z-index: 1; display: block; width: 100%; height: auto; border: 0; border-radius: 0; opacity: 0; transition: opacity 420ms var(--ui-ease); }
+.psi img.is-loaded { opacity: 1; }
+.psi:has(img.is-loaded)::after { opacity: 0; }
+.no-js .psi img { opacity: 1; }

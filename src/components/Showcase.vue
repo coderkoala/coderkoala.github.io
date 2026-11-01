@@ -1,6 +1,7 @@
 <script setup>
 // A bento of screenshots; click one to see it full size.
 import { ref } from 'vue'
+import SmartImg from './SmartImg.vue'
 const props = defineProps({ shots: Array, title: String })
 const open = ref(null)
 const dlg = ref(null)
@@ -12,8 +13,8 @@ function close() { dlg.value?.close() }
   <section class="show wrap" :aria-label="`${title} screenshots`">
     <ul class="bento">
       <li v-for="s in shots" :key="s.src" :class="['tile', { 'tile--full': s.cols >= 6 }]" :style="{ '--c': s.cols, '--r': s.rows }">
-        <button type="button" class="tile__btn shimmer" @click="show(s)" :aria-label="`Enlarge: ${s.caption}`">
-          <img :src="s.src" :alt="s.caption" loading="lazy" decoding="async" />
+        <button type="button" class="tile__btn" @click="show(s)" :aria-label="`Enlarge: ${s.caption}`">
+          <SmartImg :src="s.src" :alt="s.caption" :sizes="s.cols >= 6 ? '(max-width: 1200px) 100vw, 1120px' : '(max-width: 991px) 100vw, 560px'" />
         </button>
         <p class="tile__cap">{{ s.caption }}</p>
       </li>
@@ -39,13 +40,13 @@ function close() { dlg.value?.close() }
   min-height: 0; padding: 0; border: 1px solid var(--ui-border); border-radius: 12px; overflow: hidden;
   background: var(--ui-surface-sunken); cursor: zoom-in; display: block; width: 100%;
 }
-.tile__btn img {
+.tile__btn :deep(img) {
   width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block;
   transition: transform 700ms var(--ui-ease);
 }
-.tile__btn:hover img { transform: scale(1.03); }
+.tile__btn:hover :deep(img) { transform: scale(1.03); }
 .tile--full { grid-row: span 1; grid-template-rows: auto auto; }
-.tile--full .tile__btn img { height: auto; object-fit: initial; }
+.tile--full .tile__btn :deep(img) { height: auto; object-fit: initial; }
 .tile__cap { font-size: 13px; color: var(--ui-ink-faint); line-height: 1.4; }
 
 .lb { border: 0; padding: 0; background: transparent; max-width: min(1400px, 94vw); max-height: 92vh; overflow: visible; }

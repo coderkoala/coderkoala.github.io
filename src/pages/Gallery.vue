@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import AppIcon from '../components/AppIcon.vue'
+import SmartImg from '../components/SmartImg.vue'
 import { gallery, galleryTags } from '../lib/content.js'
 import { useSeo } from '../lib/seo.js'
 import { site, crumbs } from '../lib/site.js'
@@ -34,8 +35,8 @@ const isInternal = (l) => l && l.startsWith('/')
         <component :is="!g.link ? 'div' : isInternal(g.link) ? 'RouterLink' : 'a'"
           :to="isInternal(g.link) ? g.link : undefined" :href="g.link && !isInternal(g.link) ? g.link : undefined"
           :rel="g.link && !isInternal(g.link) ? 'noopener' : undefined" class="card">
-          <div class="cover shimmer">
-            <img v-if="g.image" :src="g.image" :alt="`${g.title}, ${g.kind}`" loading="lazy" decoding="async" />
+          <div class="cover">
+            <SmartImg v-if="g.image" :src="g.image" :alt="`${g.title}, ${g.kind}`" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 360px" />
             <video v-if="g.loop" class="cover__video" :poster="g.image" autoplay muted loop playsinline disablepictureinpicture preload="metadata" aria-hidden="true" tabindex="-1">
               <source :src="`${g.loop}.mp4`" type="video/mp4" />
             </video>
@@ -78,12 +79,12 @@ const isInternal = (l) => l && l.startsWith('/')
   aspect-ratio: 16 / 10; overflow: hidden; border-radius: 10px;
   border: 1px solid var(--ui-border); background: var(--ui-surface-sunken);
 }
-.cover img {
+.cover :deep(img) {
   width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;
   filter: grayscale(1) contrast(1.05); transform: scale(1.001);
   transition: filter 400ms var(--ui-ease), transform 600ms var(--ui-ease);
 }
-a.card:hover .cover img, .card:hover .cover img { filter: none; transform: scale(1.03); }
+a.card:hover .cover img, .card:hover .cover :deep(img) { filter: none; transform: scale(1.03); }
 .cover { position: relative; }
 .cover__video {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; pointer-events: none;
@@ -119,7 +120,7 @@ a.card:hover .cover img, .card:hover .cover img { filter: none; transform: scale
 .g-enter-from, .g-leave-to { opacity: 0; transform: translateY(6px); }
 .g-leave-active { position: absolute; visibility: hidden; }
 
-@media (hover: none) { .cover img { filter: none; } }
+@media (hover: none) { .cover :deep(img) { filter: none; } }
 @media (max-width: 991.98px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 767.98px) { .page { padding-block: 40px 64px; } .grid { grid-template-columns: 1fr; gap: 40px; } }
 </style>

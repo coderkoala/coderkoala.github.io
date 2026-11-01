@@ -1,9 +1,19 @@
 import { marked } from 'marked'
+import images from './images.json'
 
 // Headings get stable ids and a hover anchor, so any section can be linked to.
 const slugify = (t) => t.toLowerCase().replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 marked.use({
   renderer: {
+    // Post images are progressive too: blurred placeholder first, right-sized WebP on top.
+    image({ href, text }) {
+      const m = images[href]
+      const alt = (text || '').replace(/"/g, '&quot;')
+      if (!m) return `<img src="${href}" alt="${alt}" loading="lazy" decoding="async">`
+      const srcset = m.variants.map((v) => `${v.src} ${v.w}w`).join(', ')
+      const src = m.variants[m.variants.length - 1].src
+      return `<span class="psi" style="--lqip:url(${m.lqip});aspect-ratio:${m.w} / ${m.h}"><img src="${src}" srcset="${srcset}" sizes="(max-width: 760px) 100vw, 720px" alt="${alt}" width="${m.w}" height="${m.h}" loading="lazy" decoding="async"></span>`
+    },
     heading({ tokens, depth }) {
       const text = this.parser.parseInline(tokens)
       if (depth > 3) return `<h${depth}>${text}</h${depth}>`
