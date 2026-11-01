@@ -2,6 +2,8 @@
 import { ref, onMounted } from 'vue'
 import AppIcon from './AppIcon.vue'
 import { site } from '../lib/site.js'
+import { useLang } from '../lib/i18n.js'
+const { lang, t, to, other } = useLang()
 
 const dark = ref(false)
 const mod = ref('Ctrl ')
@@ -23,28 +25,30 @@ function toggle() {
 <template>
   <header class="nav">
     <div class="wrap nav__in">
-      <RouterLink to="/" class="brand" aria-label="Nobel Dahal, home">
+      <RouterLink :to="to('/')" class="brand" :aria-label="`${t.name}, ${t.homeLabel}`">
         <span class="brand__mark" aria-hidden="true">ND</span>
-        <span class="brand__name">Nobel Dahal</span>
+        <span class="brand__name">{{ t.name }}</span>
       </RouterLink>
       <nav class="links" aria-label="Main">
-        <RouterLink to="/work/">Work</RouterLink>
-        <RouterLink to="/writing/">Writing</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/consult">Consult</RouterLink>
+        <RouterLink to="/work/" :hreflang="lang === 'ne' ? 'en' : null">{{ t.work }}</RouterLink>
+        <RouterLink to="/writing/" :hreflang="lang === 'ne' ? 'en' : null">{{ t.writing }}</RouterLink>
+        <RouterLink :to="to('/about')">{{ t.about }}</RouterLink>
+        <RouterLink :to="to('/consult')">{{ t.consult }}</RouterLink>
       </nav>
       <div class="nav__end">
-        <RouterLink class="btn btn--solid btn--sm nav__cta" to="/consult">Book a consultation</RouterLink>
+        <RouterLink class="langsw" :to="other.path" :lang="other.lang" :hreflang="other.lang">{{ other.label }}</RouterLink>
+        <RouterLink class="btn btn--solid btn--sm nav__cta" :to="to('/consult')">{{ t.bookConsult }}</RouterLink>
         <button class="kbtn" type="button" @click="openPalette" aria-label="Go to (Ctrl K)" title="Go to (Ctrl K)">
           <AppIcon name="search" /><kbd class="kbtn__k">{{ mod }}K</kbd>
         </button>
-        <button class="iconbtn" type="button" @click="openA11y" aria-label="Accessibility and languages" title="Accessibility and languages">
+        <button class="iconbtn" type="button" @click="openA11y" :aria-label="t.a11y" :title="t.a11y">
           <AppIcon name="person" />
         </button>
         <button class="iconbtn" type="button" @click="toggle" :aria-label="dark ? 'Use light theme' : 'Use dark theme'">
           <AppIcon :name="dark ? 'sun' : 'moon'" />
         </button>
       </div>
+      <RouterLink class="langsw langsw--m" :to="other.path" :lang="other.lang" :hreflang="other.lang">{{ other.label }}</RouterLink>
     </div>
   </header>
 </template>
@@ -87,4 +91,7 @@ function toggle() {
   .brand__name, .nav__cta { display: none; }
   .links { gap: 20px; }
 }
+.langsw { font-size: 14px; font-weight: 600; color: var(--ui-ink-soft); text-decoration: none; padding: 6px 4px; }
+.langsw:hover { color: var(--ui-ink); text-decoration: underline; text-underline-offset: 4px; }
+.langsw--m { display: none; }
 </style>

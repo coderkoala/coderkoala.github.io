@@ -6,6 +6,9 @@ import AppToast from './components/AppToast.vue'
 import A11yPanel from './components/A11yPanel.vue'
 import MobileTabBar from './components/MobileTabBar.vue'
 import { isMobile } from './lib/device.js'
+import { useLang, formatDay, num } from './lib/i18n.js'
+import { computed } from 'vue'
+const { lang, t } = useLang()
 import { apply as applyA11y } from './lib/a11y.js'
 import { onMounted } from 'vue'
 
@@ -25,7 +28,7 @@ import { site } from './lib/site.js'
 /* global __BUILT_AT__ */
 const builtAt = __BUILT_AT__
 const openA11y = () => dispatchEvent(new Event('a11y:open'))
-const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kathmandu' })
+const builtLabel = computed(() => formatDay(builtAt, lang.value))
 </script>
 
 <template>
@@ -45,8 +48,8 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
   </main>
   <footer class="foot">
     <div class="wrap foot__in">
-      <span>© {{ new Date(builtAt).getFullYear() }} {{ site.name }} · {{ site.place }} · Updated <time :datetime="builtAt">{{ builtLabel }}</time></span>
-      <span class="foot__links"><RouterLink to="/now">Now</RouterLink><RouterLink to="/colophon">How it’s built</RouterLink><button type="button" class="foot__a11y" @click="openA11y">Accessibility and languages</button></span>
+      <span>© {{ num(new Date(builtAt).getFullYear(), lang) }} {{ t.name }} · {{ t.place }} · {{ t.updated }} <time :datetime="builtAt">{{ builtLabel }}</time></span>
+      <span class="foot__links"><RouterLink to="/now">{{ t.now }}</RouterLink><RouterLink to="/colophon">{{ t.colophon }}</RouterLink><button type="button" class="foot__a11y" @click="openA11y">{{ t.a11y }}</button></span>
       <span class="foot__motto" lang="el" title="Find a way, or make one.">Βρείτε έναν τρόπο ή φτιάξτε έναν</span>
     </div>
   </footer>

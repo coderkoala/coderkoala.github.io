@@ -10,5 +10,9 @@ export const routes = [
   { path: '/consult', component: () => import('./pages/Consult.vue') },
   { path: '/hire', redirect: '/consult' },
   { path: '/about', component: () => import('./pages/About.vue') },
+  // Nepali: same pages, copy chosen from the route (see lib/i18n.js).
+  { path: '/ne', component: () => import('./pages/Home.vue') },
+  { path: '/ne/consult', component: () => import('./pages/Consult.vue') },
+  { path: '/ne/about', component: () => import('./pages/About.vue') },
   { path: '/:rest(.*)*', component: () => import('./pages/NotFound.vue') },
 ]

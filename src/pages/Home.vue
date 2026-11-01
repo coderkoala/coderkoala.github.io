@@ -4,9 +4,17 @@ import { work, writing, gallery } from '../lib/content.js'
 import { site, personLd, websiteLd } from '../lib/site.js'
 import { openCal, loadCal } from '../lib/cal.js'
 import { useSeo } from '../lib/seo.js'
+import { useLang, num } from '../lib/i18n.js'
+import text from '../lib/copy/home.js'
 
+const { lang, t } = useLang()
+const c = text[lang.value]
+const n = (x) => num(x, lang.value)
 useSeo({
-  description: 'Nobel Dahal built Kaede, a cargo ERP with IATA ONE Record and AWB stock. Full-stack developer in Kathmandu, Nepal, working in Laravel and Vue.',
+  title: c.title,
+  path: lang.value === 'ne' ? '/ne' : '/',
+  image: '/og/default.png',
+  description: c.seo,
   ld: [personLd, websiteLd],
 })
 </script>
@@ -15,16 +23,16 @@ useSeo({
   <div class="home">
     <section class="hero wrap">
       <div class="hero__copy">
-        <p class="eyebrow">Independent software consultant · Kathmandu, Nepal</p>
+        <p class="eyebrow">{{ c.eyebrow }}</p>
         <div class="hero__head">
-        <h1 class="display">I build software businesses <span class="flare">count on</span>.</h1>
-        <p class="lede">I built Kaede, a cargo ERP that speaks IATA ONE Record and learns from an office's own history. Before it: CRMs, payment platforms and web apps, from the database up.</p>
+        <h1 class="display">{{ c.h1[0] }}<span class="flare">{{ c.h1[1] }}</span>{{ c.h1[2] }}</h1>
+        <p class="lede">{{ c.lede }}</p>
         </div>
         <div class="hero__act">
         <div class="hero__cta">
-          <RouterLink class="btn btn--solid" :to="`/work/${work[0].slug}`">See how Kaede works <AppIcon name="arrow" /></RouterLink>
-          <a v-if="site.booking" class="btn" :href="site.booking" target="_blank" rel="noopener" @click.prevent="openCal()" @pointerenter.once="loadCal()" @focus.once="loadCal()"><AppIcon name="calendar" /> Book a free review</a>
-          <a class="btn" :href="site.cv" download><AppIcon name="download" /> Résumé</a>
+          <RouterLink class="btn btn--solid" :to="`/work/${work[0].slug}`">{{ c.kaede }} <AppIcon name="arrow" /></RouterLink>
+          <a v-if="site.booking" class="btn" :href="site.booking" target="_blank" rel="noopener" @click.prevent="openCal()" @pointerenter.once="loadCal()" @focus.once="loadCal()"><AppIcon name="calendar" /> {{ c.book }}</a>
+          <a class="btn" :href="site.cv" download><AppIcon name="download" /> {{ c.resume }}</a>
         </div>
         <ul class="checks">
           <li><AppIcon name="github" /> <a :href="site.github" rel="me" aria-label="GitHub profile: coderkoala">coderkoala</a></li>
@@ -36,27 +44,28 @@ useSeo({
     </section>
 
     <section id="work" class="strip" aria-labelledby="work-title">
-      <h2 id="work-title" class="sr-only">Selected work</h2>
+      <h2 id="work-title" class="sr-only">{{ c.workTitle }}</h2>
       <ul class="wrap strip__in">
         <li v-for="w in work" :key="w.slug">
           <RouterLink :to="w.url" class="tile" >
-            <span class="tile__kind">{{ w.kind }}</span>
+            <span class="tile__kind">{{ c.kinds[w.slug] || w.kind }}</span>
             <span class="tile__name">{{ w.title }} <AppIcon name="arrow" /></span>
           </RouterLink>
         </li>
         <li>
           <RouterLink to="/work/" class="tile">
-            <span class="tile__kind">{{ gallery.length }} projects since 2017</span>
-            <span class="tile__name">Everything else <AppIcon name="arrow" /></span>
+            <span class="tile__kind">{{ c.restKind(n(gallery.length)) }}</span>
+            <span class="tile__name">{{ c.rest }} <AppIcon name="arrow" /></span>
           </RouterLink>
         </li>
         <li v-if="writing.length">
           <RouterLink to="/writing/" class="tile">
-            <span class="tile__kind">{{ writing.length }} case studies</span>
-            <span class="tile__name">Writing <AppIcon name="arrow" /></span>
+            <span class="tile__kind">{{ c.writingKind(n(writing.length)) }}</span>
+            <span class="tile__name">{{ c.writing }} <AppIcon name="arrow" /></span>
           </RouterLink>
         </li>
       </ul>
+      <p v-if="c.englishNote" class="wrap note">{{ c.englishNote }}</p>
     </section>
   </div>
 </template>
@@ -118,6 +127,7 @@ useSeo({
 </style>
 
 <style>
+.home .note { padding-block: 10px; font-size: 13px; color: var(--ui-ink-faint); }
 /* ── Phone app: portrait ── */
 html[data-device='mobile'] .home { min-height: 0; }
 html[data-device='mobile'] .home .hero { padding-block: 28px 32px; }

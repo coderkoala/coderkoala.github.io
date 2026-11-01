@@ -143,3 +143,9 @@ html[data-device='mobile'] .prose { font-size: 17px; line-height: 1.7; overflow-
 html[data-device='mobile'] .prose code { white-space: normal; word-break: break-word; }
 html[data-device='mobile'] .prose pre code { white-space: pre; word-break: normal; }
 html[data-device='mobile'] .prose pre { margin-inline: -20px; padding-inline: 20px; border-radius: 0; }
+/* Devanagari needs more room: taller matras, no negative tracking, a calmer line height. */
+html[lang='ne'] { --ui-ne: 1; }
+html[lang='ne'] .display { letter-spacing: 0; line-height: 1.25; }
+html[lang='ne'] .lede, html[lang='ne'] p, html[lang='ne'] li, html[lang='ne'] dd { line-height: 1.8; }
+html[lang='ne'] h2, html[lang='ne'] h3, html[lang='ne'] summary { letter-spacing: 0; line-height: 1.45; }
+html[data-device='mobile'] .nav .langsw--m { display: inline-flex; margin-left: auto; padding: 8px 12px; border: 1px solid var(--ui-border); border-radius: 999px; font-size: 13px; }

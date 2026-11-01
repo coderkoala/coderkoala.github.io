@@ -1,28 +1,30 @@
 <script setup>
-import { ref, watch, onMounted } from 'vue'
+import { ref, watch, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import AppIcon from './AppIcon.vue'
 import { site } from '../lib/site.js'
 import { openCal, loadCal } from '../lib/cal.js'
 import { isLandscape } from '../lib/device.js'
+import { useLang } from '../lib/i18n.js'
+const { t, to, other } = useLang()
 
 // The phone app's own navigation: a thumb-reach tab bar and a "More" sheet.
 // Rendered always, shown only under the mobile media query (no hydration mismatch, no flash).
 const route = useRoute()
 const open = ref(false)
 const dark = ref(false)
-const tabs = [
-  { to: '/', label: 'Home', icon: 'home', match: (p) => p === '/' },
-  { to: '/work/', label: 'Work', icon: 'grid', match: (p) => p.startsWith('/work') },
-  { to: '/writing/', label: 'Writing', icon: 'pen', match: (p) => p.startsWith('/writing') },
-  { to: '/consult', label: 'Consult', icon: 'chat', match: (p) => p.startsWith('/consult') },
-]
-const more = [
-  { to: '/about', label: 'About' },
-  { to: '/cv', label: 'Résumé' },
-  { to: '/now', label: 'Now' },
-  { to: '/colophon', label: 'How it’s built' },
-]
+const tabs = computed(() => [
+  { to: to('/'), label: t.value.home, icon: 'home', match: (p) => p === '/' || p === '/ne' },
+  { to: '/work/', label: t.value.work, icon: 'grid', match: (p) => p.startsWith('/work') },
+  { to: '/writing/', label: t.value.writing, icon: 'pen', match: (p) => p.startsWith('/writing') },
+  { to: to('/consult'), label: t.value.consult, icon: 'chat', match: (p) => /^(\/ne)?\/consult/.test(p) },
+])
+const more = computed(() => [
+  { to: to('/about'), label: t.value.about },
+  { to: '/cv', label: t.value.resume },
+  { to: '/now', label: t.value.now },
+  { to: '/colophon', label: t.value.colophon },
+])
 watch(() => route.path, () => { open.value = false })
 watch(isLandscape, () => { open.value = false })
 watch(open, (v) => { document.documentElement.classList.toggle('sheet-open', v); if (v) loadCal() })
@@ -49,23 +51,24 @@ function onKey(e) { if (e.key === 'Escape') open.value = false }
       <AppIcon :name="t.icon" :size="22" /><span>{{ t.label }}</span>
     </RouterLink>
     <button type="button" class="tab" :class="{ on: open || more.some((m) => route.path === m.to) }" :aria-expanded="open" aria-controls="more-sheet" @click="open = !open">
-      <AppIcon name="more" :size="22" /><span>More</span>
+      <AppIcon name="more" :size="22" /><span>{{ t.more }}</span>
     </button>
   </nav>
 
   <Transition name="sheet">
     <div v-if="open" class="scrim" @click.self="open = false">
-      <div id="more-sheet" class="sheet" role="dialog" aria-modal="true" aria-label="More">
+      <div id="more-sheet" class="sheet" role="dialog" aria-modal="true" :aria-label="t.more">
         <div class="sheet__grip" aria-hidden="true"></div>
-        <button v-if="site.booking" type="button" class="btn btn--solid sheet__cta" @click="book"><AppIcon name="calendar" /> Book a free review</button>
+        <button v-if="site.booking" type="button" class="btn btn--solid sheet__cta" @click="book"><AppIcon name="calendar" /> {{ t.bookReview }}</button>
         <ul class="sheet__list">
           <li v-for="m in more" :key="m.to"><RouterLink :to="m.to">{{ m.label }} <AppIcon name="arrow" /></RouterLink></li>
-          <li><a :href="`mailto:${site.email}`">Email {{ site.email }} <AppIcon name="mail" /></a></li>
+          <li><RouterLink :to="other.path" :lang="other.lang">{{ other.label }} <AppIcon name="web" /></RouterLink></li>
+          <li><a :href="`mailto:${site.email}`">{{ t.email }} {{ site.email }} <AppIcon name="mail" /></a></li>
         </ul>
         <div class="sheet__tools">
-          <button type="button" @click="search"><AppIcon name="search" :size="20" /><span>Search</span></button>
-          <button type="button" @click="a11y"><AppIcon name="person" :size="20" /><span>Access</span></button>
-          <button type="button" @click="theme"><AppIcon :name="dark ? 'sun' : 'moon'" :size="20" /><span>{{ dark ? 'Light' : 'Dark' }}</span></button>
+          <button type="button" @click="search"><AppIcon name="search" :size="20" /><span>{{ t.search }}</span></button>
+          <button type="button" @click="a11y"><AppIcon name="person" :size="20" /><span>{{ t.access }}</span></button>
+          <button type="button" @click="theme"><AppIcon :name="dark ? 'sun' : 'moon'" :size="20" /><span>{{ dark ? t.light : t.dark }}</span></button>
         </div>
       </div>
     </div>

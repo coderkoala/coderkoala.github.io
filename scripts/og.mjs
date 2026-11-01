@@ -29,7 +29,7 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 if (import.meta.url === `file://${process.argv[1]}`) {
 const browser = await chromium.launch({ executablePath: findChrome() })
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } })
-const all = pages().all
+const all = pages().all.filter((p) => !p.lang)   // Nepali pages reuse their English preview image
 for (const p of all) {
   const title = p.path === '/' ? 'I build software businesses count on.' : p.title
   await page.setContent(`<style>${css}</style>

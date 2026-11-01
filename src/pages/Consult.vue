@@ -6,19 +6,15 @@ import { copy } from '../lib/toast.js'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { inlineCal, openCal } from '../lib/cal.js'
 import { useSeo } from '../lib/seo.js'
+import { useLang } from '../lib/i18n.js'
+import text from '../lib/copy/consult.js'
 
-const services = [
-  { name: 'Web applications and portals', text: 'Laravel and Vue, from a customer portal to a government website that takes payments.', proof: 'Kalimati Market', to: '/work/kalimati' },
-  { name: 'ERP and CRM systems', text: 'Operations, billing, payroll and the screens your team uses two hundred times a day.', proof: 'Most waybills are the usual one', to: '/writing/most-waybills-are-the-usual-one' },
-  { name: 'Payments and integrations', text: 'eSewa, Khalti and bank payments, Microsoft Dynamics 365, airline and courier APIs.', proof: 'eSewa and Khalti, done safely', to: '/writing/esewa-khalti-laravel' },
-  { name: 'Logistics and cargo software', text: 'Air waybills, AWB stock, IATA ONE Record and Cargo-XML, rates and delivery, for freight forwarders.', proof: 'Kaede', to: '/work/kaede' },
-  { name: 'WordPress plugins', text: 'Custom plugins and fixes that hold up. I built them for WPEverest’s Everest Forms and User Registration.', proof: 'Everest Forms', to: '/writing/the-check-that-only-lived-in-the-browser' },
-  { name: 'Rescue and modernisation', text: 'Take over an old PHP or Laravel app and make it safe, fast and easy to change again.', proof: 'Laravel contributor', to: '/writing/a-date-that-did-not-fit' },
-  { name: 'Localisation', text: 'Nepali, English and Japanese, translated by someone who reads the result.', proof: 'Syncfusion in Nepali', to: '/writing/teaching-a-ui-library-nepali' },
-  { name: 'CRM on Microsoft Dynamics 365', text: 'Migrations from Zoho and spreadsheets, plugins, Power Automate and the services around it.', proof: 'GenericProperties', to: '/work/generic-properties' },
-]
+const { lang } = useLang()
+const c = text[lang.value]
+const { services, steps, faq } = c
+const mail = `mailto:${site.email}?subject=${encodeURIComponent(c.mailSubject)}`
 
-const book = site.booking || `mailto:${site.email}?subject=Free%20systems%20review`
+const book = site.booking || `mailto:${site.email}?subject=${encodeURIComponent(c.reviewSubject)}`
 function onBook(e) { if (site.booking) { e.preventDefault(); openCal() } }
 const calEl = ref(null)
 const calOn = ref(false)
@@ -29,31 +25,15 @@ onMounted(() => {
   io.observe(calEl.value)
 })
 onBeforeUnmount(() => io?.disconnect())
-const steps = [
-  { title: 'A conversation', text: 'You describe the problem, not a feature list. Thirty minutes usually tells us both whether I’m the right fit.' },
-  { title: 'A written proposal', text: 'What I recommend, what it costs and when, as a fixed quote or a monthly retainer, in plain words.' },
-  { title: 'Delivery in the open', text: 'Working software every week, on your infrastructure, so there are no surprises.' },
-  { title: 'Ongoing care', text: 'You own the code and the docs. I stay on as your technical partner for support and the next phase.' },
-]
-
-const faq = [
-  { q: 'Do you work with clients outside Nepal?', a: 'Yes. I have worked remotely for clients in the United States and in Nepal. Kathmandu is UTC+5:45, which overlaps the working day in Asia, Australia and the Gulf, and European mornings.' },
-  { q: 'Can you take over an existing project?', a: 'Yes. I start by reading the code and the data, then write down what is risky and what is fine before changing anything.' },
-  { q: 'Which technologies do you use?', a: 'Mostly PHP and Laravel, Vue, Node.js, PostgreSQL and MySQL, on Linux and Docker. WordPress when it is the right tool, and Microsoft Dynamics 365 when the client already runs on it.' },
-  { q: 'What does an engagement look like?', a: 'Either a defined project with a fixed quote, or an ongoing retainer where I act as your IT department: advising, building and keeping your systems running.' },
-  { q: 'Do you work with agencies?', a: 'Yes, as a technical partner behind your client work, under your brand if you prefer.' },
-  { q: 'Is the systems review really free?', a: 'Yes. Thirty minutes and a written page, with no obligation. I keep it to two a week so each one gets proper attention; slots usually fill a week or two ahead.' },
-  { q: 'How much does it cost?', a: 'It depends on the scope. After the first conversation you get a written proposal: a fixed quote for a defined project, or a monthly retainer for ongoing work.' },
-]
-
 useSeo({
-  title: 'Software consultant in Nepal',
-  description: 'Nobel Dahal, independent software consultant and full-stack developer in Kathmandu, Nepal: an IT department you can call on for web apps, ERP, CRM and payments.',
-  path: '/consult',
+  title: c.title,
+  description: c.seo,
+  path: lang.value === 'ne' ? '/ne/consult' : '/consult',
+  image: '/og/consult.png',
   ld: [
     {
       '@context': 'https://schema.org', '@type': 'ProfessionalService', name: 'Nobel Dahal, software consulting',
-      url: `${site.url}/consult`, email: site.email, image: `${site.url}/og/consult.png`,
+      url: `${site.url}${lang.value === 'ne' ? '/ne/consult' : '/consult'}`, email: site.email, image: `${site.url}/og/consult.png`,
       founder: { '@id': `${site.url}/#person` }, provider: { '@id': `${site.url}/#person` },
       address: { '@type': 'PostalAddress', addressLocality: 'Kathmandu', addressCountry: 'NP' },
       areaServed: [{ '@type': 'Country', name: 'Nepal' }, 'Worldwide'],
@@ -61,7 +41,7 @@ useSeo({
       hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Services', itemListElement: services.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s.name, description: s.text } })) },
     },
     { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
-    crumbs([{ name: 'Consult', path: '/consult' }]),
+    crumbs([{ name: lang.value === 'ne' ? 'परामर्श' : 'Consult', path: lang.value === 'ne' ? '/ne/consult' : '/consult' }]),
   ],
 })
 </script>
@@ -69,40 +49,40 @@ useSeo({
 <template>
   <div class="wrap page">
     <header class="head">
-      <p class="eyebrow">Independent consultant · Kathmandu, Nepal · UTC+5:45</p>
-      <p v-if="site.availability" class="avail"><i aria-hidden="true"></i>{{ site.availability }}</p>
-      <h1 class="display">An IT department you can call on</h1>
-      <p class="lede">I'm Nobel, an independent software consultant and full-stack developer in Nepal. Businesses bring me a problem; I advise, design and build the solution, then keep it running, from the database to the screen.</p>
+      <p class="eyebrow">{{ c.eyebrow }}</p>
+      <p v-if="site.availability" class="avail"><i aria-hidden="true"></i>{{ c.availability }}</p>
+      <h1 class="display">{{ c.h1 }}</h1>
+      <p class="lede">{{ c.lede }}</p>
       <div class="cta">
-        <a class="btn btn--solid" :href="`mailto:${site.email}?subject=Consultation%20enquiry`"><AppIcon name="mail" /> Start a conversation</a>
-        <button class="btn" type="button" @click="copy(site.email, 'Email address copied')"><AppIcon name="copy" /> Copy email</button>
-        <a class="btn" :href="site.cv" download><AppIcon name="download" /> Résumé</a>
+        <a class="btn btn--solid" :href="mail"><AppIcon name="mail" /> {{ c.start }}</a>
+        <button class="btn" type="button" @click="copy(site.email, c.copied)"><AppIcon name="copy" /> {{ c.copyEmail }}</button>
+        <a class="btn" :href="site.cv" download><AppIcon name="download" /> {{ c.resume }}</a>
       </div>
       <TimeOverlap />
     </header>
 
     <section aria-labelledby="review" class="review">
       <div>
-        <h2 id="review" class="review__t">Start with a free systems review</h2>
-        <p>Thirty minutes about how your business runs today: the software, the spreadsheets, the parts that keep you up at night. Afterwards you get one written page: what's risky, what's fine, and what I'd do first. Yours to keep, whether or not we work together.</p>
+        <h2 id="review" class="review__t">{{ c.reviewTitle }}</h2>
+        <p>{{ c.review }}</p>
       </div>
-      <a class="btn btn--solid" :href="book" target="_blank" rel="noopener" @click="onBook"><AppIcon name="arrow" /> {{ site.booking ? 'Book a review slot' : 'Request a review' }}</a>
-      <div v-if="site.booking" ref="calEl" class="cal" :class="{ 'cal--on': calOn }" aria-label="Booking calendar"></div>
+      <a class="btn btn--solid" :href="book" target="_blank" rel="noopener" @click="onBook"><AppIcon name="arrow" /> {{ site.booking ? c.bookSlot : c.requestReview }}</a>
+      <div v-if="site.booking" ref="calEl" class="cal" :class="{ 'cal--on': calOn }" :aria-label="c.calendar"></div>
     </section>
 
     <section aria-labelledby="what" class="block">
-      <h2 id="what" class="h">Where I can help</h2>
+      <h2 id="what" class="h">{{ c.helpTitle }}</h2>
       <ul class="services">
         <li v-for="s in services" :key="s.name">
           <h3>{{ s.name }}</h3>
           <p>{{ s.text }}</p>
-          <RouterLink :to="s.to" class="proof">{{ s.proof }} <AppIcon name="arrow" /></RouterLink>
+          <RouterLink :to="s.to" class="proof" :hreflang="lang === 'ne' ? 'en' : null">{{ s.proof }} <AppIcon name="arrow" /></RouterLink>
         </li>
       </ul>
     </section>
 
     <section aria-labelledby="how" class="block">
-      <h2 id="how" class="h">How we work together</h2>
+      <h2 id="how" class="h">{{ c.howTitle }}</h2>
       <ol class="steps">
         <li v-for="(s, i) in steps" :key="s.title">
           <span class="n mono">{{ String(i + 1).padStart(2, '0') }}</span>
@@ -113,17 +93,14 @@ useSeo({
     </section>
 
     <section aria-labelledby="why" class="block why">
-      <h2 id="why" class="h">Track record</h2>
+      <h2 id="why" class="h">{{ c.recordTitle }}</h2>
       <ul class="checks">
-        <li><AppIcon name="check" /> Shipping production software since 2018</li>
-        <li><AppIcon name="check" /> Built Kaede, an ERP for freight forwarders</li>
-        <li><AppIcon name="check" /> Sole developer of Kalimati Market's platform</li>
-        <li><AppIcon name="check" /> Laravel contributor, and found security bugs in WordPress plugins</li>
+        <li v-for="r in c.record" :key="r"><AppIcon name="check" /> {{ r }}</li>
       </ul>
     </section>
 
     <section aria-labelledby="faq" class="block">
-      <h2 id="faq" class="h">Questions</h2>
+      <h2 id="faq" class="h">{{ c.faqTitle }}</h2>
       <div class="faq">
         <details v-for="f in faq" :key="f.q">
           <summary>{{ f.q }}</summary>
@@ -133,8 +110,8 @@ useSeo({
     </section>
 
     <section class="end">
-      <h2 class="end__t">Tell me what your business needs.</h2>
-      <a class="btn btn--solid" :href="`mailto:${site.email}?subject=Consultation%20enquiry`"><AppIcon name="mail" /> Start a conversation</a>
+      <h2 class="end__t">{{ c.endTitle }}</h2>
+      <a class="btn btn--solid" :href="mail"><AppIcon name="mail" /> {{ c.start }}</a>
     </section>
   </div>
 </template>

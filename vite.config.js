@@ -2,15 +2,23 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import fs from 'node:fs'
 import { SITE, pages, imagesFor } from './scripts/pages.mjs'
+// English/Nepali pairs, mirrored from src/lib/i18n.js, as hreflang links in the sitemap.
+const PAIRS = { '/': '/ne', '/consult': '/ne/consult', '/about': '/ne/about' }
+const alt = (path) => {
+  const en = PAIRS[path] ? path : Object.keys(PAIRS).find((k) => PAIRS[k] === path)
+  if (!en) return ''
+  const l = (lang, href) => `<xhtml:link rel="alternate" hreflang="${lang}" href="${SITE}${href}"/>`
+  return l('en', en) + l('ne', PAIRS[en]) + l('x-default', en)
+}
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[c])
 
 function writeSitemap({ all }) {
   const urls = all.map((p) => {
     const imgs = imagesFor(p).map(([src, cap]) => `<image:image><image:loc>${SITE}${src}</image:loc><image:caption>${esc(cap)}</image:caption></image:image>`).join('')
-    return `<url><loc>${SITE}${p.path}</loc><lastmod>${p.lastmod}</lastmod><priority>${p.priority}</priority>${imgs}</url>`
+    return `<url><loc>${SITE}${p.path}</loc><lastmod>${p.lastmod}</lastmod><priority>${p.priority}</priority>${alt(p.path)}${imgs}</url>`
   }).join('')
-  fs.writeFileSync('dist/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${urls}</urlset>`)
+  fs.writeFileSync('dist/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}</urlset>`)
 }
 
 // A plain-text map of the site for AI assistants and answer engines.

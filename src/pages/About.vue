@@ -2,13 +2,19 @@
 import AppIcon from '../components/AppIcon.vue'
 import { site, experience, certifications, personLd, skills, assessed, openSource, crumbs } from '../lib/site.js'
 import { useSeo } from '../lib/seo.js'
+import { useLang, num } from '../lib/i18n.js'
+import text from '../lib/copy/about.js'
 const top = certifications.filter((c) => c.featured)
 const rest = certifications.filter((c) => !c.featured)
+const { lang } = useLang()
+const c = text[lang.value]
+const here = lang.value === 'ne' ? '/ne/about' : '/about'
 useSeo({
-  title: 'Experience, open source and certifications',
-  description: 'Experience since 2018, open-source work on Laravel, Syncfusion and WordPress plugins, PMI and PagerDuty certifications, and a computer engineering degree.',
-  path: '/about',
-  ld: [{ '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: personLd, url: 'https://nobeldahal.com.np/about' }, crumbs([{ name: 'About', path: '/about' }])],
+  title: c.title,
+  description: c.seo,
+  path: here,
+  image: '/og/about.png',
+  ld: [{ '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: personLd, url: site.url + here }, crumbs([{ name: c.h1, path: here }])],
 })
 </script>
 
@@ -16,29 +22,24 @@ useSeo({
   <section class="wrap page">
     <header class="head">
       <div class="head__main">
-      <h1 class="display">About</h1>
+      <h1 class="display">{{ c.h1 }}</h1>
       <div class="lede intro">
-        <p>I'm Nobel, a full-stack developer in Kathmandu, Nepal. I studied computer engineering here and have been shipping web applications and software for businesses since 2018: WordPress plugins, a government market's website, a US brokerage's CRM, and now an ERP for air cargo.</p>
-        <p>I like the unglamorous parts. Migrations, audit logs, the form someone fills in two hundred times a day.</p>
+        <p v-for="p in c.intro" :key="p">{{ p }}</p>
       </div>
       <div class="cta">
-        <a class="btn btn--solid" :href="`mailto:${site.email}`"><AppIcon name="mail" /> Email me</a>
-        <a class="btn" :href="site.cv" download><AppIcon name="download" /> Résumé</a>
+        <a class="btn btn--solid" :href="`mailto:${site.email}`"><AppIcon name="mail" /> {{ c.emailMe }}</a>
+        <a class="btn" :href="site.cv" download><AppIcon name="download" /> {{ c.resume }}</a>
       </div>
       </div>
       <dl class="facts">
-        <div><dt>Based in</dt><dd>Kathmandu, Nepal <span class="soft">· UTC+5:45</span></dd></div>
-        <div><dt>Working as</dt><dd>Independent software consultant</dd></div>
-        <div><dt>Shipping since</dt><dd>2018</dd></div>
-        <div><dt>Speaks</dt><dd>English, Nepali</dd></div>
-        <div><dt>Builds with</dt><dd>Laravel, Vue, PostgreSQL</dd></div>
+        <div v-for="f in c.facts" :key="f[0]"><dt>{{ f[0] }}</dt><dd>{{ f[1] }} <span v-if="f[2]" class="soft">{{ f[2] }}</span></dd></div>
       </dl>
     </header>
 
     <div class="masonry">
         <section aria-labelledby="exp">
-          <h2 id="exp" class="h">Experience</h2>
-          <ol class="rows">
+          <h2 id="exp" class="h">{{ c.exp }}</h2>
+          <ol class="rows" :lang="lang === 'ne' ? 'en' : null">
             <li v-for="e in experience" :key="e.org" class="row">
               <span><strong>{{ e.org }}</strong><span class="soft">{{ e.title }} · {{ e.type }}</span></span>
               <span class="soft mono">{{ e.when }}</span>
@@ -46,8 +47,8 @@ useSeo({
           </ol>
         </section>
         <section aria-labelledby="oss">
-          <h2 id="oss" class="h">Open source</h2>
-          <ul class="oss">
+          <h2 id="oss" class="h">{{ c.oss }}</h2>
+          <ul class="oss" :lang="lang === 'ne' ? 'en' : null">
             <li v-for="o in openSource" :key="o.href">
               <a :href="o.href" rel="noopener"><strong>{{ o.what }}</strong></a>
               <span class="soft">{{ o.text }}</span>
@@ -55,28 +56,28 @@ useSeo({
           </ul>
         </section>
         <section aria-labelledby="skills">
-          <h2 id="skills" class="h">Skills</h2>
-          <dl class="skills">
+          <h2 id="skills" class="h">{{ c.skills }}</h2>
+          <dl class="skills" :lang="lang === 'ne' ? 'en' : null">
             <div v-for="g in skills" :key="g.group"><dt>{{ g.group }}</dt><dd>{{ g.items.join(', ') }}</dd></div>
           </dl>
-          <p class="soft small">Passed LinkedIn assessments in {{ assessed.join(', ') }}.</p>
+          <p class="soft small">{{ c.assessed }} {{ assessed.join(', ') }}.</p>
         </section>
         <section aria-labelledby="cert">
-          <h2 id="cert" class="h">Certifications</h2>
+          <h2 id="cert" class="h">{{ c.cert }}</h2>
           <ul class="certs">
             <li v-for="c in top" :key="c.name + c.issuer"><span>{{ c.name }}</span><span class="soft">{{ c.issuer }} · {{ c.year }}</span></li>
           </ul>
           <details class="more">
-            <summary>{{ rest.length }} more courses</summary>
+            <summary>{{ c.moreCourses(num(rest.length, lang)) }}</summary>
             <ul class="certs certs--small">
               <li v-for="c in rest" :key="c.name + c.issuer"><span>{{ c.name }}</span><span class="soft">{{ c.issuer }} · {{ c.year }}</span></li>
             </ul>
           </details>
         </section>
         <section aria-labelledby="edu">
-          <h2 id="edu" class="h">Education</h2>
-          <p>Bachelor of Engineering, Computer</p>
-          <p class="soft small">Himalaya College of Engineering, 2014–2018</p>
+          <h2 id="edu" class="h">{{ c.edu }}</h2>
+          <p>{{ c.degree }}</p>
+          <p class="soft small">{{ c.college }}</p>
         </section>
     </div>
   </section>
