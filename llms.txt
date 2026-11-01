@@ -1,0 +1,24 @@
+# Nobel Dahal
+
+> Freelance software engineer and consultant in Kathmandu, Nepal. Builds ERP, CRM and operations software end to end with Laravel, Vue and PostgreSQL. Creator of Kaede, an ERP for freight forwarders. Laravel contributor. Contact: nobel@dahal.tech
+
+## Case studies
+- [Kaede](https://www.nobeldahal.com.np/work/kaede): The system a freight forwarder runs on. It reads the paperwork, learns how your office works, and talks to airlines, customers and drivers for you.
+- [Kalimati Market](https://www.nobeldahal.com.np/work/kalimati): Nepal's largest wholesale produce market, run online. Daily prices for everyone, an ad-free Android app, and dues that traders pay from their phones through eSewa, Khalti or the bank.
+- [GenericProperties](https://www.nobeldahal.com.np/work/generic-properties): Moved a US brokerage from Zoho to Microsoft Dynamics, then built what Dynamics was missing.
+
+## Writing
+- [Why every edit in Kaede leaves a fingerprint](https://www.nobeldahal.com.np/writing/why-every-edit-is-chained): An air waybill is a contract. Here's how Kaede makes a quiet edit to its history show up, using nothing more exotic than SHA-256.
+- [Teaching a UI library to speak Nepali](https://www.nobeldahal.com.np/writing/teaching-a-ui-library-nepali): I translated Syncfusion's Essential JS 2, 64 components and over four thousand strings, into Nepali. These are the choices that made it read like Nepali and not like a dictionary.
+- [Taking money on a government website](https://www.nobeldahal.com.np/writing/taking-money-on-a-government-website): How Kalimati's traders came to pay their dues from their phones through eSewa and Khalti, and the checks that keep a public payment page honest.
+- [One developer, one market, no ads](https://www.nobeldahal.com.np/writing/one-developer-one-market): Building the website and Android app for Kalimati, the market that sets vegetable prices for half of Kathmandu, on my own.
+- [A date that didn't fit in an integer](https://www.nobeldahal.com.np/writing/a-date-that-did-not-fit): The year 4123 crashed Laravel's date validation on 32-bit PHP. Here's how I found it, and the four-line fix that shipped in Laravel 8.
+- [Finding the nearest agent among millions](https://www.nobeldahal.com.np/writing/finding-the-nearest-agent): A US brokerage moved from Zoho to Microsoft Dynamics. The data moved fine; the question it couldn't answer quickly was "who is closest to this lead?"
+- [The check that only lived in the browser](https://www.nobeldahal.com.np/writing/the-check-that-only-lived-in-the-browser): How an email field in Everest Forms trusted the browser, how I closed it, and the regression I shipped and fixed along the way.
+
+## More
+- [All work since 2017](https://www.nobeldahal.com.np/work/)
+- [About, experience, open source and certifications](https://www.nobeldahal.com.np/about)
+- [Résumé (PDF)](https://www.nobeldahal.com.np/download/resume.pdf)
+- [GitHub](https://github.com/coderkoala)
+- [LinkedIn](https://www.linkedin.com/in/coderkoala)

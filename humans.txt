@@ -1,0 +1,10 @@
+/* TEAM */
+Built by: Nobel Dahal
+Contact: nobel@dahal.tech
+From: Kathmandu, Nepal
+GitHub: coderkoala
+
+/* SITE */
+Standards: HTML, CSS, Vue 3, Vite
+Type: IBM Plex Sans, IBM Plex Mono
+Motto: Βρείτε έναν τρόπο ή φτιάξτε έναν. Find a way, or make one.

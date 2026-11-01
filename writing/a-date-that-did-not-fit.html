@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nobel Dahal">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="alternate" type="application/rss+xml" title="Nobel Dahal · Writing" href="/feed.xml">
+    <link rel="me" href="https://github.com/coderkoala">
+    <link rel="me" href="https://www.linkedin.com/in/coderkoala">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="author" href="/humans.txt">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+      try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+    </script>
+    <script type="module" crossorigin="" src="/assets/app-DBiFUB8r.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-00Pjj21I.css">
+  <link rel="modulepreload" crossorigin="" href="/assets/Post-DMzIJYtc.js"><link rel="stylesheet" href="/assets/Post-DDV0Wgpd.css"><title>A date that didn't fit in an integer · Nobel Dahal</title><link rel="canonical" href="https://www.nobeldahal.com.np/writing/a-date-that-did-not-fit"><meta name="description" content="The year 4123 crashed Laravel's date validation on 32-bit PHP. Here's how I found it, and the four-line fix that shipped in Laravel 8."><meta name="robots" content="index, follow, max-image-preview:large"><meta property="og:type" content="article"><meta property="og:site_name" content="Nobel Dahal"><meta property="og:locale" content="en_GB"><meta property="og:title" content="A date that didn't fit in an integer · Nobel Dahal"><meta property="og:description" content="The year 4123 crashed Laravel's date validation on 32-bit PHP. Here's how I found it, and the four-line fix that shipped in Laravel 8."><meta property="og:url" content="https://www.nobeldahal.com.np/writing/a-date-that-did-not-fit"><meta property="og:image" content="https://www.nobeldahal.com.np/og/writing/a-date-that-did-not-fit.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="A date that didn't fit in an integer · Nobel Dahal"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A date that didn't fit in an integer · Nobel Dahal"><meta name="twitter:description" content="The year 4123 crashed Laravel's date validation on 32-bit PHP. Here's how I found it, and the four-line fix that shipped in Laravel 8."><meta name="twitter:image" content="https://www.nobeldahal.com.np/og/writing/a-date-that-did-not-fit.png"><meta property="article:published_time" content="2022-01-31"><meta property="article:author" content="https://www.nobeldahal.com.np"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"A date that didn't fit in an integer","description":"The year 4123 crashed Laravel's date validation on 32-bit PHP. Here's how I found it, and the four-line fix that shipped in Laravel 8.","datePublished":"2022-01-31","dateModified":"2022-01-31","wordCount":380,"inLanguage":"en","timeRequired":"PT2M","url":"https://www.nobeldahal.com.np/writing/a-date-that-did-not-fit","mainEntityOfPage":"https://www.nobeldahal.com.np/writing/a-date-that-did-not-fit","image":"https://www.nobeldahal.com.np/og/writing/a-date-that-did-not-fit.png","author":{"@id":"https://www.nobeldahal.com.np/#person","name":"Nobel Dahal","url":"https://www.nobeldahal.com.np"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.nobeldahal.com.np/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://www.nobeldahal.com.np/writing/"},{"@type":"ListItem","position":3,"name":"A date that didn't fit in an integer","item":"https://www.nobeldahal.com.np/writing/a-date-that-did-not-fit"}]}</script></head>
+  <body>
+    <div id="app" data-server-rendered="true"><!--[--><a class="skip" href="#main" data-v-89c23350="">Skip to content</a><header class="nav" data-v-89c23350="" data-v-a526a887=""><div class="wrap nav__in" data-v-a526a887=""><a href="/" class="brand" aria-label="Nobel Dahal, home" data-v-a526a887=""><span class="brand__mark" aria-hidden="true" data-v-a526a887="">ND</span><span class="brand__name" data-v-a526a887="">Nobel Dahal</span></a><nav class="links" aria-label="Main" data-v-a526a887=""><a href="/work/" class="" data-v-a526a887="">Work</a><a href="/writing/" class="" data-v-a526a887="">Writing</a><a href="/about" class="" data-v-a526a887="">About</a></nav><div class="nav__end" data-v-a526a887=""><a class="btn btn--solid btn--sm nav__cta" href="mailto:nobel@dahal.tech" data-v-a526a887="">Get in touch</a><button class="iconbtn" type="button" aria-label="Use dark theme" data-v-a526a887=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-a526a887=""><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"></path></svg></button></div></div></header><main id="main" data-v-89c23350=""><article class="wrap page" data-v-89c23350="" data-v-ef2f5567=""><header class="head" data-v-ef2f5567=""><a href="/writing/" class="back" data-v-ef2f5567=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-ef2f5567=""><path d="M19 12H5 M11 6l-6 6 6 6"></path></svg> Writing</a><h1 class="display" data-v-ef2f5567="">A date that didn't fit in an integer</h1><p class="lede" data-v-ef2f5567="">The year 4123 crashed Laravel's date validation on 32-bit PHP. Here's how I found it, and the four-line fix that shipped in Laravel 8.</p><p class="date" data-v-ef2f5567=""><time datetime="2022-01-31" data-v-ef2f5567="">31 January 2022</time> · 2 min read</p></header><div class="prose" data-v-ef2f5567=""><p>Every validator has one job: say yes or no. It should never fall over.</p>
+<p>In January 2022 I found an input that made Laravel's <code>date</code> rule do exactly that. Type <code>12-2-4123</code> into a date field that relied only on server-side validation, and on some servers you didn't get "The date is not a valid date." You got a 500 error.</p>
+<h2>Finding it</h2>
+<p>It turned up on an Apache and PHP stack running a 32-bit build. Laravel's <code>validateDate</code> asked PHP's <code>strtotime()</code> whether the string was a date it understood:</p>
+<pre><code class="language-php">if ((! is_string($value) &amp;&amp; ! is_numeric($value)) || strtotime($value) === false) {
+    return false;
+}
+</code></pre>
+<p><code>strtotime</code> returns a Unix timestamp, a count of seconds since 1970. A 32-bit integer runs out in January 2038, which is the famous Year 2038 problem. Ask for a date past that and, instead of quietly returning <code>false</code>, PHP raised:</p>
+<pre><code>ErrorException: strtotime(): Epoch doesn't fit in a PHP integer
+</code></pre>
+<p>Laravel turns PHP warnings into exceptions, so a bad date from a form brought down the whole request. Any public form with a date field could be made to throw, just by typing a year a little too far away.</p>
+<h2>The fix</h2>
+<p>The rule should behave the same everywhere: an unparseable date is invalid, not fatal. So I wrapped the check and treated a failure to parse as what it is, a no:</p>
+<pre><code class="language-php">try {
+    if ((! is_string($value) &amp;&amp; ! is_numeric($value)) || strtotime($value) === false) {
+        return false;
+    }
+} catch (Exception $e) {
+    return false;
+}
+</code></pre>
+<p>I opened the issue (<a href="https://github.com/laravel/framework/issues/40686">#40686</a>) and the pull request (<a href="https://github.com/laravel/framework/pull/40690">#40690</a>) the same day. It was merged into Laravel 8.x that afternoon.</p>
+<h2>Why a tiny fix matters</h2>
+<ul>
+<li><strong>Validators are a security boundary.</strong> Anything that turns user input into a 500 is a cheap way to fill logs, trip alerts and find soft spots.</li>
+<li><strong>Environment is input too.</strong> The same code was fine on 64-bit PHP. Your users don't choose your servers, and a library doesn't get to choose its users' servers.</li>
+<li><strong>Fail closed, quietly.</strong> The right answer to "I can't read this date" is "invalid", with the same message as any other bad date.</li>
+</ul>
+<p>It's four lines. It's also in every Laravel 8 app that updated after January 2022, which is a nice thing to have helped with.</p>
+</div><!----></article></main><footer class="foot" data-v-89c23350=""><div class="wrap foot__in" data-v-89c23350=""><span data-v-89c23350="">© 2026 Nobel Dahal · Kathmandu, Nepal</span><span class="foot__motto" lang="el" title="Find a way, or make one." data-v-89c23350="">Βρείτε έναν τρόπο ή φτιάξτε έναν</span></div></footer><!--]--></div>
+  
+
+</body></html>
