@@ -44,6 +44,7 @@ Work (`content/work/*.md`):
 - `schema: SoftwareApplication` for products; everything else is a CreativeWork.
 
 Posts and work:
+- `seoTitle:` a shorter title for search results and the browser tab (keep it under ~55 characters).
 - `seo:` a shorter description for search results (keep it under ~160 characters). Falls back to `summary`.
 - `project:` on a post, the work slug it belongs to. The post links to the case study and appears under it.
 

@@ -12,7 +12,7 @@ const p = computed(() => writing.find((w) => w.slug === route.params.slug))
 const proj = computed(() => work.find((w) => w.slug === p.value?.project))
 const words = computed(() => (p.value?.html || '').replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length)
 if (p.value) useSeo({
-  title: p.value.title, description: p.value.seo || p.value.summary, path: p.value.url, type: 'article', published: p.value.date,
+  title: p.value.seoTitle || p.value.title, description: p.value.seo || p.value.summary, path: p.value.url, type: 'article', published: p.value.date,
   ld: [{
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.value.title,
     description: p.value.summary, datePublished: p.value.date, dateModified: p.value.updated || p.value.date,
