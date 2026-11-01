@@ -13,6 +13,7 @@ useSeo({
 </script>
 
 <template>
+  <div class="backdrop" aria-hidden="true"></div>
   <section class="wrap page">
     <header class="head">
       <div class="head__main">
@@ -34,15 +35,6 @@ useSeo({
         <div><dt>Builds with</dt><dd>Laravel, Vue, PostgreSQL</dd></div>
       </dl>
     </header>
-
-    <figure class="essence">
-      <img src="/media/about/ridge.jpg" srcset="/media/hello-section/image.jpg 960w, /media/about/ridge.jpg 1920w" sizes="(max-width: 1200px) 100vw, 1120px" width="1920" height="1440" loading="lazy" decoding="async"
-        alt="Nobel standing alone on a grassy ridge above a misty valley in Nepal" />
-      <figcaption>
-        <span class="essence__quote" lang="el">Βρείτε έναν τρόπο ή φτιάξτε έναν.</span>
-        <span class="essence__en">Find a way, or make one.</span>
-      </figcaption>
-    </figure>
 
     <div class="masonry">
         <section aria-labelledby="exp">
@@ -101,13 +93,17 @@ useSeo({
 .row > .soft.mono { white-space: nowrap; }
 .intro { display: grid; gap: 12px; max-width: 58ch; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
-.essence { position: relative; margin: 0; border-radius: 14px; overflow: hidden; aspect-ratio: 21 / 8; background: #1a1a1a; }
-.essence img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 62%; display: block;
-  filter: grayscale(1) contrast(1.05); transition: filter 1200ms var(--ui-ease), transform 1600ms var(--ui-ease); }
-.essence:hover img { filter: grayscale(.15) contrast(1.02); transform: scale(1.015); }
-.essence figcaption { position: absolute; left: 36px; top: 32px; display: grid; gap: 4px; color: #1a1a1a; }
-.essence__quote { font-size: clamp(18px, 2.2vw, 26px); font-weight: 600; font-style: italic; letter-spacing: -0.01em; }
-.essence__en { font-size: 14px; opacity: .7; }
+/* The ridge photo as a quiet backdrop behind the header, Kaede-style:
+   monochrome, faint, and fading into the page before the content starts. */
+.backdrop {
+  position: absolute; inset: 64px 0 auto; height: min(760px, 92vh); z-index: -1; pointer-events: none;
+  background: url('/media/about/ridge.jpg') 58% 62% / cover no-repeat;
+  filter: var(--ui-backdrop-filter);
+  opacity: var(--ui-backdrop-opacity);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
+}
+.page { position: relative; }
 .masonry { columns: 2 380px; column-gap: 72px; }
 .masonry > section { break-inside: avoid; margin-bottom: 56px; }
 .h { font-size: 14px; font-weight: 600; color: var(--ui-ink-faint); margin-bottom: 16px; }
@@ -132,8 +128,7 @@ useSeo({
   .page { padding-block: 40px 64px; gap: 48px; }
   .masonry > section { margin-bottom: 40px; }
   .head { grid-template-columns: 1fr; gap: 40px; }
-  .essence { aspect-ratio: 4 / 3; }
-  .essence figcaption { left: 20px; top: 18px; }
+  .backdrop { height: 520px; background-position: 50% 62%; }
   .row { flex-direction: column; gap: 2px; }
 }
 </style>

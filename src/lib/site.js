@@ -99,6 +99,7 @@ export const openSource = [
   { what: 'WPEverest', text: '28 merged pull requests to Everest Forms and User Registration.', href: 'https://github.com/themegrill/everest-forms/pulls?q=is%3Apr+author%3Acoderkoala+is%3Amerged', ref: 'themegrill' },
   { what: 'WPEverest docs', text: 'Wrote the developer documentation, on my own.', href: 'https://themegrill.github.io/dev-docs/', ref: 'dev-docs' },
   { what: 'GDG Dang', text: 'Built the DevFest 2019 site and a Vision AI demo for my talk.', href: 'https://github.com/gdgdang', ref: 'gdgdang' },
+  { what: 'PHPJasper', text: 'Maintain a fork for production: JasperStarter 3.6.2, headless Java, Japanese fonts.', href: 'https://github.com/coderkoala/phpjasper', ref: 'coderkoala/phpjasper' },
   { what: 'vee-validate', text: 'Made the Nepali messages formal and correct.', href: 'https://github.com/logaretm/vee-validate/pull/4642', ref: 'vee-validate#4642' },
 ]
 

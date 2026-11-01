@@ -1,7 +1,7 @@
 ---
 title: Integrating eSewa and Khalti in Laravel without trusting the redirect
 seoTitle: eSewa and Khalti integration in Laravel, done safely
-date: 2026-11-01
+date: 2022-12-16
 project: kalimati
 seo: How to integrate eSewa and Khalti payments in Laravel safely: server-side verification, exact amounts, single-use references, queues and daily rollover.
 summary: Most eSewa and Khalti tutorials stop when the success page loads. That's exactly where the fraud starts. A production pattern from a government payment page, for any Laravel app in Nepal.

@@ -1,7 +1,7 @@
 ---
 title: What building IATA ONE Record taught me about linked data
 seoTitle: What IATA ONE Record taught me
-date: 2026-11-01
+date: 2026-10-30
 project: kaede
 seo: Lessons from implementing IATA ONE Record JSON-LD in a cargo ERP: stable URIs, one data source, idempotent events and honest errors.
 summary: Air cargo is moving from messages to linked data. Lessons from serving ONE Record from a real cargo system, beyond what the spec tells you.
