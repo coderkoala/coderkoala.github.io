@@ -128,23 +128,27 @@ html[data-device='mobile'] .home .hero__cta { display: grid; grid-template-colum
 html[data-device='mobile'] .home .hero__cta .btn { padding-inline: 8px; gap: 6px; font-size: 14.5px; white-space: nowrap; }
 html[data-device='mobile'] .home .hero__cta .btn--solid { grid-column: 1 / -1; height: 52px; font-size: 16px; }
 html[data-device='mobile'] .home .checks { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
-/* Work as swipeable cards, like an app shelf. */
-html[data-device='mobile'] .home .strip { border: 0; background: none; padding-bottom: 24px; }
+/* Work as one grouped list, app-settings style: nothing clipped, every row a full-width tap target. */
+html[data-device='mobile'] .home .strip { border: 0; background: none; padding-bottom: 28px; }
 html[data-device='mobile'] .home .strip__in {
-  display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
-  padding-block: 4px; scroll-padding-inline: 20px;
+  display: grid; grid-template-columns: 1fr; padding: 0; margin-inline: 20px; width: auto;
+  border: 1px solid var(--ui-border); border-radius: 14px; overflow: hidden; background: var(--ui-surface-sunken);
 }
-html[data-device='mobile'] .home .strip__in::-webkit-scrollbar { display: none; }
-html[data-device='mobile'] .home .strip__in > li { flex: 0 0 72%; scroll-snap-align: start; border: 0 !important; }
-html[data-device='mobile'] .home .tile {
-  min-height: 112px; align-content: end; padding: 18px; border: 1px solid var(--ui-border); border-radius: 14px;
-  background: var(--ui-surface-sunken);
-}
-html[data-device='mobile'] .home .tile:active { background: var(--ui-hover); transform: scale(.98); }
+html[data-device='mobile'] .home .strip__in > li { border: 0 !important; }
+html[data-device='mobile'] .home .strip__in > li + li { border-top: 1px solid var(--ui-border) !important; }
+html[data-device='mobile'] .home .tile { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; gap: 12px; min-height: 60px; padding: 12px 16px; }
+html[data-device='mobile'] .home .tile__kind { font-size: 13px; text-align: right; }
+html[data-device='mobile'] .home .tile__name { font-size: 16px; }
+html[data-device='mobile'] .home .tile:active { background: var(--ui-hover); }
+/* Contacts as quiet chips on one line. */
+html[data-device='mobile'] .home .checks { flex-wrap: wrap; gap: 8px; }
+html[data-device='mobile'] .home .eyebrow { text-wrap: balance; }
+html[data-device='mobile'] .home .checks li { flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--ui-border); border-radius: 999px; font-size: 13px; }
 /* ── Phone app: sideways ── headline left, actions right, cards below. */
 html[data-device='mobile'][data-orientation='landscape'] .home .hero { padding-block: 20px; }
 html[data-device='mobile'][data-orientation='landscape'] .home .hero__copy { grid-template-columns: 1.3fr 1fr; column-gap: 32px; align-items: end; }
 html[data-device='mobile'][data-orientation='landscape'] .home .hero__copy .eyebrow { grid-column: 1 / -1; }
-html[data-device='mobile'][data-orientation='landscape'] .home .strip__in > li { flex-basis: 34%; }
-html[data-device='mobile'][data-orientation='landscape'] .home .tile { min-height: 84px; }
+html[data-device='mobile'][data-orientation='landscape'] .home .strip__in { grid-template-columns: 1fr 1fr; }
+html[data-device='mobile'][data-orientation='landscape'] .home .strip__in > li:nth-child(2) { border-top: 0 !important; }
+html[data-device='mobile'][data-orientation='landscape'] .home .strip__in > li:nth-child(even) { border-left: 1px solid var(--ui-border) !important; }
 </style>

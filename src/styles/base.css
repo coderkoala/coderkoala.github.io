@@ -117,7 +117,8 @@ html[data-device='mobile'] .nav .nav__in { height: 52px; }
 html[data-device='mobile'] .nav .brand__name { display: inline; font-size: 16px; }
 html[data-device='mobile'] .nav .brand__mark { width: 28px; height: 28px; border-radius: 7px; font-size: 11px; }
 html[data-device='mobile'] .foot .foot__links { display: none; }
-html[data-device='mobile'] .foot .foot__in { justify-content: center; text-align: center; padding-block: 16px; }
+html[data-device='mobile'] .foot .foot__in { flex-direction: column; align-items: center; gap: 4px; text-align: center; padding-block: 18px 22px; font-size: 12px; line-height: 1.5; }
+html[data-device='mobile'] .foot .foot__in > span:first-child { text-wrap: balance; }
 html[data-device='mobile'] .display { font-size: clamp(32px, 9vw, 44px); line-height: 1.05; }
 html[data-device='mobile'] .lede { font-size: 17px; line-height: 1.55; }
 html[data-device='mobile'] .btn { min-height: 48px; }
@@ -134,3 +135,11 @@ html[data-device='mobile'][data-orientation='landscape'] .nav .nav__in { height:
 html[data-device='mobile'][data-orientation='landscape'] body { padding-bottom: calc(48px + env(safe-area-inset-bottom)); }
 html[data-device='mobile'][data-orientation='landscape'] .display { font-size: clamp(28px, 5vw, 38px); }
 html[data-device='mobile'][data-orientation='landscape'] .backdrop { height: 100vh; }
+/* Grid and flex children default to min-width:auto, so one long token (a URL, inline code)
+   can stretch a whole column past the screen. Let them shrink, and let words break. */
+main :where(div, section, article, header, aside, figure, li, dd, p) { min-width: 0; }
+.prose { overflow-wrap: break-word; }
+html[data-device='mobile'] .prose { font-size: 17px; line-height: 1.7; overflow-wrap: anywhere; }
+html[data-device='mobile'] .prose code { white-space: normal; word-break: break-word; }
+html[data-device='mobile'] .prose pre code { white-space: pre; word-break: normal; }
+html[data-device='mobile'] .prose pre { margin-inline: -20px; padding-inline: 20px; border-radius: 0; }
