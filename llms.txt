@@ -1,6 +1,6 @@
 # Nobel Dahal
 
-> Freelance software engineer and consultant in Kathmandu, Nepal. Builds ERP, CRM and operations software end to end with Laravel, Vue and PostgreSQL. Creator of Kaede, an ERP for freight forwarders. Laravel contributor. Contact: nobel@dahal.tech
+> Full-stack web developer and software engineer in Kathmandu, Nepal, working freelance. Builds web applications, ERP, CRM and operations software end to end with Laravel, Vue and PostgreSQL. Creator of Kaede, an ERP for freight forwarders. Laravel contributor. Contact: nobel@dahal.tech
 
 ## Case studies
 - [Kaede](https://nobeldahal.com.np/work/kaede): The system a freight forwarder runs on. It reads the paperwork, learns how your office works, and talks to airlines, customers and drivers for you.
@@ -18,6 +18,7 @@
 
 ## More
 - [All work since 2017](https://nobeldahal.com.np/work/)
+- [Hire: services, process and FAQ](https://nobeldahal.com.np/hire)
 - [About, experience, open source and certifications](https://nobeldahal.com.np/about)
 - [Résumé (PDF)](https://nobeldahal.com.np/download/resume.pdf)
 - [GitHub](https://github.com/coderkoala)
