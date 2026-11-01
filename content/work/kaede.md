@@ -12,6 +12,15 @@ facts:
   - Twelve chat channels, one desk
 link: https://dahal.tech/kaede/index.html
 linkLabel: dahal.tech/kaede
+cover: /media/work/kaede.jpg
+shots:
+  - /media/kaede/kaede-map.webp :: Real flown legs, every hop, weighted by chargeable weight. :: 4x2
+  - /media/kaede/kaede-cargomsg-panel.webp :: Cargo-IMP and Cargo-XML, built and checked line by line before they leave. :: 2x2
+  - /media/kaede/kaede-outlook.webp :: Outlook: next month's forecast, customers to call, and what moved. :: 3x2
+  - /media/kaede/kaede-pdf-awb.webp :: All twelve IATA air waybill copies, printed exactly. :: 3x2
+  - /media/kaede/kaede-pivot-drill.webp :: Every number opens the shipments behind it. :: 6x1
+  - /media/kaede/kaede-designer.webp :: Design your own courier waybill, block by block, from the keyboard. :: 4x2
+  - /media/kaede/kaede-letterhead-designs.webp :: Nine letterhead designs for every printed document. :: 2x2
 steps:
   - Booking email lands :: Kaede reads the attachment and drafts the waybill. You confirm.
   - Routing suggests itself :: Learned from your history. The right lane is nearly always top five.

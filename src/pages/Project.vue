@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import AppIcon from '../components/AppIcon.vue'
 import DryRun from '../components/DryRun.vue'
+import Showcase from '../components/Showcase.vue'
 import NotFound from './NotFound.vue'
 import { work } from '../lib/content.js'
 import { site, crumbs } from '../lib/site.js'
@@ -54,6 +55,15 @@ if (p.value) useSeo({
       <figcaption>The real thing, recorded in 2021. <a :href="`https://www.youtube.com/watch?v=${p.video}`" rel="noopener">Watch with sound</a></figcaption>
     </figure>
 
+    <figure v-if="!p.video && p.cover" class="hero-shot wrap">
+      <div class="browser">
+        <div class="browser__bar" aria-hidden="true"><span class="dots"><i /><i /><i /></span><span class="browser__url mono">{{ p.linkLabel }}</span></div>
+        <img :src="p.cover" :alt="`${p.title}, the live product`" fetchpriority="high" decoding="async" width="1440" height="900" />
+      </div>
+    </figure>
+
+    <Showcase v-if="p.shots.length" :shots="p.shots" :title="p.title" />
+
     <section class="body wrap">
       <div class="prose" v-html="p.html" />
       <aside class="stack">
@@ -83,6 +93,14 @@ if (p.value) useSeo({
 .body { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 72px; padding-block: 64px; border-top: 1px solid var(--ui-border); }
 .stack { display: grid; gap: 12px; align-content: start; position: sticky; top: 96px; }
 .stack__title { font-size: 13px; font-weight: 600; color: var(--ui-ink-faint); }
+.hero-shot { padding-bottom: 56px; }
+.browser { border: 1px solid var(--ui-border); border-radius: 14px; overflow: hidden; background: var(--ui-surface);
+  box-shadow: 0 1px 2px rgb(0 0 0 / .04), 0 40px 80px -40px rgb(0 0 0 / .25); }
+.browser__bar { display: flex; align-items: center; gap: 16px; height: 40px; padding: 0 16px; border-bottom: 1px solid var(--ui-border); background: var(--ui-surface-sunken); }
+.browser__bar .dots { display: flex; gap: 6px; }
+.browser__bar .dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--ui-border); }
+.browser__url { flex: 1; text-align: center; font-size: 12px; color: var(--ui-ink-faint); margin-right: 46px; }
+.browser img { display: block; width: 100%; height: auto; }
 .film { display: grid; gap: 12px; padding-bottom: 64px; }
 .film__frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 14px; border: 1px solid var(--ui-border); background: #000; }
 .film__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; transform: scale(1.2); }

@@ -37,6 +37,11 @@ export const work = load(workFiles, 'work')
   .map((w) => ({
     ...w,
     stack: String(w.stack || '').split(',').map((s) => s.trim()).filter(Boolean),
+    shots: (Array.isArray(w.shots) ? w.shots : []).map((s) => {
+      const [src, caption, span = '3x2'] = s.split('::').map((x) => x.trim())
+      const [cols, rows] = span.split('x').map(Number)
+      return { src, caption, cols, rows }
+    }),
     steps: (w.steps || []).map((s) => {
       const [title, text] = s.split('::').map((x) => x.trim())
       return { title, text }
