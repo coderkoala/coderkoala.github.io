@@ -2,7 +2,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-export const SITE = 'https://www.nobeldahal.com.np'
+export const SITE = 'https://nobeldahal.com.np'
 
 export function frontmatter(file) {
   const raw = fs.readFileSync(file, 'utf8')

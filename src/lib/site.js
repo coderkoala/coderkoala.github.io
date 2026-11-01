@@ -1,5 +1,5 @@
 export const site = {
-  url: 'https://www.nobeldahal.com.np',
+  url: 'https://nobeldahal.com.np',
   name: 'Nobel Dahal',
   role: 'Freelance software engineer and consultant',
   place: 'Kathmandu, Nepal',

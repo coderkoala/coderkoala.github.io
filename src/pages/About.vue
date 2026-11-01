@@ -8,7 +8,7 @@ useSeo({
   title: 'Experience, open source and certifications',
   description: 'Experience since 2018, open-source work on Laravel, Syncfusion and WordPress plugins, PMI and PagerDuty certifications, and a computer engineering degree.',
   path: '/about',
-  ld: [{ '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: personLd, url: 'https://www.nobeldahal.com.np/about' }, crumbs([{ name: 'About', path: '/about' }])],
+  ld: [{ '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: personLd, url: 'https://nobeldahal.com.np/about' }, crumbs([{ name: 'About', path: '/about' }])],
 })
 </script>
 
