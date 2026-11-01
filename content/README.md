@@ -34,3 +34,17 @@ featured: false
 summary: One line, said the way you'd say it out loud.
 ---
 ```
+
+## Extra fields
+
+Work (`content/work/*.md`):
+- `cover:` a big framed screenshot under the header.
+- `shots:` a screenshot grid, one per line: `/path.webp :: caption :: 4x2` (columns out of 6 × rows).
+- `video:` a YouTube id, played muted and looping in place of the cover.
+- `schema: SoftwareApplication` for products; everything else is a CreativeWork.
+
+Posts and work:
+- `seo:` a shorter description for search results (keep it under ~160 characters). Falls back to `summary`.
+- `project:` on a post, the work slug it belongs to. The post links to the case study and appears under it.
+
+After adding content: `npm run og` (preview images and icons), `npm run cv` (résumé), then commit. Pushing to master deploys.

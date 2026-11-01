@@ -5,7 +5,7 @@ import AppIcon from '../components/AppIcon.vue'
 import DryRun from '../components/DryRun.vue'
 import Showcase from '../components/Showcase.vue'
 import NotFound from './NotFound.vue'
-import { work } from '../lib/content.js'
+import { work, writing, formatDate } from '../lib/content.js'
 import { site, crumbs } from '../lib/site.js'
 import { useSeo } from '../lib/seo.js'
 
@@ -13,16 +13,22 @@ const route = useRoute()
 const idx = computed(() => work.findIndex((w) => w.slug === route.params.slug))
 const p = computed(() => work[idx.value])
 const next = computed(() => work[(idx.value + 1) % work.length])
+const related = computed(() => writing.filter((w) => w.project === p.value?.slug))
 
 if (p.value) useSeo({
   title: `${p.value.title}, a ${p.value.kind} case study`,
-  description: p.value.summary,
+  description: p.value.seo || p.value.summary,
   path: p.value.url,
   ld: [{
-    '@context': 'https://schema.org', '@type': 'CreativeWork', name: p.value.title,
-    description: p.value.summary, url: site.url + p.value.url, image: `${site.url}/og${p.value.url}.png`,
+    '@context': 'https://schema.org',
+    '@type': p.value.schema === 'SoftwareApplication' ? 'SoftwareApplication' : 'CreativeWork',
+    name: p.value.title, description: p.value.summary, url: site.url + p.value.url,
+    image: [p.value.cover, ...p.value.shots.map((s) => s.src)].filter(Boolean).map((i) => site.url + i),
     keywords: p.value.stack.join(', '), genre: p.value.kind,
-    creator: { '@id': `${site.url}/#person` },
+    ...(p.value.schema === 'SoftwareApplication' ? { applicationCategory: 'BusinessApplication', operatingSystem: 'Web, Android', inLanguage: ['en', 'ne', 'ja'] } : {}),
+    ...(p.value.link && !p.value.link.includes('github.com') ? { sameAs: p.value.link } : {}),
+    ...(p.value.video ? { video: { '@type': 'VideoObject', name: `${p.value.title} demo`, description: p.value.summary, embedUrl: `https://www.youtube.com/embed/${p.value.video}`, contentUrl: `https://www.youtube.com/watch?v=${p.value.video}`, thumbnailUrl: `https://img.youtube.com/vi/${p.value.video}/maxresdefault.jpg`, uploadDate: '2021-05-25' } } : {}),
+    creator: { '@id': `${site.url}/#person` }, author: { '@id': `${site.url}/#person` },
   }, crumbs([{ name: 'Work', path: '/work' }, { name: p.value.title, path: p.value.url }])],
 })
 </script>
@@ -72,6 +78,19 @@ if (p.value) useSeo({
       </aside>
     </section>
 
+    <section v-if="related.length" class="related wrap" aria-labelledby="related-title">
+      <h2 id="related-title" class="related__title">Writing about {{ p.title }}</h2>
+      <ul>
+        <li v-for="r in related" :key="r.slug">
+          <RouterLink :to="r.url" class="related__item">
+            <span class="related__name">{{ r.title }}</span>
+            <span class="related__sum">{{ r.summary }}</span>
+            <time :datetime="r.date" class="related__date">{{ formatDate(r.date) }}</time>
+          </RouterLink>
+        </li>
+      </ul>
+    </section>
+
     <nav class="next wrap" aria-label="Next project">
       <RouterLink :to="next.url" class="next__link">
         <span class="next__label">Next project</span>
@@ -105,6 +124,14 @@ if (p.value) useSeo({
 .film__frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 14px; border: 1px solid var(--ui-border); background: #000; }
 .film__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; transform: scale(1.2); }
 .film figcaption { font-size: 14px; color: var(--ui-ink-faint); }
+.related { padding-block: 0 56px; display: grid; gap: 16px; }
+.related__title { font-size: 14px; font-weight: 600; color: var(--ui-ink-faint); }
+.related ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.related__item { display: grid; gap: 6px; height: 100%; padding: 20px; border: 1px solid var(--ui-border); border-radius: 12px; text-decoration: none; transition: border-color var(--ui-duration) var(--ui-ease); }
+.related__item:hover { border-color: var(--ui-ink); }
+.related__name { font-weight: 700; font-size: 17px; }
+.related__sum { color: var(--ui-ink-soft); font-size: 15px; }
+.related__date { color: var(--ui-ink-faint); font-size: 13px; }
 .next { border-top: 1px solid var(--ui-border); }
 .next__link { display: grid; gap: 4px; padding-block: 40px 56px; text-decoration: none; }
 .next__label { font-size: 14px; color: var(--ui-ink-faint); }

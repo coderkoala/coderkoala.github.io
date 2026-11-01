@@ -1,6 +1,7 @@
 ---
 title: Why every edit in Kaede leaves a fingerprint
 date: 2026-10-03
+project: kaede
 summary: An air waybill is a contract. Here's how Kaede makes a quiet edit to its history show up, using nothing more exotic than SHA-256.
 ---
 

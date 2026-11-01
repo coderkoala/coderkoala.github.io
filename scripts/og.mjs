@@ -41,6 +41,13 @@ for (const p of all) {
   fs.mkdirSync(path.dirname(out), { recursive: true })
   await page.screenshot({ path: out })
 }
+// App icons from the same mark.
+for (const [name, size] of [['apple-touch-icon', 180], ['icon-192', 192], ['icon-512', 512]]) {
+  await page.setViewportSize({ width: size, height: size })
+  await page.setContent(`<style>${css}body{width:${size}px;height:${size}px;padding:0;display:grid;place-items:center;background:#141414}</style><div style="font-family:P;font-weight:700;color:#f5f5f4;font-size:${Math.round(size * 0.38)}px;letter-spacing:-.02em">ND</div>`)
+  await page.evaluate(() => document.fonts.ready)
+  await page.screenshot({ path: `public/${name}.png` })
+}
 await browser.close()
 console.log(`og: ${all.length} images`)
 }

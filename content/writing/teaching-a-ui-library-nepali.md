@@ -1,6 +1,8 @@
 ---
 title: Teaching a UI library to speak Nepali
 date: 2024-01-09
+project: syncfusion
+seo: How I translated Syncfusion's Essential JS 2, 64 components and 4,355 strings, into Nepali that reads like Nepali.
 summary: I translated Syncfusion's Essential JS 2, 64 components and over four thousand strings, into Nepali. These are the choices that made it read like Nepali and not like a dictionary.
 ---
 

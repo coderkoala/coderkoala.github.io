@@ -1,6 +1,7 @@
 ---
 title: The check that only lived in the browser
 date: 2020-05-01
+project: everest-forms
 summary: How an email field in Everest Forms trusted the browser, how I closed it, and the regression I shipped and fixed along the way.
 ---
 

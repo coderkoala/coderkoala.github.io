@@ -1,6 +1,7 @@
 ---
 title: Kaede
 order: 1
+schema: SoftwareApplication
 kind: Cargo ERP
 years: 2022–now
 role: Designed and built it, end to end

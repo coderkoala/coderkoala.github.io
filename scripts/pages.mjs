@@ -8,9 +8,13 @@ export function frontmatter(file) {
   const raw = fs.readFileSync(file, 'utf8')
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)
   const data = {}
+  let list = null
   if (m) for (const line of m[1].split(/\r?\n/)) {
+    const item = line.match(/^\s+-\s+(.*)$/)
+    if (item && list) { data[list].push(item[1].trim()); continue }
     const kv = line.match(/^([\w-]+):\s*(.*)$/)
-    if (kv && kv[2] !== '') data[kv[1]] = kv[2]
+    if (!kv) continue
+    if (kv[2] === '') { data[kv[1]] = []; list = kv[1] } else { data[kv[1]] = kv[2]; list = null }
   }
   return data
 }
@@ -23,8 +27,24 @@ function read(dir, base) {
   }).filter((d) => d.draft !== 'true')
 }
 
+// Images worth indexing per page, for the image sitemap.
+export function imagesFor(page) {
+  const shots = Array.isArray(page.shots) ? page.shots.map((s) => s.split('::').map((x) => x.trim())) : []
+  const list = [
+    ...(page.cover ? [[page.cover, `${page.title}, the live product`]] : []),
+    ...shots.map(([src, cap]) => [src, cap]),
+  ]
+  if (page.path === '/work') {
+    for (const f of fs.readdirSync('content/gallery').filter((f) => f.endsWith('.md'))) {
+      const g = frontmatter(path.join('content/gallery', f))
+      for (const k of ['image', 'logo']) if (typeof g[k] === 'string' && g[k]) list.push([g[k], `${g.title}, ${g.kind}`])
+    }
+  }
+  return list
+}
+
 export function pages() {
-  const work = read('content/work', '/work')
+  const work = read('content/work', '/work').sort((a, b) => Number(a.order) - Number(b.order))
   const posts = read('content/writing', '/writing').sort((a, b) => b.date.localeCompare(a.date))
   const today = new Date().toISOString().slice(0, 10)
   return {

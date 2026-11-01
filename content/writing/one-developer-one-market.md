@@ -1,6 +1,7 @@
 ---
 title: One developer, one market, no ads
 date: 2022-07-19
+project: kalimati
 summary: Building the website and Android app for Kalimati, the market that sets vegetable prices for half of Kathmandu, on my own.
 ---
 

@@ -22,14 +22,17 @@ const projects = [
     stack: 'Laravel 13, PHP 8.4, Vue 3, PostgreSQL, Reverb (WebSockets), Syncfusion, Playwright · English, Nepali, Japanese',
   },
   {
-    name: 'Kalimati Market', kind: 'kalimatimarket.gov.np', when: '2021 – 2022', role: 'Sole developer',
+    name: 'Kalimati Market', kind: 'kalimatimarket.gov.np', when: '2021 – 2025', role: 'Sole developer',
     points: [
-      'Website and ad-free Android app for Nepal’s largest wholesale produce market (60–70% of Kathmandu valley supply).',
-      'Daily prices and arrivals with history, trends and comparisons; trader dues; tenders, RTI and pesticide reports; daily price newsletter.',
-      'Admin with role-based permissions, two-factor sign-in, impersonation and searchable tables; Nepali and English.',
+      'Platform for Nepal’s largest wholesale produce market (60–70% of Kathmandu valley supply): website, ad-free Android app and staff admin.',
+      'Daily prices for 100+ commodities and arrivals, with history and comparisons; notices, tenders and pesticide reports; Nepali and English.',
+      'Online dues payments via eSewa, Khalti and bank: exact-amount checks, single-use references, queued server-to-server verification, daily rollover.',
+      'Payment API for gateway providers: per-provider HS512 JWTs, IP allow-listing, quarterly key rotation, named errors, maintenance-safe retries.',
+      'Nightly sync with the market’s office system: transactional CSV imports with checksums and one-per-day guards, payment exports, libsodium encryption.',
     ],
-    stack: 'Laravel 8, Livewire, MySQL, Android',
+    stack: 'Laravel, MySQL, queues, libsodium, JWT, Android',
   },
+
 ]
 
 const roles = [

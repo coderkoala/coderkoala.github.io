@@ -1,6 +1,7 @@
 ---
 title: A date that didn't fit in an integer
 date: 2022-01-31
+project: laravel
 summary: The year 4123 crashed Laravel's date validation on 32-bit PHP. Here's how I found it, and the four-line fix that shipped in Laravel 8.
 ---
 

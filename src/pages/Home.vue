@@ -7,7 +7,7 @@ import { site, personLd, websiteLd } from '../lib/site.js'
 import { useSeo } from '../lib/seo.js'
 
 useSeo({
-  description: 'Nobel Dahal, freelance software engineer and consultant in Kathmandu, Nepal. ERPs and CRMs in Laravel and Vue, including Kaede, cargo software for freight forwarders.',
+  description: 'Nobel Dahal, freelance software engineer and consultant in Kathmandu, Nepal. ERPs and CRMs in Laravel and Vue, including Kaede for freight forwarders.',
   ld: [personLd, websiteLd],
 })
 const shown = ref(work[0])

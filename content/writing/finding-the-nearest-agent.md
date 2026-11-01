@@ -1,6 +1,7 @@
 ---
 title: Finding the nearest agent among millions
 date: 2021-05-25
+project: generic-properties
 summary: A US brokerage moved from Zoho to Microsoft Dynamics. The data moved fine; the question it couldn't answer quickly was "who is closest to this lead?"
 ---
 
