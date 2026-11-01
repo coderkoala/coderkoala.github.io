@@ -60,7 +60,7 @@ if (p.value) useSeo({
           <source :src="`${p.loop}.mp4`" type="video/mp4" />
         </video>
       </div>
-      <figcaption>Recorded in 2021, shown at 1.5× without sound. <a v-if="p.youtube" :href="`https://www.youtube.com/watch?v=${p.youtube}`" rel="noopener">Watch the full demo</a></figcaption>
+      <figcaption>Recorded in 2021: a lead goes in, nearby agents come out. Shown without sound. <a v-if="p.youtube" :href="`https://www.youtube.com/watch?v=${p.youtube}`" rel="noopener">Watch the full demo</a></figcaption>
     </figure>
 
     <figure v-if="!p.loop && p.cover" class="hero-shot wrap">
