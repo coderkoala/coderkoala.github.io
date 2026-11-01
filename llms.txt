@@ -25,7 +25,7 @@
 
 ## More
 - [All work since 2017](https://nobeldahal.com.np/work/)
-- [Hire: services, process and FAQ](https://nobeldahal.com.np/hire)
+- [Consult: how I help, how we work, FAQ](https://nobeldahal.com.np/consult)
 - [About, experience, open source and certifications](https://nobeldahal.com.np/about)
 - [Résumé (PDF)](https://nobeldahal.com.np/download/resume.pdf)
 - [GitHub](https://github.com/coderkoala)
