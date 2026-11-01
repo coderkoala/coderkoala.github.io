@@ -143,8 +143,8 @@
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
-  "../../../../../media/hello-section/image.jpg": [
-    "/assets/About-PgXzyyGS.js",
+  "../../../media/hello-section/image.jpg": [
+    "/assets/About-B00vMqSs.js",
     "/assets/About-CnMZFRnC.css"
   ],
   "content/gallery/01-kaede.md?raw": [
@@ -1501,20 +1501,20 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "src/components/DryRun.vue": [
-    "/assets/DryRun-B9ITZXYG.js",
+    "/assets/DryRun-CNbqDdty.js",
     "/assets/DryRun-CAqeynQ4.css"
   ],
   "src/components/DryRun.vue?vue&type=style&index=0&scoped=3b8ba217&lang.css": [
-    "/assets/DryRun-B9ITZXYG.js",
+    "/assets/DryRun-CNbqDdty.js",
     "/assets/DryRun-CAqeynQ4.css"
   ],
   "src/components/Showcase.vue": [
-    "/assets/Project-DHU48Rv6.js",
-    "/assets/Project-CJtJ93op.css"
+    "/assets/Project-T4SdR5WF.js",
+    "/assets/Project-BWNzDVdx.css"
   ],
   "src/components/Showcase.vue?vue&type=style&index=0&scoped=36a258a6&lang.css": [
-    "/assets/Project-DHU48Rv6.js",
-    "/assets/Project-CJtJ93op.css"
+    "/assets/Project-T4SdR5WF.js",
+    "/assets/Project-BWNzDVdx.css"
   ],
   "src/components/SiteNav.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1616,7 +1616,7 @@
     "/assets/content-vb1OBMpb.js"
   ],
   "src/lib/seo.js": [
-    "/assets/seo-DWLxWpAn.js"
+    "/assets/seo-SQPnxr5J.js"
   ],
   "src/lib/site.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1715,67 +1715,67 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "src/pages/About.vue": [
-    "/assets/About-PgXzyyGS.js",
+    "/assets/About-B00vMqSs.js",
     "/assets/About-CnMZFRnC.css"
   ],
   "src/pages/About.vue?vue&type=style&index=0&scoped=cd1ecff1&lang.css": [
-    "/assets/About-PgXzyyGS.js",
+    "/assets/About-B00vMqSs.js",
     "/assets/About-CnMZFRnC.css"
   ],
   "src/pages/Gallery.vue": [
-    "/assets/Gallery-BiRc_rMs.js",
+    "/assets/Gallery-C8h5VkD2.js",
     "/assets/Gallery-BiDukYCO.css"
   ],
   "src/pages/Gallery.vue?vue&type=style&index=0&scoped=9fa0d4f7&lang.css": [
-    "/assets/Gallery-BiRc_rMs.js",
+    "/assets/Gallery-C8h5VkD2.js",
     "/assets/Gallery-BiDukYCO.css"
   ],
   "src/pages/Hire.vue": [
-    "/assets/Hire-D3VH_OOp.js",
+    "/assets/Hire-MutCovtX.js",
     "/assets/Hire-Cjwl9rt-.css"
   ],
   "src/pages/Hire.vue?vue&type=style&index=0&scoped=2abe30e2&lang.css": [
-    "/assets/Hire-D3VH_OOp.js",
+    "/assets/Hire-MutCovtX.js",
     "/assets/Hire-Cjwl9rt-.css"
   ],
   "src/pages/Home.vue": [
-    "/assets/Home-DfHMkt3C.js",
+    "/assets/Home-lwBwV6Vd.js",
     "/assets/Home-DAORm08v.css"
   ],
   "src/pages/Home.vue?vue&type=style&index=0&scoped=6a321fc7&lang.css": [
-    "/assets/Home-DfHMkt3C.js",
+    "/assets/Home-lwBwV6Vd.js",
     "/assets/Home-DAORm08v.css"
   ],
   "src/pages/NotFound.vue": [
-    "/assets/NotFound-CdqfKrpL.js",
+    "/assets/NotFound-ZdHGU059.js",
     "/assets/NotFound-Cr_wQFex.css"
   ],
   "src/pages/NotFound.vue?vue&type=style&index=0&scoped=c1fc66e8&lang.css": [
-    "/assets/NotFound-CdqfKrpL.js",
+    "/assets/NotFound-ZdHGU059.js",
     "/assets/NotFound-Cr_wQFex.css"
   ],
   "src/pages/Post.vue": [
-    "/assets/Post-BtAHVwFK.js",
+    "/assets/Post-CX7G4uSY.js",
     "/assets/Post-BVo7xjkh.css"
   ],
   "src/pages/Post.vue?vue&type=style&index=0&scoped=97a09a5a&lang.css": [
-    "/assets/Post-BtAHVwFK.js",
+    "/assets/Post-CX7G4uSY.js",
     "/assets/Post-BVo7xjkh.css"
   ],
   "src/pages/Project.vue": [
-    "/assets/Project-DHU48Rv6.js",
-    "/assets/Project-CJtJ93op.css"
+    "/assets/Project-T4SdR5WF.js",
+    "/assets/Project-BWNzDVdx.css"
   ],
-  "src/pages/Project.vue?vue&type=style&index=0&scoped=8dd41e92&lang.css": [
-    "/assets/Project-DHU48Rv6.js",
-    "/assets/Project-CJtJ93op.css"
+  "src/pages/Project.vue?vue&type=style&index=0&scoped=7d5e5419&lang.css": [
+    "/assets/Project-T4SdR5WF.js",
+    "/assets/Project-BWNzDVdx.css"
   ],
   "src/pages/Writing.vue": [
-    "/assets/Writing-D6w_tqaN.js",
+    "/assets/Writing-DwfL8rs8.js",
     "/assets/Writing-DyxIALO6.css"
   ],
   "src/pages/Writing.vue?vue&type=style&index=0&scoped=d7eb182e&lang.css": [
-    "/assets/Writing-D6w_tqaN.js",
+    "/assets/Writing-DwfL8rs8.js",
     "/assets/Writing-DyxIALO6.css"
   ],
   "src/routes.js": [
