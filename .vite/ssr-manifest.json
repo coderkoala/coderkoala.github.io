@@ -1152,7 +1152,7 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "content/now.md?raw": [
-    "/assets/Now-B_G6JxiZ.js",
+    "/assets/Now-BC8hCX-Q.js",
     "/assets/Now-BWaMw-6L.css"
   ],
   "content/work/generic-properties.md?raw": [
@@ -3507,7 +3507,7 @@
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
-  "src/components/CommandPalette.vue?vue&type=style&index=0&scoped=1fbd87be&lang.css": [
+  "src/components/CommandPalette.vue?vue&type=style&index=0&scoped=91169747&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
     "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
@@ -3652,11 +3652,11 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "src/components/Showcase.vue": [
-    "/assets/Project-CC51COUa.js",
+    "/assets/Project-kIHsqMhc.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/components/Showcase.vue?vue&type=style&index=0&scoped=74e51d2b&lang.css": [
-    "/assets/Project-CC51COUa.js",
+    "/assets/Project-kIHsqMhc.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/components/SiteNav.vue": [
@@ -3756,22 +3756,70 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "src/components/SmartImg.vue": [
-    "/assets/SmartImg-xApN5Yxe.js",
+    "/assets/SmartImg-DLyto-cp.js",
     "/assets/SmartImg-DO-tLpu-.css"
   ],
   "src/components/SmartImg.vue?vue&type=style&index=0&scoped=17e50125&lang.css": [
-    "/assets/SmartImg-xApN5Yxe.js",
+    "/assets/SmartImg-DLyto-cp.js",
     "/assets/SmartImg-DO-tLpu-.css"
   ],
   "src/components/TimeOverlap.vue": [
-    "/assets/Consult-BEZqYlOA.js",
-    "/assets/Consult-CbMQ4OpN.css"
+    "/assets/Consult-B4v--Wvu.js",
+    "/assets/Consult-D-cHJqBn.css"
   ],
   "src/components/TimeOverlap.vue?vue&type=style&index=0&scoped=18cd33f0&lang.css": [
-    "/assets/Consult-BEZqYlOA.js",
-    "/assets/Consult-CbMQ4OpN.css"
+    "/assets/Consult-B4v--Wvu.js",
+    "/assets/Consult-D-cHJqBn.css"
   ],
   "src/lib/a11y.js": [
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-BTotfTJu.woff",
+    "/assets/ibm-plex-sans-greek-400-normal-_efipK4i.woff2",
+    "/assets/ibm-plex-sans-greek-400-normal-D9ESIMu3.woff",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-DG4YqDda.woff2",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-fK1oJ5dG.woff",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-C5H60-Va.woff2",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-RBey6euL.woff",
+    "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+    "/assets/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-DUMzJB7m.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-Bz0x94Yp.woff",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-71GNu3SW.woff2",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-BGq0mW3O.woff",
+    "/assets/ibm-plex-sans-greek-600-normal-DzTrcv_p.woff2",
+    "/assets/ibm-plex-sans-greek-600-normal-D-CqTdkO.woff",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DpPYBSTl.woff2",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DgdngZtN.woff",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DOrvGEcy.woff2",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DIrixKbi.woff",
+    "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+    "/assets/ibm-plex-sans-latin-600-normal-Cu4Hd6ag.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-BmRLXWpJ.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-DCQwxkRk.woff",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-D_uavGvn.woff2",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-RFb1v-CK.woff",
+    "/assets/ibm-plex-sans-greek-700-normal-wyJ6jzdA.woff2",
+    "/assets/ibm-plex-sans-greek-700-normal-CkZN0sRy.woff",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-CkEo6LDy.woff2",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-BV5B8Are.woff",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-aMgXseD4.woff2",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-DZH6Xh-4.woff",
+    "/assets/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2",
+    "/assets/ibm-plex-sans-latin-700-normal-Bth3BMcD.woff",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-xuaO2J-f.woff2",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-DMdlQ8Kv.woff",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-BSMlKf0J.woff2",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-CEL4l2ZJ.woff",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-BulugwFq.woff2",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-DDuiU_S-.woff",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
+    "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+  ],
+  "src/lib/cal.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
     "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
@@ -3868,7 +3916,7 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "src/lib/cv.js": [
-    "/assets/Cv-CgyTHBah.js",
+    "/assets/Cv-CvJwB-Cl.js",
     "/assets/Cv-25iUBV5B.css"
   ],
   "src/lib/images.json": [
@@ -3920,7 +3968,7 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "src/lib/seo.js": [
-    "/assets/seo-vpG0VyCW.js"
+    "/assets/seo-Dxp3PKUj.js"
   ],
   "src/lib/site.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4067,91 +4115,91 @@
     "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
   ],
   "src/pages/About.vue": [
-    "/assets/About-zsZAwFzO.js",
+    "/assets/About-8tZiNGtL.js",
     "/assets/About-FsmmSRXE.css"
   ],
   "src/pages/About.vue?vue&type=style&index=0&scoped=b69f9f91&lang.css": [
-    "/assets/About-zsZAwFzO.js",
+    "/assets/About-8tZiNGtL.js",
     "/assets/About-FsmmSRXE.css"
   ],
   "src/pages/Colophon.vue": [
-    "/assets/Colophon-DfJFcVtx.js",
+    "/assets/Colophon-BevCrKgN.js",
     "/assets/Colophon-DVfn-d6Z.css"
   ],
   "src/pages/Colophon.vue?vue&type=style&index=0&scoped=153fedba&lang.css": [
-    "/assets/Colophon-DfJFcVtx.js",
+    "/assets/Colophon-BevCrKgN.js",
     "/assets/Colophon-DVfn-d6Z.css"
   ],
   "src/pages/Consult.vue": [
-    "/assets/Consult-BEZqYlOA.js",
-    "/assets/Consult-CbMQ4OpN.css"
+    "/assets/Consult-B4v--Wvu.js",
+    "/assets/Consult-D-cHJqBn.css"
   ],
-  "src/pages/Consult.vue?vue&type=style&index=0&scoped=b860914c&lang.css": [
-    "/assets/Consult-BEZqYlOA.js",
-    "/assets/Consult-CbMQ4OpN.css"
+  "src/pages/Consult.vue?vue&type=style&index=0&scoped=950fa7c6&lang.css": [
+    "/assets/Consult-B4v--Wvu.js",
+    "/assets/Consult-D-cHJqBn.css"
   ],
   "src/pages/Cv.vue": [
-    "/assets/Cv-CgyTHBah.js",
+    "/assets/Cv-CvJwB-Cl.js",
     "/assets/Cv-25iUBV5B.css"
   ],
   "src/pages/Cv.vue?vue&type=style&index=0&scoped=3c6f3654&lang.css": [
-    "/assets/Cv-CgyTHBah.js",
+    "/assets/Cv-CvJwB-Cl.js",
     "/assets/Cv-25iUBV5B.css"
   ],
   "src/pages/Gallery.vue": [
-    "/assets/Gallery-DsX5f991.js",
+    "/assets/Gallery-CQK4Oyi1.js",
     "/assets/Gallery-CaMaC-3K.css"
   ],
   "src/pages/Gallery.vue?vue&type=style&index=0&scoped=c73ef673&lang.css": [
-    "/assets/Gallery-DsX5f991.js",
+    "/assets/Gallery-CQK4Oyi1.js",
     "/assets/Gallery-CaMaC-3K.css"
   ],
   "src/pages/Home.vue": [
-    "/assets/Home-_VO9_q79.js",
-    "/assets/Home-BKb_VXiH.css"
+    "/assets/Home-RYVxUZMj.js",
+    "/assets/Home-S1mBLaMG.css"
   ],
-  "src/pages/Home.vue?vue&type=style&index=0&scoped=17e741c5&lang.css": [
-    "/assets/Home-_VO9_q79.js",
-    "/assets/Home-BKb_VXiH.css"
+  "src/pages/Home.vue?vue&type=style&index=0&scoped=c994c182&lang.css": [
+    "/assets/Home-RYVxUZMj.js",
+    "/assets/Home-S1mBLaMG.css"
   ],
   "src/pages/NotFound.vue": [
-    "/assets/NotFound-C4t4DBN_.js",
+    "/assets/NotFound-Bkhqi0jd.js",
     "/assets/NotFound-Cr_wQFex.css"
   ],
   "src/pages/NotFound.vue?vue&type=style&index=0&scoped=c1fc66e8&lang.css": [
-    "/assets/NotFound-C4t4DBN_.js",
+    "/assets/NotFound-Bkhqi0jd.js",
     "/assets/NotFound-Cr_wQFex.css"
   ],
   "src/pages/Now.vue": [
-    "/assets/Now-B_G6JxiZ.js",
+    "/assets/Now-BC8hCX-Q.js",
     "/assets/Now-BWaMw-6L.css"
   ],
   "src/pages/Now.vue?vue&type=style&index=0&scoped=87d849df&lang.css": [
-    "/assets/Now-B_G6JxiZ.js",
+    "/assets/Now-BC8hCX-Q.js",
     "/assets/Now-BWaMw-6L.css"
   ],
   "src/pages/Post.vue": [
-    "/assets/Post-CiAyVIOw.js",
+    "/assets/Post-Bn6caG-W.js",
     "/assets/Post-KBJ79dg7.css"
   ],
   "src/pages/Post.vue?vue&type=style&index=0&scoped=9f7981a0&lang.css": [
-    "/assets/Post-CiAyVIOw.js",
+    "/assets/Post-Bn6caG-W.js",
     "/assets/Post-KBJ79dg7.css"
   ],
   "src/pages/Project.vue": [
-    "/assets/Project-CC51COUa.js",
+    "/assets/Project-kIHsqMhc.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/pages/Project.vue?vue&type=style&index=0&scoped=d17a0dc0&lang.css": [
-    "/assets/Project-CC51COUa.js",
+    "/assets/Project-kIHsqMhc.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/pages/Writing.vue": [
-    "/assets/Writing-BABov5Ar.js",
+    "/assets/Writing-0yAhkTJr.js",
     "/assets/Writing-DyxIALO6.css"
   ],
   "src/pages/Writing.vue?vue&type=style&index=0&scoped=d7eb182e&lang.css": [
-    "/assets/Writing-BABov5Ar.js",
+    "/assets/Writing-0yAhkTJr.js",
     "/assets/Writing-DyxIALO6.css"
   ],
   "src/routes.js": [
