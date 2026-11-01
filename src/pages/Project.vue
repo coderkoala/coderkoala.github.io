@@ -16,7 +16,7 @@ const next = computed(() => work[(idx.value + 1) % work.length])
 const related = computed(() => writing.filter((w) => w.project === p.value?.slug))
 
 if (p.value) useSeo({
-  title: `${p.value.title}, a ${p.value.kind} case study`,
+  title: p.value.seoTitle || `${p.value.title}, a ${p.value.kind} case study`,
   description: p.value.seo || p.value.summary,
   path: p.value.url,
   ld: [{

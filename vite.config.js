@@ -50,6 +50,7 @@ export default defineConfig({
   ssgOptions: {
     dirStyle: 'flat', // work/kaede.html: GitHub Pages serves it at /work/kaede with no redirect
     formatting: 'none',
+    beastiesOptions: { preload: 'swap', pruneSource: false }, // inline critical CSS, load the rest without blocking
     includedRoutes: () => [...pages().all.map((p) => p.path), '/404'],
     onFinished() {
       const data = pages()

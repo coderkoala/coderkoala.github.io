@@ -4,12 +4,14 @@ import { site, crumbs } from '../lib/site.js'
 import { useSeo } from '../lib/seo.js'
 
 const services = [
-  { name: 'Web applications and portals', text: 'Laravel and Vue, from a customer portal to a government website with payments.', proof: 'Kalimati Market', to: '/work/kalimati' },
-  { name: 'ERP and CRM systems', text: 'Operations, billing, payroll and the screens your team uses two hundred times a day.', proof: 'Kaede', to: '/work/kaede' },
-  { name: 'Payments and integrations', text: 'eSewa, Khalti and bank payments, Microsoft Dynamics 365, airline and courier APIs.', proof: 'GenericProperties', to: '/work/generic-properties' },
+  { name: 'Laravel web applications', text: 'Laravel and Vue, from a customer portal to a government website with payments.', proof: 'Kalimati Market', to: '/work/kalimati' },
+  { name: 'ERP and CRM systems', text: 'Operations, billing, payroll and the screens your team uses two hundred times a day.', proof: 'Most waybills are the usual one', to: '/writing/most-waybills-are-the-usual-one' },
+  { name: 'Payments and integrations', text: 'eSewa, Khalti and bank payments, Microsoft Dynamics 365, airline and courier APIs.', proof: 'eSewa and Khalti, done safely', to: '/writing/esewa-khalti-laravel' },
+  { name: 'Logistics and cargo software', text: 'Air waybills, AWB stock, IATA ONE Record and Cargo-XML, rates and delivery, for freight forwarders.', proof: 'Kaede', to: '/work/kaede' },
   { name: 'WordPress plugins', text: 'Custom plugins and fixes, written properly. I spent a year building them for WPEverest.', proof: 'Everest Forms', to: '/writing/the-check-that-only-lived-in-the-browser' },
   { name: 'Rescue and modernisation', text: 'Take over an old PHP or Laravel app and make it safe, fast and easy to change again.', proof: 'Laravel contributor', to: '/writing/a-date-that-did-not-fit' },
   { name: 'Localisation', text: 'Nepali, English and Japanese, translated by someone who reads the result.', proof: 'Syncfusion in Nepali', to: '/writing/teaching-a-ui-library-nepali' },
+  { name: 'CRM on Microsoft Dynamics 365', text: 'Migrations from Zoho and spreadsheets, plugins, Power Automate and the services around it.', proof: 'GenericProperties', to: '/work/generic-properties' },
 ]
 
 const steps = [
@@ -114,9 +116,9 @@ useSeo({
 .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
 .block { display: grid; gap: 24px; }
 .h { font-size: 14px; font-weight: 600; color: var(--ui-ink-faint); }
-.services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ui-border); }
+.services { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--ui-border); }
 .services li { display: grid; gap: 8px; align-content: start; padding: 24px 24px 28px 0; border-bottom: 1px solid var(--ui-border); }
-.services li:not(:nth-child(3n + 1)) { padding-left: 24px; border-left: 1px solid var(--ui-border); }
+.services li:not(:nth-child(4n + 1)) { padding-left: 24px; border-left: 1px solid var(--ui-border); }
 .services h3, .steps h3 { font-size: 18px; font-weight: 700; }
 .services p, .steps p { color: var(--ui-ink-soft); }
 .proof { display: inline-flex; align-items: center; gap: 6px; width: fit-content; margin-top: 4px; font-size: 14px; font-weight: 600; text-decoration: none; }
@@ -134,8 +136,10 @@ useSeo({
 .end { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-top: 40px; border-top: 1px solid var(--ui-border); }
 .end__t { font-size: clamp(24px, 3vw, 34px); font-weight: 700; letter-spacing: -0.02em; }
 @media (max-width: 991.98px) {
-  .services { grid-template-columns: minmax(0, 1fr); }
-  .services li, .services li:not(:nth-child(3n + 1)) { padding: 20px 0; border-left: 0; }
+  .services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .services li:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .services li:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--ui-border); }
+  .services li, .services li:not(:nth-child(4n + 1)) { padding: 20px 0; border-left: 0; }
   .steps { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 767.98px) { .page { padding-block: 40px 64px; gap: 56px; } .steps { grid-template-columns: 1fr; } }

@@ -2,6 +2,8 @@
 title: Kaede
 order: 1
 schema: SoftwareApplication
+seoTitle: Kaede, freight forwarding software built in Nepal
+seo: Kaede is cargo and freight forwarding software built in Nepal: air waybills and AWB stock, IATA ONE Record, rates, door-to-door delivery and payroll.
 kind: Cargo ERP
 years: 2022–now
 role: Designed and built it, end to end

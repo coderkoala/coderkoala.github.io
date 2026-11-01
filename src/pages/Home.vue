@@ -25,8 +25,8 @@ const shown = ref(work[0])
           <a class="btn" :href="site.cv" download><AppIcon name="download" /> Résumé</a>
         </div>
         <ul class="checks">
-          <li><AppIcon name="github" /> <a :href="site.github" rel="me">coderkoala</a></li>
-          <li><AppIcon name="linkedin" /> <a :href="site.linkedin" rel="me">coderkoala</a></li>
+          <li><AppIcon name="github" /> <a :href="site.github" rel="me" aria-label="GitHub profile: coderkoala">coderkoala</a></li>
+          <li><AppIcon name="linkedin" /> <a :href="site.linkedin" rel="me" aria-label="LinkedIn profile: coderkoala">coderkoala</a></li>
           <li><AppIcon name="mail" /> <a :href="`mailto:${site.email}`">{{ site.email }}</a></li>
         </ul>
       </div>
