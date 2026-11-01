@@ -16,8 +16,11 @@ useSeo({
     <section class="hero wrap">
       <div class="hero__copy">
         <p class="eyebrow">Independent software consultant · Kathmandu, Nepal</p>
+        <div class="hero__head">
         <h1 class="display">I build software businesses <span class="flare">count on</span>.</h1>
         <p class="lede">I built Kaede, a cargo ERP that speaks IATA ONE Record and learns from an office's own history. Before it: CRMs, payment platforms and web apps, from the database up.</p>
+        </div>
+        <div class="hero__act">
         <div class="hero__cta">
           <RouterLink class="btn btn--solid" :to="`/work/${work[0].slug}`">See how Kaede works <AppIcon name="arrow" /></RouterLink>
           <a v-if="site.booking" class="btn" :href="site.booking" target="_blank" rel="noopener" @click.prevent="openCal()" @pointerenter.once="loadCal()" @focus.once="loadCal()"><AppIcon name="calendar" /> Book a free review</a>
@@ -28,6 +31,7 @@ useSeo({
           <li><AppIcon name="linkedin" /> <a :href="site.linkedin" rel="me" aria-label="LinkedIn profile: coderkoala">coderkoala</a></li>
           <li><AppIcon name="mail" /> <a :href="`mailto:${site.email}`">{{ site.email }}</a></li>
         </ul>
+        </div>
       </div>
     </section>
 
@@ -63,7 +67,7 @@ useSeo({
   flex: 1; display: grid; grid-template-columns: minmax(0, 1fr); align-items: center;
   padding-block: clamp(24px, 5vh, 64px);
 }
-.hero__copy { display: grid; gap: 24px; }
+.hero__copy, .hero__head, .hero__act { display: grid; gap: 24px; }
 .flare { position: relative; white-space: nowrap; }
 /* A single confident stroke under the claim: drawn once, then left alone. */
 .flare::after {
@@ -111,4 +115,36 @@ useSeo({
   .tile:hover { background: none; box-shadow: none; }
   .hero__cta .btn { flex: 1 1 auto; }
 }
+</style>
+
+<style>
+/* ── Phone app: portrait ── */
+html[data-device='mobile'] .home { min-height: 0; }
+html[data-device='mobile'] .home .hero { padding-block: 28px 32px; }
+html[data-device='mobile'] .home .hero__copy { gap: 18px; }
+html[data-device='mobile'] .home .hero__head { display: grid; gap: 14px; }
+html[data-device='mobile'] .home .hero__act { display: grid; gap: 20px; }
+html[data-device='mobile'] .home .hero__cta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0; }
+html[data-device='mobile'] .home .hero__cta .btn { padding-inline: 8px; gap: 6px; font-size: 14.5px; white-space: nowrap; }
+html[data-device='mobile'] .home .hero__cta .btn--solid { grid-column: 1 / -1; height: 52px; font-size: 16px; }
+html[data-device='mobile'] .home .checks { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
+/* Work as swipeable cards, like an app shelf. */
+html[data-device='mobile'] .home .strip { border: 0; background: none; padding-bottom: 24px; }
+html[data-device='mobile'] .home .strip__in {
+  display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+  padding-block: 4px; scroll-padding-inline: 20px;
+}
+html[data-device='mobile'] .home .strip__in::-webkit-scrollbar { display: none; }
+html[data-device='mobile'] .home .strip__in > li { flex: 0 0 72%; scroll-snap-align: start; border: 0 !important; }
+html[data-device='mobile'] .home .tile {
+  min-height: 112px; align-content: end; padding: 18px; border: 1px solid var(--ui-border); border-radius: 14px;
+  background: var(--ui-surface-sunken);
+}
+html[data-device='mobile'] .home .tile:active { background: var(--ui-hover); transform: scale(.98); }
+/* ── Phone app: sideways ── headline left, actions right, cards below. */
+html[data-device='mobile'][data-orientation='landscape'] .home .hero { padding-block: 20px; }
+html[data-device='mobile'][data-orientation='landscape'] .home .hero__copy { grid-template-columns: 1.3fr 1fr; column-gap: 32px; align-items: end; }
+html[data-device='mobile'][data-orientation='landscape'] .home .hero__copy .eyebrow { grid-column: 1 / -1; }
+html[data-device='mobile'][data-orientation='landscape'] .home .strip__in > li { flex-basis: 34%; }
+html[data-device='mobile'][data-orientation='landscape'] .home .tile { min-height: 84px; }
 </style>

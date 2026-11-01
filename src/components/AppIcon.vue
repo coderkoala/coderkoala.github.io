@@ -1,6 +1,12 @@
 <script setup>
 defineProps({ name: String, size: { type: Number, default: 16 } })
 const paths = {
+  home: 'M4 11l8-7 8 7 M6 9.5V20h12V9.5 M10 20v-5h4v5',
+  grid: 'M4 4h7v7H4z M13 4h7v7h-7z M4 13h7v7H4z M13 13h7v7h-7z',
+  pen: 'M4 20h4L19 9l-4-4L4 16z M13 7l4 4',
+  chat: 'M4 5h16v11H9l-5 4z',
+  more: 'M5 12h.01 M12 12h.01 M19 12h.01',
+  close: 'M6 6l12 12 M18 6L6 18',
   calendar: 'M4 6h16v14H4z M4 10h16 M8 3v4 M16 3v4',
   person: 'M12 5.2a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4z M5 8l7 1.5L19 8 M12 9.5V14 M12 14l-3 7 M12 14l3 7',
   search: 'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14z M20 20l-4-4',

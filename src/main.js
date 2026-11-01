@@ -33,9 +33,13 @@ export const createApp = ViteSSG(App, {
     if (a) router.resolve(a.getAttribute('href')).matched.forEach((r) => load(r.components?.default))
   }
   addEventListener('pointerover', near, { passive: true })
+  addEventListener('touchstart', near, { passive: true })
   addEventListener('focusin', near)
   // Once the page is idle, fetch every page's code so each navigation is instant.
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1500))
   const warmAll = () => idle(() => routes.forEach((r) => load(r.component)))
-  if (document.readyState === 'complete') warmAll(); else addEventListener('load', warmAll, { once: true })
+  // On phones, respect data plans: only the pages behind the tab bar get warmed.
+  const phone = matchMedia('(max-width: 767.98px), (pointer: coarse) and (max-height: 500px)').matches || navigator.connection?.saveData
+  const warm = phone ? () => idle(() => ['/work/', '/writing/', '/consult'].forEach((p) => router.resolve(p).matched.forEach((r) => load(r.components?.default)))) : warmAll
+  if (document.readyState === 'complete') warm(); else addEventListener('load', warm, { once: true })
 })

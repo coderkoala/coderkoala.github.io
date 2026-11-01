@@ -103,3 +103,34 @@ html[data-a11y-spacing='wide'] body { letter-spacing: .03em; word-spacing: .14em
 html[data-a11y-spacing='wide'] p, html[data-a11y-spacing='wide'] li, html[data-a11y-spacing='wide'] dd { line-height: 1.9 !important; }
 html[data-a11y-motion='reduce'] *, html[data-a11y-motion='reduce'] *::before, html[data-a11y-motion='reduce'] *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 html[data-a11y-motion='reduce'] .bd { transform: none !important; }
+
+/* ── Mobile app shell ─────────────────────────────────────────────
+   data-device is stamped before paint from the same query as lib/device.js
+   (narrow, or a short touch screen = phone turned sideways), and re-stamped on rotation. */
+html[data-device='mobile'] { overflow-x: clip; scroll-padding-top: 64px; -webkit-tap-highlight-color: transparent; }
+html[data-device='mobile'] body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); overflow-x: clip; }
+html[data-device='mobile'].sheet-open body { overflow: hidden; }
+html[data-device='mobile'] .wrap { padding-inline: max(20px, env(safe-area-inset-left)) max(20px, env(safe-area-inset-right)); }
+html[data-device='mobile'] .nav .links,
+html[data-device='mobile'] .nav .nav__end { display: none; }
+html[data-device='mobile'] .nav .nav__in { height: 52px; }
+html[data-device='mobile'] .nav .brand__name { display: inline; font-size: 16px; }
+html[data-device='mobile'] .nav .brand__mark { width: 28px; height: 28px; border-radius: 7px; font-size: 11px; }
+html[data-device='mobile'] .foot .foot__links { display: none; }
+html[data-device='mobile'] .foot .foot__in { justify-content: center; text-align: center; padding-block: 16px; }
+html[data-device='mobile'] .display { font-size: clamp(32px, 9vw, 44px); line-height: 1.05; }
+html[data-device='mobile'] .lede { font-size: 17px; line-height: 1.55; }
+html[data-device='mobile'] .btn { min-height: 48px; }
+html[data-device='mobile'] .btn:hover { transform: none; }
+html[data-device='mobile'] .btn:active { transform: scale(.98); background: var(--ui-hover); }
+html[data-device='mobile'] .btn--solid:active { background: var(--ui-ink-soft); }
+html[data-device='mobile'] .backdrop { height: 520px; }
+html[data-device='mobile'] img, html[data-device='mobile'] video, html[data-device='mobile'] pre, html[data-device='mobile'] table { max-width: 100%; }
+html[data-device='mobile'] pre { overflow-x: auto; }
+html[data-device='mobile'] .prose table { display: block; overflow-x: auto; }
+/* Sideways: every vertical pixel counts, so the top bar scrolls away and the slim tab bar stays. */
+html[data-device='mobile'][data-orientation='landscape'] .nav { position: static; }
+html[data-device='mobile'][data-orientation='landscape'] .nav .nav__in { height: 44px; }
+html[data-device='mobile'][data-orientation='landscape'] body { padding-bottom: calc(48px + env(safe-area-inset-bottom)); }
+html[data-device='mobile'][data-orientation='landscape'] .display { font-size: clamp(28px, 5vw, 38px); }
+html[data-device='mobile'][data-orientation='landscape'] .backdrop { height: 100vh; }

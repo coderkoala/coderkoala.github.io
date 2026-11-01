@@ -4,13 +4,16 @@ import RouteProgress from './components/RouteProgress.vue'
 import CommandPalette from './components/CommandPalette.vue'
 import AppToast from './components/AppToast.vue'
 import A11yPanel from './components/A11yPanel.vue'
+import MobileTabBar from './components/MobileTabBar.vue'
+import { isMobile } from './lib/device.js'
 import { apply as applyA11y } from './lib/a11y.js'
 import { onMounted } from 'vue'
 
 // Subtle parallax: the far mountain drifts with scroll and pointer; the land barely moves.
 onMounted(() => {
   applyA11y()
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+  // Phones get a still backdrop: no scroll work on every frame, better battery.
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || isMobile.value) return
   const root = document.documentElement
   let sy = 0, mx = 0, queued = false
   const paint = () => { queued = false; root.style.setProperty('--sy', sy); root.style.setProperty('--mx', mx) }
@@ -47,6 +50,7 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
       <span class="foot__motto" lang="el" title="Find a way, or make one.">Βρείτε έναν τρόπο ή φτιάξτε έναν</span>
     </div>
   </footer>
+  <MobileTabBar />
   <CommandPalette />
   <A11yPanel />
   <AppToast />
