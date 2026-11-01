@@ -50,6 +50,8 @@ link: https://dahal.tech/kaede/index.html
 linkLabel: dahal.tech/kaede
 cover: /media/work/kaede.jpg
 shots:
+  - /media/kaede/routing-suggest.webp :: Learned from the office's own history: its usual routings, one click away. :: 6x2
+  - /media/kaede/routing-applied.webp :: One click later: both legs, distances, flying time, the connection and what's still missing. :: 6x3
   - /media/kaede/kaede-map.webp :: Real flown legs, every hop, weighted by chargeable weight. :: 4x2
   - /media/kaede/kaede-cargomsg-panel.webp :: Cargo-IMP and Cargo-XML, built and checked line by line before they leave. :: 2x2
   - /media/kaede/kaede-outlook.webp :: Outlook: next month's forecast, customers to call, and what moved. :: 3x2
@@ -483,7 +485,13 @@ So routing was never an authoring problem. It was a **recall** problem: the righ
 
 ## From form to shortlist
 
-The routing field now opens on an empty waybill with the office's most likely routings as chips. One click applies a whole multi-leg journey, with airport and airline names looked up fresh, so old free-text labels never come back. Pick an origin and destination and it hints the usual carriers, the usual flight and the median transit time for that lane.
+The routing field now opens on an empty waybill with the office's most likely routings as chips.
+
+![The routing field on a new waybill, offering the office's frequent routings as chips with how often each was used, a box to paste a routing, and a one-line leg entry.](/media/kaede/routing-suggest.webp) One click applies a whole multi-leg journey, with airport and airline names looked up fresh, so old free-text labels never come back. Pick an origin and destination and it hints the usual carriers, the usual flight and the median transit time for that lane.
+
+![The same field after clicking one chip: a two-leg routing via Hong Kong with total distance, flying time, each leg's distance and usual duration, a small route map, and warnings that departure dates are still missing.](/media/kaede/routing-applied.webp)
+
+One click fills every leg, and the field does the arithmetic people used to do in their heads: distance, flying time, where the connection is, and what's still missing before the waybill can go.
 
 For people who'd rather type, a routing can be pasted as one line: \`KTM-DEL(RA)\`, \`KTM-DEL/RA433/2026-09-09\`, \`KTM DEL RA 433 09SEP\`. Codes resolve only on an exact IATA match. A guess here becomes a wrong flight on a legal document.
 
