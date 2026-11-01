@@ -1,4 +1,4 @@
-import{F as e,L as t,R as n,W as r,Z as i,a,b as o,d as s,et as c,f as l,z as u}from"./app-C3Bc5jf1.js";import{t as d}from"./seo-ChMc_SeN.js";var f=`---
+import{F as e,L as t,R as n,W as r,Z as i,a,b as o,d as s,et as c,f as l,z as u}from"./app-Ck1X_jhN.js";import{t as d}from"./seo-C3ji7MOd.js";var f=`---
 updated: 2026-11-01
 ---
 
