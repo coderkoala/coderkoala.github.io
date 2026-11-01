@@ -66,7 +66,7 @@ if (p.value) useSeo({
     <figure v-if="!p.loop && p.cover" class="hero-shot wrap">
       <div class="browser">
         <div class="browser__bar" aria-hidden="true"><span class="dots"><i /><i /><i /></span><span class="browser__url mono">{{ p.linkLabel }}</span></div>
-        <img :src="p.cover" :alt="`${p.title}, the live product`" fetchpriority="high" decoding="async" width="1440" height="900" />
+        <img :src="p.cover" :alt="`${p.title}, the live product`" fetchpriority="high" decoding="async" width="1440" height="840" />
       </div>
     </figure>
 
