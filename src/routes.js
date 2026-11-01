@@ -4,6 +4,8 @@ export const routes = [
   { path: '/work/:slug', component: () => import('./pages/Project.vue') },
   { path: '/writing/', component: () => import('./pages/Writing.vue') },
   { path: '/writing/:slug', component: () => import('./pages/Post.vue') },
+  { path: '/now', component: () => import('./pages/Now.vue') },
+  { path: '/colophon', component: () => import('./pages/Colophon.vue') },
   { path: '/cv', component: () => import('./pages/Cv.vue') },
   { path: '/consult', component: () => import('./pages/Consult.vue') },
   { path: '/hire', redirect: '/consult' },

@@ -6,6 +6,7 @@ seoTitle: Kaede, freight forwarding software built in Nepal
 seo: Kaede is cargo and freight forwarding software built in Nepal: air waybills and AWB stock, IATA ONE Record, rates, door-to-door delivery and payroll.
 kind: Cargo ERP
 years: 2022–now
+status: In daily production use
 role: Designed and built it, end to end
 summary: The system a freight forwarder runs on. It reads the paperwork, learns how your office works, and talks to airlines, customers and drivers for you.
 stack: Laravel, Vue 3, PostgreSQL, WebSockets, Flutter, Playwright

@@ -3,6 +3,7 @@ title: Kalimati Market
 order: 2
 kind: Government platform
 years: 2021–2025
+status: Live since 2022, still in production
 role: Solo, from design to deployment
 seo: Kalimati Market's platform: daily prices, an ad-free Android app, and dues paid online via eSewa and Khalti. Built solo.
 summary: Nepal's largest wholesale produce market, run online. Daily prices for everyone, an ad-free Android app, and dues that traders pay from their phones through eSewa, Khalti or the bank.

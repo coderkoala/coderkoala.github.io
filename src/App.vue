@@ -43,7 +43,7 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
   <footer class="foot">
     <div class="wrap foot__in">
       <span>© {{ new Date(builtAt).getFullYear() }} {{ site.name }} · {{ site.place }} · Updated <time :datetime="builtAt">{{ builtLabel }}</time></span>
-      <button type="button" class="foot__a11y" @click="openA11y">Accessibility and languages</button>
+      <span class="foot__links"><RouterLink to="/now">Now</RouterLink><RouterLink to="/colophon">How it’s built</RouterLink><button type="button" class="foot__a11y" @click="openA11y">Accessibility and languages</button></span>
       <span class="foot__motto" lang="el" title="Find a way, or make one.">Βρείτε έναν τρόπο ή φτιάξτε έναν</span>
     </div>
   </footer>
@@ -96,6 +96,9 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
 .foot { border-top: 1px solid var(--ui-border); color: var(--ui-ink-faint); font-size: var(--ui-text-xs); }
 .foot__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-block: 20px; }
 .foot__motto { font-style: italic; }
+.foot__links { display: inline-flex; flex-wrap: wrap; gap: 6px 18px; }
+.foot__links a { color: inherit; text-underline-offset: 3px; }
+.foot__links a:hover { color: var(--ui-ink); }
 .foot__a11y { border: 0; background: none; padding: 0; color: inherit; font: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .foot__a11y:hover { color: var(--ui-ink); }
 </style>

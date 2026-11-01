@@ -39,7 +39,7 @@ if (p.value) useSeo({
     <header class="hero wrap">
       <div class="hero__copy">
         <RouterLink to="/work/" class="back"><AppIcon name="back" /> All work</RouterLink>
-        <p class="eyebrow">{{ p.kind }} · {{ p.years }}</p>
+        <p class="eyebrow">{{ p.kind }} · {{ p.years }}<span v-if="p.status" class="live"><i aria-hidden="true"></i>{{ p.status }}</span></p>
         <h1 class="display">{{ p.title }}</h1>
         <p class="lede">{{ p.summary }}</p>
         <ul class="checks">
@@ -115,6 +115,9 @@ if (p.value) useSeo({
 .hero { display: grid; grid-template-columns: minmax(0, 1fr); padding-block: 56px 72px; }
 .hero__copy { max-width: 760px; }
 .hero__copy { display: grid; gap: 20px; }
+.live { display: inline-flex; align-items: center; gap: 7px; margin-left: 14px; padding: 3px 10px 3px 8px; border: 1px solid var(--ui-border); border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--ui-ink); }
+.live i { width: 7px; height: 7px; border-radius: 50%; background: var(--ui-ink); animation: pulse 2.4s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: .3; } }
 .back { display: inline-flex; align-items: center; gap: 6px; width: fit-content; color: var(--ui-ink-faint); text-decoration: none; font-size: 14px; }
 .back:hover { color: var(--ui-ink); }
 .lede { max-width: 46ch; }

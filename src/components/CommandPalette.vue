@@ -28,6 +28,8 @@ const items = computed(() => [
   { group: 'Pages', label: 'About', to: '/about' },
   { group: 'Pages', label: 'Consult', hint: 'How I help, how we work, questions', to: '/consult' },
   { group: 'Pages', label: 'Résumé', hint: 'as a page', to: '/cv' },
+  { group: 'Pages', label: 'Now', hint: 'this month', to: '/now' },
+  { group: 'Pages', label: 'How this site is built', to: '/colophon' },
   ...work.map((w) => ({ group: 'Case studies', label: w.title, hint: w.kind, to: w.url })),
   ...writing.map((p) => ({ group: 'Writing', label: p.title, to: p.url })),
   ...gallery.filter((g) => !g.featured).map((g) => ({ group: 'Gallery', label: g.title, hint: `${g.kind} · ${g.year}`, to: '/work/' })),

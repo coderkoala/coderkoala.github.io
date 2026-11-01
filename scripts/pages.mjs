@@ -52,6 +52,8 @@ export function pages() {
     all: [
       { path: '/', title: 'Nobel Dahal', kind: 'Full-stack developer in Nepal', og: 'default', lastmod: today, priority: '1.0' },
       { path: '/work/', title: 'Work', kind: 'Everything since 2017', lastmod: today, priority: '0.9' },
+      { path: '/now', title: 'Now', kind: 'What I’m building this month', lastmod: today, priority: '0.6' },
+      { path: '/colophon', title: 'How this site is built', kind: 'Colophon', lastmod: today, priority: '0.4' },
       { path: '/cv', title: 'Résumé', kind: 'Full-stack developer · Kathmandu', lastmod: today, priority: '0.8' },
       { path: '/consult', title: 'An IT department you can call on', kind: 'Independent consultant · Kathmandu', lastmod: today, priority: '0.9' },
       { path: '/about', title: 'About', kind: 'Experience, open source, certifications', lastmod: today, priority: '0.8' },
