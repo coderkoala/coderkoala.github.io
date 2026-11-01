@@ -58,6 +58,6 @@ export function formatDate(d) {
 const galleryFiles = import.meta.glob('/content/gallery/*.md', { query: '?raw', import: 'default', eager: true })
 const str = (v) => (typeof v === 'string' ? v : '')
 export const gallery = load(galleryFiles, 'gallery')
-  .map((g) => ({ ...g, link: str(g.link), image: str(g.image), logo: str(g.logo), video: str(g.video), cover: str(g.cover), year: String(g.year) }))
+  .map((g) => ({ ...g, link: str(g.link), image: str(g.image), logo: str(g.logo), loop: str(g.loop), cover: str(g.cover), year: String(g.year) }))
   .sort((a, b) => a.slug.localeCompare(b.slug))
 export const galleryTags = ['All', ...new Set(gallery.map((g) => g.tag))]

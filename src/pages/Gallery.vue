@@ -36,9 +36,9 @@ const isInternal = (l) => l && l.startsWith('/')
           :rel="g.link && !isInternal(g.link) ? 'noopener' : undefined" class="card">
           <div class="cover">
             <img v-if="g.image" :src="g.image" :alt="`${g.title}, ${g.kind}`" loading="lazy" decoding="async" />
-            <iframe v-if="g.video" class="cover__video" tabindex="-1" aria-hidden="true" loading="lazy"
-              :src="`https://www.youtube-nocookie.com/embed/${g.video}?autoplay=1&mute=1&controls=0&loop=1&playlist=${g.video}&modestbranding=1&playsinline=1&rel=0&disablekb=1&iv_load_policy=3`"
-              allow="autoplay; encrypted-media" title="" />
+            <video v-if="g.loop" class="cover__video" :poster="g.image" autoplay muted loop playsinline disablepictureinpicture preload="metadata" aria-hidden="true" tabindex="-1">
+              <source :src="`${g.loop}.mp4`" type="video/mp4" />
+            </video>
             <div v-else-if="g.logo" class="cover__logo"><img :src="g.logo" :alt="`${g.title} logo`" loading="lazy" /></div>
             <div v-else-if="g.cover === 'pixel'" class="cover__pixel" aria-hidden="true">
               <span class="cover__pixel-title">{{ g.title.toUpperCase() }}</span>
@@ -86,8 +86,8 @@ const isInternal = (l) => l && l.startsWith('/')
 a.card:hover .cover img, .card:hover .cover img { filter: none; transform: scale(1.03); }
 .cover { position: relative; }
 .cover__video {
-  position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none;
-  transform: scale(1.35); filter: grayscale(1); transition: filter 400ms var(--ui-ease);
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; pointer-events: none;
+  filter: grayscale(1); transition: filter 400ms var(--ui-ease);
 }
 .card:hover .cover__video { filter: none; }
 .cover__logo { height: 100%; display: grid; place-items: center; background: #fff; }

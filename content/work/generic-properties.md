@@ -12,7 +12,8 @@ facts:
   - Open sourced with permission
 link: https://github.com/coderkoala/GenericProperties
 linkLabel: coderkoala/GenericProperties
-video: cxSg2U6NzUE
+loop: /media/work/generic-properties
+youtube: cxSg2U6NzUE
 steps:
   - Zoho moves to Dynamics :: Every record migrated by tools I wrote, not by hand.
   - Documents follow :: Years of files carried from Zoho into SharePoint.

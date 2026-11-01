@@ -27,7 +27,7 @@ if (p.value) useSeo({
     keywords: p.value.stack.join(', '), genre: p.value.kind,
     ...(p.value.schema === 'SoftwareApplication' ? { applicationCategory: 'BusinessApplication', operatingSystem: 'Web, Android', inLanguage: ['en', 'ne', 'ja'] } : {}),
     ...(p.value.link && !p.value.link.includes('github.com') ? { sameAs: p.value.link } : {}),
-    ...(p.value.video ? { video: { '@type': 'VideoObject', name: `${p.value.title} demo`, description: p.value.summary, embedUrl: `https://www.youtube.com/embed/${p.value.video}`, contentUrl: `https://www.youtube.com/watch?v=${p.value.video}`, thumbnailUrl: `https://img.youtube.com/vi/${p.value.video}/maxresdefault.jpg`, uploadDate: '2021-05-25' } } : {}),
+    ...(p.value.loop ? { video: { '@type': 'VideoObject', name: `${p.value.title} demo`, description: p.value.summary, contentUrl: `${site.url}${p.value.loop}.mp4`, thumbnailUrl: `${site.url}${p.value.loop}-poster.jpg`, uploadDate: '2021-05-25', ...(p.value.youtube ? { embedUrl: `https://www.youtube.com/embed/${p.value.youtube}` } : {}) } } : {}),
     creator: { '@id': `${site.url}/#person` }, author: { '@id': `${site.url}/#person` },
   }, crumbs([{ name: 'Work', path: '/work' }, { name: p.value.title, path: p.value.url }])],
 })
@@ -53,15 +53,17 @@ if (p.value) useSeo({
       <DryRun :project="p" />
     </header>
 
-    <figure v-if="p.video" class="film wrap">
+    <figure v-if="p.loop" class="film wrap">
       <div class="film__frame">
-        <iframe :src="`https://www.youtube-nocookie.com/embed/${p.video}?autoplay=1&mute=1&controls=0&loop=1&playlist=${p.video}&modestbranding=1&playsinline=1&rel=0&disablekb=1&iv_load_policy=3`"
-          allow="autoplay; encrypted-media" tabindex="-1" :title="`${p.title} demo`" loading="lazy" />
+        <video :poster="`${p.loop}-poster.jpg`" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="auto" aria-label="Silent demo recording">
+          <source :src="`${p.loop}.webm`" type="video/webm" />
+          <source :src="`${p.loop}.mp4`" type="video/mp4" />
+        </video>
       </div>
-      <figcaption>The real thing, recorded in 2021. <a :href="`https://www.youtube.com/watch?v=${p.video}`" rel="noopener">Watch with sound</a></figcaption>
+      <figcaption>Recorded in 2021, shown at 1.5× without sound. <a v-if="p.youtube" :href="`https://www.youtube.com/watch?v=${p.youtube}`" rel="noopener">Watch the full demo</a></figcaption>
     </figure>
 
-    <figure v-if="!p.video && p.cover" class="hero-shot wrap">
+    <figure v-if="!p.loop && p.cover" class="hero-shot wrap">
       <div class="browser">
         <div class="browser__bar" aria-hidden="true"><span class="dots"><i /><i /><i /></span><span class="browser__url mono">{{ p.linkLabel }}</span></div>
         <img :src="p.cover" :alt="`${p.title}, the live product`" fetchpriority="high" decoding="async" width="1440" height="900" />
@@ -121,8 +123,8 @@ if (p.value) useSeo({
 .browser__url { flex: 1; text-align: center; font-size: 12px; color: var(--ui-ink-faint); margin-right: 46px; }
 .browser img { display: block; width: 100%; height: auto; }
 .film { display: grid; gap: 12px; padding-bottom: 64px; }
-.film__frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 14px; border: 1px solid var(--ui-border); background: #000; }
-.film__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; transform: scale(1.2); }
+.film__frame { position: relative; aspect-ratio: 1920 / 930; overflow: hidden; border-radius: 14px; border: 1px solid var(--ui-border); background: #000; }
+.film__frame video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; pointer-events: none; }
 .film figcaption { font-size: 14px; color: var(--ui-ink-faint); }
 .related { padding-block: 0 56px; display: grid; gap: 16px; }
 .related__title { font-size: 14px; font-weight: 600; color: var(--ui-ink-faint); }
