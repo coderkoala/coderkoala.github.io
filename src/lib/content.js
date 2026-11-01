@@ -42,6 +42,10 @@ export const work = load(workFiles, 'work')
       const [cols, rows] = span.split('x').map(Number)
       return { src, caption, cols, rows }
     }),
+    engineering: (Array.isArray(w.engineering) ? w.engineering : []).map((s) => {
+      const [label, text, to] = s.split('::').map((x) => x.trim())
+      return { label, text, to }
+    }),
     steps: (w.steps || []).map((s) => {
       const [title, text] = s.split('::').map((x) => x.trim())
       return { title, text }

@@ -26,6 +26,17 @@ shots:
   - /media/kaede/kaede-pivot-drill.webp :: Every number opens the shipments behind it. :: 6x1
   - /media/kaede/kaede-designer.webp :: Design your own courier waybill, block by block, from the keyboard. :: 4x2
   - /media/kaede/kaede-letterhead-designs.webp :: Nine letterhead designs for every printed document. :: 2x2
+engineering:
+  - Stack :: Laravel 13 on PHP 8.4, Vue 3, PostgreSQL, Redis; realtime over Laravel Reverb; multi-tenant; English, Nepali and Japanese
+  - Messaging :: Cargo-IMP and Cargo-XML (FWB, FHL, FSU, FFR and their X- forms) built and validated line by line; IATA ONE Record API 2.3.0 on ontology 3.3 :: /writing/what-one-record-taught-me
+  - AWB stock :: Mod-7 check digits, row-locked allocation in issue order, a legality table for every state move, a unique index as the backstop :: /writing/handing-out-air-waybill-numbers
+  - Integrations :: Mutual TLS with OAuth2 client credentials, pinned CAs, encrypted credentials; browser automation for carrier portals :: /writing/mtls-and-oauth2-together
+  - Learning :: Per-organisation history with 90-day decay, accept/override verdicts at save, Wilson lower bound to trust or retire; no ML model :: /writing/most-waybills-are-the-usual-one
+  - Rates :: One pure calculator for air, sea, road and rail; immutable published cards; a priced snapshot per quote :: /writing/designing-a-rate-engine
+  - Integrity :: Executed waybills lock; SHA-256 hash-chained audit trail, verified incrementally every night
+  - Printing :: JasperReports through a PHPJasper fork I maintain; all 12 IATA AWB copies; one font family across seven scripts :: /writing/maintaining-phpjasper
+  - Mobile :: Versioned contracts for the driver and warehouse app: dispatch runs, scan batches that never move a status on their own, shift check-in with location
+  - Quality :: Playwright smoke runs with per-screen request budgets; design and architecture rules checked in CI
 steps:
   - Booking email lands :: Kaede reads the attachment and drafts the waybill. You confirm.
   - Routing suggests itself :: Learned from your history. The right lane is nearly always top five.

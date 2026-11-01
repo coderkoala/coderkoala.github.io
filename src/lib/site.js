@@ -63,7 +63,7 @@ export const personLd = {
   image: `${site.url}/og/default.png`,
   jobTitle: 'Full-Stack Developer and Software Engineer',
   hasOccupation: { '@type': 'Occupation', name: 'Full-stack web developer', occupationLocation: { '@type': 'Country', name: 'Nepal' }, skills: 'Laravel, PHP, Vue.js, Node.js, PostgreSQL, MySQL, WordPress, ERP, CRM' },
-  description: 'Full-stack web developer and software engineer in Kathmandu, Nepal, building ERP, CRM and web applications with Laravel and Vue.',
+  description: 'Built Kaede, a cargo ERP for freight forwarders (IATA ONE Record, AWB stock, learning suggestions). Full-stack developer in Kathmandu, Nepal: Laravel, Vue, PostgreSQL.',
   email: `mailto:${site.email}`,
   address: { '@type': 'PostalAddress', addressLocality: 'Kathmandu', addressRegion: 'Bagmati', addressCountry: 'NP' },
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'Himalaya College of Engineering' },

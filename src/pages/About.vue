@@ -13,7 +13,6 @@ useSeo({
 </script>
 
 <template>
-  <div class="backdrop" aria-hidden="true"></div>
   <section class="wrap page">
     <header class="head">
       <div class="head__main">
@@ -93,16 +92,6 @@ useSeo({
 .row > .soft.mono { white-space: nowrap; }
 .intro { display: grid; gap: 12px; max-width: 58ch; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
-/* The ridge photo as a quiet backdrop behind the header, Kaede-style:
-   monochrome, faint, and fading into the page before the content starts. */
-.backdrop {
-  position: absolute; inset: 64px 0 auto; height: min(760px, 92vh); z-index: -1; pointer-events: none;
-  background: url('/media/about/ridge.jpg') 58% 62% / cover no-repeat;
-  filter: var(--ui-backdrop-filter);
-  opacity: var(--ui-backdrop-opacity);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
-          mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
-}
 .page { position: relative; }
 .masonry { columns: 2 380px; column-gap: 72px; }
 .masonry > section { break-inside: avoid; margin-bottom: 56px; }
@@ -128,7 +117,6 @@ useSeo({
   .page { padding-block: 40px 64px; gap: 48px; }
   .masonry > section { margin-bottom: 40px; }
   .head { grid-template-columns: 1fr; gap: 40px; }
-  .backdrop { height: 520px; background-position: 50% 62%; }
   .row { flex-direction: column; gap: 2px; }
 }
 </style>

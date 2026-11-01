@@ -113,7 +113,7 @@ const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>
     <a href="${site.github}">${host(site.github)}</a> · <a href="${site.linkedin}">${host(site.linkedin)}</a>
   </div>
 </header>
-<p class="summary">Full-stack engineer who designs, builds and runs business systems end to end: ERP, CRM and operations software, from the database schema to the screen people use all day. Creator of Kaede, an ERP for freight forwarders. Shipping production software since 2018; Laravel contributor.</p>
+<p class="summary">Built Kaede, a cargo ERP for freight forwarders, end to end: IATA ONE Record and Cargo-XML, AWB stock under concurrency, carrier-portal automation, and a learning engine that suggests from the office's own history. Laravel contributor; author of Syncfusion's Nepali locale. Full-stack developer in Kathmandu, shipping production software since 2018.</p>
 
 <h2>Selected work</h2>
 ${projects.map((p) => `<div class="item">

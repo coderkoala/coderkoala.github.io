@@ -2,7 +2,6 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import AppIcon from '../components/AppIcon.vue'
-import DryRun from '../components/DryRun.vue'
 import Showcase from '../components/Showcase.vue'
 import NotFound from './NotFound.vue'
 import { work, writing, formatDate } from '../lib/content.js'
@@ -50,8 +49,17 @@ if (p.value) useSeo({
           <div v-if="p.link"><dt>See it</dt><dd><a :href="p.link" rel="noopener">{{ p.linkLabel }}</a></dd></div>
         </dl>
       </div>
-      <DryRun :project="p" />
     </header>
+
+    <section v-if="p.engineering.length" class="eng wrap" aria-labelledby="eng-title">
+      <h2 id="eng-title" class="eng__title">For engineers</h2>
+      <dl class="eng__list">
+        <div v-for="e in p.engineering" :key="e.label" class="eng__row">
+          <dt>{{ e.label }}</dt>
+          <dd>{{ e.text }} <RouterLink v-if="e.to" :to="e.to" class="eng__more">How <AppIcon name="arrow" /></RouterLink></dd>
+        </div>
+      </dl>
+    </section>
 
     <figure v-if="p.loop" class="film wrap">
       <div class="film__frame">
@@ -103,7 +111,8 @@ if (p.value) useSeo({
 </template>
 
 <style scoped>
-.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 480px); gap: 72px; align-items: start; padding-block: 56px 72px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr); padding-block: 56px 72px; }
+.hero__copy { max-width: 760px; }
 .hero__copy { display: grid; gap: 20px; }
 .back { display: inline-flex; align-items: center; gap: 6px; width: fit-content; color: var(--ui-ink-faint); text-decoration: none; font-size: 14px; }
 .back:hover { color: var(--ui-ink); }
@@ -114,6 +123,16 @@ if (p.value) useSeo({
 .body { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 72px; padding-block: 64px; border-top: 1px solid var(--ui-border); }
 .stack { display: grid; gap: 12px; align-content: start; position: sticky; top: 96px; }
 .stack__title { font-size: 13px; font-weight: 600; color: var(--ui-ink-faint); }
+.eng { display: grid; gap: 16px; padding-bottom: 56px; }
+.eng__title { font-size: 14px; font-weight: 600; color: var(--ui-ink-faint); }
+.eng__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px; border-top: 1px solid var(--ui-border); }
+.eng__row { display: grid; grid-template-columns: 112px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--ui-border); }
+.eng__row dt { font-weight: 600; font-size: 15px; }
+.eng__row dd { color: var(--ui-ink-soft); font-size: 15px; line-height: 1.55; }
+.eng__more { display: inline-flex; align-items: center; gap: 4px; margin-left: 4px; font-size: 13px; font-weight: 600; color: var(--ui-ink); text-decoration: none; white-space: nowrap; }
+.eng__more:hover { text-decoration: underline; }
+@media (max-width: 991.98px) { .eng__list { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 767.98px) { .eng__row { grid-template-columns: 1fr; gap: 4px; } }
 .hero-shot { padding-bottom: 56px; }
 .browser { border: 1px solid var(--ui-border); border-radius: 14px; overflow: hidden; background: var(--ui-surface);
   box-shadow: 0 1px 2px rgb(0 0 0 / .04), 0 40px 80px -40px rgb(0 0 0 / .25); }

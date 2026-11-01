@@ -18,7 +18,7 @@ function writeLlms({ work, posts }) {
   const lines = [
     '# Nobel Dahal',
     '',
-    '> Full-stack web developer and software engineer in Kathmandu, Nepal, working freelance. Builds web applications, ERP, CRM and operations software end to end with Laravel, Vue and PostgreSQL. Creator of Kaede, an ERP for freight forwarders. Laravel contributor. Contact: nobel@dahal.tech',
+    '> Built Kaede, a cargo ERP for freight forwarders, end to end: IATA ONE Record and Cargo-XML messaging, AWB stock allocation under concurrency, carrier-portal automation, and a learning engine that suggests from an office\'s own history. Laravel contributor. Freelance full-stack developer (Laravel, Vue, PostgreSQL) in Kathmandu, Nepal. Contact: nobel@dahal.tech',
     '',
     '## Case studies',
     ...work.map((w) => `- [${w.title}](${SITE}${w.path}): ${w.summary}`),
