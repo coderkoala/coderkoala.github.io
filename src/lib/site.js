@@ -9,8 +9,8 @@ export const site = {
   linkedin: 'https://www.linkedin.com/in/coderkoala',
   motto: 'Find a way, or make one.',
   // Set these and the site shows them; leave empty to hide.
-  booking: '',          // e.g. a Cal.com link: 'https://cal.com/coderkoala/30min'
-  availability: '',     // e.g. 'Taking one new engagement from January 2027'
+  booking: 'https://cal.com/nobel/30min',
+  availability: 'Two review slots a week · Mon, Tue, Thu, Fri',
 }
 
 export const experience = [

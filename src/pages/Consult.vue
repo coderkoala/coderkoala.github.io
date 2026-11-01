@@ -30,7 +30,7 @@ const faq = [
   { q: 'Which technologies do you use?', a: 'Mostly PHP and Laravel, Vue, Node.js, PostgreSQL and MySQL, on Linux and Docker. WordPress when it is the right tool, and Microsoft Dynamics 365 when the client already runs on it.' },
   { q: 'What does an engagement look like?', a: 'Either a defined project with a fixed quote, or an ongoing retainer where I act as your IT department: advising, building and keeping your systems running.' },
   { q: 'Do you work with agencies?', a: 'Yes, as a technical partner behind your client work, under your brand if you prefer.' },
-  { q: 'Is the systems review really free?', a: 'Yes. Thirty minutes and a written page, with no obligation. I take on a few at a time so each one gets proper attention.' },
+  { q: 'Is the systems review really free?', a: 'Yes. Thirty minutes and a written page, with no obligation. I keep it to two a week so each one gets proper attention; slots usually fill a week or two ahead.' },
   { q: 'How much does it cost?', a: 'It depends on the scope. After the first conversation you get a written proposal: a fixed quote for a defined project, or a monthly retainer for ongoing work.' },
 ]
 
@@ -72,9 +72,9 @@ useSeo({
     <section aria-labelledby="review" class="review">
       <div>
         <h2 id="review" class="review__t">Start with a free systems review</h2>
-        <p>Thirty minutes on a call about how your business runs today: the software, the spreadsheets, the parts that keep you up at night. Afterwards you get one written page: what's risky, what's fine, and what I'd do first. Yours to keep, whether or not we work together.</p>
+        <p>Thirty minutes about how your business runs today: the software, the spreadsheets, the parts that keep you up at night. Afterwards you get one written page: what's risky, what's fine, and what I'd do first. Yours to keep, whether or not we work together.</p>
       </div>
-      <a class="btn btn--solid" :href="book" :target="site.booking ? '_blank' : undefined" rel="noopener"><AppIcon name="arrow" /> {{ site.booking ? 'Pick a time' : 'Request a review' }}</a>
+      <a class="btn btn--solid" :href="book" :target="site.booking ? '_blank' : undefined" rel="noopener"><AppIcon name="arrow" /> {{ site.booking ? 'Book a review slot' : 'Request a review' }}</a>
     </section>
 
     <section aria-labelledby="what" class="block">
