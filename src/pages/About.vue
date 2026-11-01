@@ -36,7 +36,7 @@ useSeo({
     </header>
 
     <figure class="essence">
-      <img src="/media/hello-section/image.jpg" width="960" height="720" loading="lazy" decoding="async"
+      <img src="/media/about/ridge.jpg" srcset="/media/hello-section/image.jpg 960w, /media/about/ridge.jpg 1920w" sizes="(max-width: 1200px) 100vw, 1120px" width="1920" height="1440" loading="lazy" decoding="async"
         alt="Nobel standing alone on a grassy ridge above a misty valley in Nepal" />
       <figcaption>
         <span class="essence__quote" lang="el">Βρείτε έναν τρόπο ή φτιάξτε έναν.</span>
