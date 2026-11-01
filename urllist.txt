@@ -1,5 +1,6 @@
 https://nobeldahal.com.np/
 https://nobeldahal.com.np/work/
+https://nobeldahal.com.np/cv
 https://nobeldahal.com.np/hire
 https://nobeldahal.com.np/about
 https://nobeldahal.com.np/writing/
@@ -12,6 +13,7 @@ https://nobeldahal.com.np/writing/mtls-and-oauth2-together
 https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one
 https://nobeldahal.com.np/writing/designing-a-rate-engine
 https://nobeldahal.com.np/writing/maintaining-phpjasper
+https://nobeldahal.com.np/writing/a-copilot-that-lives-in-bash
 https://nobeldahal.com.np/writing/teaching-a-ui-library-nepali
 https://nobeldahal.com.np/writing/esewa-khalti-laravel
 https://nobeldahal.com.np/writing/taking-money-on-a-government-website
