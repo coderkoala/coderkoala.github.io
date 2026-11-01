@@ -1,47 +1,26 @@
 {
-	"name": "Nobel Portfolio",
-	"version": "0.0.1",
-	"description": "A portfolio website for me.",
-	"main": "./dist/your-main-js-file.js",
-	"author": {
-		"name": "Nobel Dahal",
-		"url": "http://nobeldahal.com.np"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "http://link-to-your-git-repo.com"
-	},
-	"boilerplate": {
-		"version": "2.2.6",
-		"author": "Chris Ferdinandi",
-		"url": "https://gomakethings.com",
-		"repo": "http://github.com/cferdinandi/gulp-boilerplate"
-	},
-	"browserslist": [
-		"last 2 versions",
-		"> 0.25%"
-	],
-	"devDependencies": {},
-	"dependencies": {
-		"autoprefixer": "^9.7.4",
-		"browser-sync": "^2.26.7",
-		"cssnano": "^4.1.10",
-		"del": "^5.1.0",
-		"gulp": "^4.0.2",
-		"gulp-concat": "^2.6.1",
-		"gulp-flatmap": "^1.0.2",
-		"gulp-header": "^2.0.9",
-		"gulp-jshint": "^2.1.0",
-		"gulp-optimize-js": "^1.1.0",
-		"gulp-postcss": "^8.0.0",
-		"gulp-rename": "^2.0.0",
-		"gulp-sass": "^4.0.2",
-		"gulp-svgmin": "^2.2.0",
-		"gulp-terser": "^1.2.0",
-		"jshint": "^2.11.0",
-		"jshint-stylish": "^2.2.1",
-		"lazypipe": "^1.0.2",
-		"node-sass": "^4.13.1"
-	}
+  "name": "nobel-dahal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "og": "node scripts/og.mjs",
+    "build": "vite-ssg build",
+    "preview": "vite preview",
+    "cv": "node scripts/cv.mjs"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@unhead/vue": "^2.1.17",
+    "marked": "^18.1.2",
+    "vue": "^3.5.44",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "playwright-core": "^1.64.1",
+    "vite": "^8.3.5",
+    "vite-ssg": "^28.3.0"
+  }
 }
