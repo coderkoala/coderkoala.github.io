@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nobel Dahal">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="alternate" type="application/rss+xml" title="Nobel Dahal · Writing" href="/feed.xml">
+    <link rel="me" href="https://github.com/coderkoala">
+    <link rel="me" href="https://www.linkedin.com/in/coderkoala">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="author" href="/humans.txt">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+      try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+      if (location.pathname === '/' && location.hash) {
+        const to = { '#portfolio': '/work/', '#experience': '/about', '#education': '/about', '#skills': '/about', '#contact': '/hire', '#feedback': '/hire' }[location.hash]
+        if (to) location.replace(to)
+      }
+    </script>
+    <script type="module" crossorigin="" src="/assets/app-BrV8zPfC.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-f56wxyu-.css">
+  <link rel="modulepreload" crossorigin="" href="/assets/Post-CfqK3yGU.js"><link rel="stylesheet" href="/assets/Post-BVo7xjkh.css"><title>Allocating air waybill numbers safely · Nobel Dahal</title><link rel="canonical" href="https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers"><meta name="description" content="How IATA air waybill check digits work, how AWB stock moves between states, and how to allocate numbers safely under concurrency."><meta name="robots" content="index, follow, max-image-preview:large"><meta property="og:type" content="article"><meta property="og:site_name" content="Nobel Dahal"><meta property="og:locale" content="en_GB"><meta property="og:title" content="Allocating air waybill numbers safely · Nobel Dahal"><meta property="og:description" content="How IATA air waybill check digits work, how AWB stock moves between states, and how to allocate numbers safely under concurrency."><meta property="og:url" content="https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers"><meta property="og:image" content="https://nobeldahal.com.np/og/writing/handing-out-air-waybill-numbers.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Allocating air waybill numbers safely · Nobel Dahal"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Allocating air waybill numbers safely · Nobel Dahal"><meta name="twitter:description" content="How IATA air waybill check digits work, how AWB stock moves between states, and how to allocate numbers safely under concurrency."><meta name="twitter:image" content="https://nobeldahal.com.np/og/writing/handing-out-air-waybill-numbers.png"><meta property="article:published_time" content="2026-10-29"><meta property="article:author" content="https://nobeldahal.com.np"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Handing out air waybill numbers without handing out the same one twice","description":"An air waybill number is a scarce, audited resource that two people will try to take at the same second. Check digits, stock states, and the locks that keep it honest.","datePublished":"2026-10-29","dateModified":"2026-10-29","wordCount":941,"inLanguage":"en","timeRequired":"PT4M","about":{"@type":"CreativeWork","name":"Kaede","url":"https://nobeldahal.com.np/work/kaede"},"url":"https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers","mainEntityOfPage":"https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers","image":"https://nobeldahal.com.np/og/writing/handing-out-air-waybill-numbers.png","author":{"@id":"https://nobeldahal.com.np/#person","name":"Nobel Dahal","url":"https://nobeldahal.com.np"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nobeldahal.com.np/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://nobeldahal.com.np/writing/"},{"@type":"ListItem","position":3,"name":"Handing out air waybill numbers without handing out the same one twice","item":"https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers"}]}</script></head>
+  <body>
+    <div id="app" data-server-rendered="true"><!--[--><a class="skip" href="#main" data-v-89c23350="">Skip to content</a><header class="nav" data-v-89c23350="" data-v-0305c0c7=""><div class="wrap nav__in" data-v-0305c0c7=""><a href="/" class="brand" aria-label="Nobel Dahal, home" data-v-0305c0c7=""><span class="brand__mark" aria-hidden="true" data-v-0305c0c7="">ND</span><span class="brand__name" data-v-0305c0c7="">Nobel Dahal</span></a><nav class="links" aria-label="Main" data-v-0305c0c7=""><a href="/work/" class="" data-v-0305c0c7="">Work</a><a href="/writing/" class="" data-v-0305c0c7="">Writing</a><a href="/about" class="" data-v-0305c0c7="">About</a><a href="/hire" class="" data-v-0305c0c7="">Hire</a></nav><div class="nav__end" data-v-0305c0c7=""><a href="/hire" class="btn btn--solid btn--sm nav__cta" data-v-0305c0c7="">Hire me</a><button class="iconbtn" type="button" aria-label="Use dark theme" data-v-0305c0c7=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-0305c0c7=""><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"></path></svg></button></div></div></header><main id="main" data-v-89c23350=""><article class="wrap page" data-v-89c23350="" data-v-97a09a5a=""><header class="head" data-v-97a09a5a=""><a href="/writing/" class="back" data-v-97a09a5a=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M19 12H5 M11 6l-6 6 6 6"></path></svg> Writing</a><h1 class="display" data-v-97a09a5a="">Handing out air waybill numbers without handing out the same one twice</h1><p class="lede" data-v-97a09a5a="">An air waybill number is a scarce, audited resource that two people will try to take at the same second. Check digits, stock states, and the locks that keep it honest.</p><p class="date" data-v-97a09a5a=""><time datetime="2026-10-29" data-v-97a09a5a="">29 October 2026</time> · 4 min read</p></header><div class="prose" data-v-97a09a5a=""><p>Every air shipment travels under an air waybill (AWB) number. Airlines sell those numbers to forwarders in blocks, and they expect every number in every block to be accounted for: used, voided, returned or still on the shelf. Lose one and the airline asks where it went. Hand the same one to two shipments and you have two legal documents with one identity.</p>
+<p>So in Kaede the AWB number is not a string field. It is stock.</p>
+<h2>The number checks itself</h2>
+<p>An AWB number has 11 digits: a 3-digit airline prefix, a 7-digit serial, and a check digit.</p>
+<pre><code>157 - 4012101 2
+│     │       └ check digit
+│     └ serial
+└ airline prefix
+</code></pre>
+<p>The check digit is the serial modulo 7:</p>
+<pre><code class="language-php">function awbIsValid(string $raw): bool
+{
+    $digits = preg_replace('/\D/', '', $raw);          // "157-4012 1012" → "15740121012"
+    if (strlen($digits) !== 11) return false;
+
+    $serial = (int) substr($digits, 3, 7);
+    return $serial % 7 === (int) $digits[10];
+}
+</code></pre>
+<p>Mod 7 catches most single-digit typos and many transpositions, which is exactly the class of error a person makes when copying a number off a sheet. It is not a security check: anyone can compute it. It just stops <code>157-40121013</code> reaching an airline.</p>
+<p>People write AWB numbers in half a dozen ways: <code>157-40121012</code>, <code>157-4012 1012</code>, sometimes with the origin airport wedged in after the prefix. Normalise first, validate once, and use one implementation everywhere. A second, slightly different check-digit function somewhere else in the codebase is how a bad number slips in.</p>
+<p>When a block arrives from the airline, the first and last numbers are validated and the range is expanded into individual stock rows. Each one is checked again on the way in, because a typo in the range is a block of numbers that all look valid but don't belong to you.</p>
+<h2>A number has a life</h2>
+<p>Each stock row moves through a small set of states:</p>
+<pre><code>ready ──▶ assigned ──▶ issued ──▶ executed
+  │          │            │
+  └──────────┴────────────┴──▶ voided / cancelled
+</code></pre>
+<ul>
+<li><strong>Ready</strong>: on the shelf, owned by the business.</li>
+<li><strong>Assigned</strong>: given to a branch or sub-agent to draw from.</li>
+<li><strong>Issued</strong>: on a waybill being prepared.</li>
+<li><strong>Executed</strong>: the waybill is a legal document. This is a one-way door.</li>
+</ul>
+<p>The transitions are a table, not a set of <code>if</code> statements scattered across controllers. A number cannot go from executed back to ready, and one that is assigned to branch A cannot be pulled by branch B. When we first measured, there were 17 code paths writing a stock status. Several knocked executed numbers back to "assigned" or let expired numbers be issued. Funnelling every change through one service with a legality table fixed whole categories of bugs at once.</p>
+<p>Two more rules turned out to matter in practice:</p>
+<ul>
+<li><strong>Expiry is part of availability.</strong> A number past its valid-to date is refused at the airline counter, so it must never be offered. When we checked, about one in six "ready" numbers had already expired.</li>
+<li><strong>Freezing is not a status.</strong> A disputed block or an audit takes numbers out of circulation without rewriting their state, so the history stays true.</li>
+</ul>
+<h2>Two people, one number</h2>
+<p>Here is the bug every stock system has at least once. Two users press "new waybill" at the same moment:</p>
+<pre><code>A: SELECT first ready number  → 4012101 2
+B: SELECT first ready number  → 4012101 2
+A: UPDATE … SET status = issued
+B: UPDATE … SET status = issued      ← same number, twice
+</code></pre>
+<p>Both reads were correct when they ran. The fix is to make the read and the write one decision, inside a transaction, with the row locked:</p>
+<pre><code class="language-php">DB::transaction(function () use ($pool, $type) {
+    $number = AwbStock::query()
+        -&gt;ready()-&gt;notExpired()-&gt;notFrozen()
+        -&gt;where('pool_id', $pool)-&gt;where('type', $type)
+        -&gt;orderBy('serial')            // issue in sequence, as airlines expect
+        -&gt;lockForUpdate()               // SELECT … FOR UPDATE
+        -&gt;first();
+
+    if (! $number) throw new OutOfStock();
+
+    $number-&gt;update(['status' =&gt; 'issued']);
+    return $number;
+});
+</code></pre>
+<p>Now B waits on A's lock, re-reads after A commits, and gets the next number. Postgres's <code>SKIP LOCKED</code> would let B take the next free row without waiting, which is faster under heavy load. We chose plain waiting on purpose: airlines audit sequences, and issuing strictly in order with no gaps is worth a few milliseconds when a forwarder issues dozens of numbers an hour, not thousands a second.</p>
+<h3>The race moves; follow it</h3>
+<p>Locking the pick is the obvious part. The less obvious races came later:</p>
+<ul>
+<li><strong>Decisions made on a stale copy.</strong> Release, reassign and status changes checked the state on the model the request had loaded, then wrote inside a transaction. By then another request could have moved it. The rule now: lock the row and re-read it inside the transaction, then decide.</li>
+<li><strong>Releasing what is no longer yours.</strong> Two "give this number back" clicks both loaded a case holding a number. The first released it; another case took it; the second release freed <em>that</em> case's number. Re-reading the holder under the lock makes the second release a no-op.</li>
+<li><strong>The database as the last word.</strong> A unique index allows one live assignment per number. If two creates still slip past the application check, the second hits the index. We catch that specific violation and answer it in plain language, the same message the application check would have given, instead of a 500.</li>
+</ul>
+<h2>What I'd tell anyone building this</h2>
+<ol>
+<li>Treat scarce identifiers as inventory with states, not strings.</li>
+<li>One validator, one transition table, one service that writes status.</li>
+<li>Lock, re-read, decide, write. In that order, every time.</li>
+<li>Let a unique index be the backstop, and make its refusal readable.</li>
+<li>Measure the real data. The worst bugs here were found by counting rows, not by reading code.</li>
+</ol>
+</div><a href="/work/kaede" class="proj" data-v-97a09a5a=""><span class="proj__k" data-v-97a09a5a="">Case study</span><span class="proj__n" data-v-97a09a5a="">Kaede <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></span></a></article></main><footer class="foot" data-v-89c23350=""><div class="wrap foot__in" data-v-89c23350=""><span data-v-89c23350="">© 2026 Nobel Dahal · Kathmandu, Nepal</span><span class="foot__motto" lang="el" title="Find a way, or make one." data-v-89c23350="">Βρείτε έναν τρόπο ή φτιάξτε έναν</span></div></footer><!--]--></div>
+  
+
+</body></html>

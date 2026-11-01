@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nobel Dahal">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="alternate" type="application/rss+xml" title="Nobel Dahal · Writing" href="/feed.xml">
+    <link rel="me" href="https://github.com/coderkoala">
+    <link rel="me" href="https://www.linkedin.com/in/coderkoala">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="author" href="/humans.txt">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+      try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+      if (location.pathname === '/' && location.hash) {
+        const to = { '#portfolio': '/work/', '#experience': '/about', '#education': '/about', '#skills': '/about', '#contact': '/hire', '#feedback': '/hire' }[location.hash]
+        if (to) location.replace(to)
+      }
+    </script>
+    <script type="module" crossorigin="" src="/assets/app-BrV8zPfC.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-f56wxyu-.css">
+  <link rel="modulepreload" crossorigin="" href="/assets/Post-CfqK3yGU.js"><link rel="stylesheet" href="/assets/Post-BVo7xjkh.css"><title>Most waybills are the usual one · Nobel Dahal</title><link rel="canonical" href="https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one"><meta name="description" content="How I built a learning suggestion engine for a cargo ERP from its own data, with no ML model: recall, decay, verdicts and a Wilson score."><meta name="robots" content="index, follow, max-image-preview:large"><meta property="og:type" content="article"><meta property="og:site_name" content="Nobel Dahal"><meta property="og:locale" content="en_GB"><meta property="og:title" content="Most waybills are the usual one · Nobel Dahal"><meta property="og:description" content="How I built a learning suggestion engine for a cargo ERP from its own data, with no ML model: recall, decay, verdicts and a Wilson score."><meta property="og:url" content="https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one"><meta property="og:image" content="https://nobeldahal.com.np/og/writing/most-waybills-are-the-usual-one.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Most waybills are the usual one · Nobel Dahal"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Most waybills are the usual one · Nobel Dahal"><meta name="twitter:description" content="How I built a learning suggestion engine for a cargo ERP from its own data, with no ML model: recall, decay, verdicts and a Wilson score."><meta name="twitter:image" content="https://nobeldahal.com.np/og/writing/most-waybills-are-the-usual-one.png"><meta property="article:published_time" content="2026-10-03"><meta property="article:author" content="https://nobeldahal.com.np"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Most waybills are the usual one","description":"3,142 air waybills used just 149 routings, and five of them covered 87%. How that one number turned a data-entry form into a learning engine, without a model.","datePublished":"2026-10-03","dateModified":"2026-10-03","wordCount":900,"inLanguage":"en","timeRequired":"PT4M","about":{"@type":"CreativeWork","name":"Kaede","url":"https://nobeldahal.com.np/work/kaede"},"url":"https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one","mainEntityOfPage":"https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one","image":"https://nobeldahal.com.np/og/writing/most-waybills-are-the-usual-one.png","author":{"@id":"https://nobeldahal.com.np/#person","name":"Nobel Dahal","url":"https://nobeldahal.com.np"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nobeldahal.com.np/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://nobeldahal.com.np/writing/"},{"@type":"ListItem","position":3,"name":"Most waybills are the usual one","item":"https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one"}]}</script></head>
+  <body>
+    <div id="app" data-server-rendered="true"><!--[--><a class="skip" href="#main" data-v-89c23350="">Skip to content</a><header class="nav" data-v-89c23350="" data-v-0305c0c7=""><div class="wrap nav__in" data-v-0305c0c7=""><a href="/" class="brand" aria-label="Nobel Dahal, home" data-v-0305c0c7=""><span class="brand__mark" aria-hidden="true" data-v-0305c0c7="">ND</span><span class="brand__name" data-v-0305c0c7="">Nobel Dahal</span></a><nav class="links" aria-label="Main" data-v-0305c0c7=""><a href="/work/" class="" data-v-0305c0c7="">Work</a><a href="/writing/" class="" data-v-0305c0c7="">Writing</a><a href="/about" class="" data-v-0305c0c7="">About</a><a href="/hire" class="" data-v-0305c0c7="">Hire</a></nav><div class="nav__end" data-v-0305c0c7=""><a href="/hire" class="btn btn--solid btn--sm nav__cta" data-v-0305c0c7="">Hire me</a><button class="iconbtn" type="button" aria-label="Use dark theme" data-v-0305c0c7=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-0305c0c7=""><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"></path></svg></button></div></div></header><main id="main" data-v-89c23350=""><article class="wrap page" data-v-89c23350="" data-v-97a09a5a=""><header class="head" data-v-97a09a5a=""><a href="/writing/" class="back" data-v-97a09a5a=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M19 12H5 M11 6l-6 6 6 6"></path></svg> Writing</a><h1 class="display" data-v-97a09a5a="">Most waybills are the usual one</h1><p class="lede" data-v-97a09a5a="">3,142 air waybills used just 149 routings, and five of them covered 87%. How that one number turned a data-entry form into a learning engine, without a model.</p><p class="date" data-v-97a09a5a=""><time datetime="2026-10-03" data-v-97a09a5a="">3 October 2026</time> · 4 min read</p></header><div class="prose" data-v-97a09a5a=""><p>Entering an air waybill's routing used to mean six fields per flight leg: origin, destination, carrier, flight number, date, and again for the next leg. It was built like an authoring tool, as if every shipment invented a new journey.</p>
+<p>Before redesigning it, I counted.</p>
+<h2>The number that changed the design</h2>
+<p>Across 3,142 waybills there were 4,682 flight legs. Those legs described only <strong>149 distinct routings</strong>. The five most common covered <strong>87% of all waybills</strong>; the top twenty covered 94%. The single most common one, Kathmandu to Narita on one carrier's flight, appeared 1,728 times.</p>
+<p>The same query found the mess that free entry creates: 9.4% of legs saved with no flight number, 8.6% with a zero-padded one ("0898" next to "898"), and five legs that landed before they took off.</p>
+<p>So routing was never an authoring problem. It was a <strong>recall</strong> problem: the right answer was almost always one the office had already typed. That reframing is the whole design.</p>
+<h2>From form to shortlist</h2>
+<p>The routing field now opens on an empty waybill with the office's most likely routings as chips. One click applies a whole multi-leg journey, with airport and airline names looked up fresh, so old free-text labels never come back. Pick an origin and destination and it hints the usual carriers, the usual flight and the median transit time for that lane.</p>
+<p>For people who'd rather type, a routing can be pasted as one line: <code>KTM-DEL(RA)</code>, <code>KTM-DEL/RA433/2026-09-09</code>, <code>KTM DEL RA 433 09SEP</code>. Codes resolve only on an exact IATA match. A guess here becomes a wrong flight on a legal document.</p>
+<h2>Then it spread: a learning engine</h2>
+<p>Routings were the first field. The same idea, that an office's own history is the best predictor of its next entry, now runs across the waybill: a shipper's usual agent, issuer and bill-to, the HS codes for their goods, the consignee's notify party, the currency by destination. It also runs in quotes, rates and the carrier-portal automation.</p>
+<p>There is <strong>no machine-learning model</strong>. Everything below is counting, done carefully.</p>
+<h3>1. Harvest, nightly</h3>
+<p>Each night, each organisation's saved records are read into its own private layer: values, the context they were used in, and how often. Nothing leaves the organisation's database.</p>
+<h3>2. Recent beats old</h3>
+<p>Every count decays with a 90-day half-life:</p>
+<pre><code>weight = uses × 0.5^(age_in_days / 90)
+</code></pre>
+<p>The routing a forwarder used 500 times two years ago, before an airline dropped the route, fades. The one it started using last month rises. Without decay, a learning system is a museum.</p>
+<h3>3. Suggest where people already type</h3>
+<p>Suggestions appear as grey text and chips in the fields people already use. There's no new screen and no "AI" button. The organisation's own values come first, always.</p>
+<h3>4. Judge at save, not per keystroke</h3>
+<p>When the form is saved, the browser reports, for each suggestion, whether it was <strong>offered</strong>, <strong>taken</strong>, <strong>overridden</strong> or <strong>ignored</strong>. One small payload with the normal save, never keystroke tracking.</p>
+<h3>5. Let the evidence decide, honestly</h3>
+<p>Each suggestion source earns or loses trust from those verdicts. The naive way is to look at the take rate: 2 of 5 is 40%, 200 of 500 is 40%. But those are not equally certain, and treating them the same promotes lucky guesses.</p>
+<p>So the engine uses the <strong>lower bound of the Wilson score interval</strong> at 95% confidence:</p>
+<pre><code class="language-php">function wilsonLower(float $taken, float $offered, float $z = 1.96): float
+{
+    if ($offered &lt;= 0) return 0.0;
+    $p = $taken / $offered;
+    $d = 1 + $z * $z / $offered;
+    $c = $p + $z * $z / (2 * $offered);
+    $m = $z * sqrt(($p * (1 - $p) + $z * $z / (4 * $offered)) / $offered);
+    return ($c - $m) / $d;
+}
+</code></pre>
+<p>At 2 of 5 the lower bound is about 0.12. At 200 of 500 it's about 0.36. A source whose lower bound clears 0.5 becomes <strong>trusted</strong> and is weighted up. One below 0.2 is <strong>retired</strong> and stops being offered. The counts decay too, so a source can earn its way back.</p>
+<h3>6. Share only what's safe to share</h3>
+<p>Some knowledge belongs to everyone: public codes, standard trade wording, common HS classifications. A weekly job harvests candidates across organisations into a staging area, and a value only qualifies if it appears in <strong>at least three organisations and five waybills</strong>. Anything shaped like a name, a phone number or an address is refused at harvest and checked again at load. Then a person reviews the result and commits it to the repository like code, so every deployment ships the same reviewed knowledge.</p>
+<p>A company's customers, lanes and prices never leave it.</p>
+<h2>What it taught me</h2>
+<ol>
+<li><strong>Count before you design.</strong> The ratio of distinct values to rows tells you whether a field needs a better form or a shortlist.</li>
+<li><strong>Recall beats prediction</strong> when the past is this repetitive. Offering the office's own answers is faster and more trusted than generating new ones.</li>
+<li><strong>Decay everything.</strong> Business changes, and a learner that can't forget is wrong in slow motion.</li>
+<li><strong>Measure acceptance with confidence, not ratios.</strong> The Wilson lower bound is a few lines of code and stops small samples from looking certain.</li>
+<li><strong>You often don't need a model.</strong> Rules and counts over your own data, reviewed by people, go a very long way, and run with no data leaving the building.</li>
+</ol>
+</div><a href="/work/kaede" class="proj" data-v-97a09a5a=""><span class="proj__k" data-v-97a09a5a="">Case study</span><span class="proj__n" data-v-97a09a5a="">Kaede <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></span></a></article></main><footer class="foot" data-v-89c23350=""><div class="wrap foot__in" data-v-89c23350=""><span data-v-89c23350="">© 2026 Nobel Dahal · Kathmandu, Nepal</span><span class="foot__motto" lang="el" title="Find a way, or make one." data-v-89c23350="">Βρείτε έναν τρόπο ή φτιάξτε έναν</span></div></footer><!--]--></div>
+  
+
+</body></html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nobel Dahal">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="alternate" type="application/rss+xml" title="Nobel Dahal · Writing" href="/feed.xml">
+    <link rel="me" href="https://github.com/coderkoala">
+    <link rel="me" href="https://www.linkedin.com/in/coderkoala">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="author" href="/humans.txt">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+      try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+      if (location.pathname === '/' && location.hash) {
+        const to = { '#portfolio': '/work/', '#experience': '/about', '#education': '/about', '#skills': '/about', '#contact': '/hire', '#feedback': '/hire' }[location.hash]
+        if (to) location.replace(to)
+      }
+    </script>
+    <script type="module" crossorigin="" src="/assets/app-BrV8zPfC.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-f56wxyu-.css">
+  <link rel="modulepreload" crossorigin="" href="/assets/Post-CfqK3yGU.js"><link rel="stylesheet" href="/assets/Post-BVo7xjkh.css"><title>mTLS and OAuth2 on the same call, step by step · Nobel Dahal</title><link rel="canonical" href="https://nobeldahal.com.np/writing/mtls-and-oauth2-together"><meta name="description" content="A practical walkthrough of integrating with an API that requires both mutual TLS and OAuth2 client credentials, and every way it fails."><meta name="robots" content="index, follow, max-image-preview:large"><meta property="og:type" content="article"><meta property="og:site_name" content="Nobel Dahal"><meta property="og:locale" content="en_GB"><meta property="og:title" content="mTLS and OAuth2 on the same call, step by step · Nobel Dahal"><meta property="og:description" content="A practical walkthrough of integrating with an API that requires both mutual TLS and OAuth2 client credentials, and every way it fails."><meta property="og:url" content="https://nobeldahal.com.np/writing/mtls-and-oauth2-together"><meta property="og:image" content="https://nobeldahal.com.np/og/writing/mtls-and-oauth2-together.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="mTLS and OAuth2 on the same call, step by step · Nobel Dahal"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="mTLS and OAuth2 on the same call, step by step · Nobel Dahal"><meta name="twitter:description" content="A practical walkthrough of integrating with an API that requires both mutual TLS and OAuth2 client credentials, and every way it fails."><meta name="twitter:image" content="https://nobeldahal.com.np/og/writing/mtls-and-oauth2-together.png"><meta property="article:published_time" content="2026-10-05"><meta property="article:author" content="https://nobeldahal.com.np"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"mTLS and OAuth2 on the same call, step by step","description":"Some partner APIs want a client certificate on the connection and a bearer token on the request. Every way that goes wrong, in the order it went wrong for me.","datePublished":"2026-10-05","dateModified":"2026-10-05","wordCount":971,"inLanguage":"en","timeRequired":"PT4M","about":{"@type":"CreativeWork","name":"Kaede","url":"https://nobeldahal.com.np/work/kaede"},"url":"https://nobeldahal.com.np/writing/mtls-and-oauth2-together","mainEntityOfPage":"https://nobeldahal.com.np/writing/mtls-and-oauth2-together","image":"https://nobeldahal.com.np/og/writing/mtls-and-oauth2-together.png","author":{"@id":"https://nobeldahal.com.np/#person","name":"Nobel Dahal","url":"https://nobeldahal.com.np"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nobeldahal.com.np/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://nobeldahal.com.np/writing/"},{"@type":"ListItem","position":3,"name":"mTLS and OAuth2 on the same call, step by step","item":"https://nobeldahal.com.np/writing/mtls-and-oauth2-together"}]}</script></head>
+  <body>
+    <div id="app" data-server-rendered="true"><!--[--><a class="skip" href="#main" data-v-89c23350="">Skip to content</a><header class="nav" data-v-89c23350="" data-v-0305c0c7=""><div class="wrap nav__in" data-v-0305c0c7=""><a href="/" class="brand" aria-label="Nobel Dahal, home" data-v-0305c0c7=""><span class="brand__mark" aria-hidden="true" data-v-0305c0c7="">ND</span><span class="brand__name" data-v-0305c0c7="">Nobel Dahal</span></a><nav class="links" aria-label="Main" data-v-0305c0c7=""><a href="/work/" class="" data-v-0305c0c7="">Work</a><a href="/writing/" class="" data-v-0305c0c7="">Writing</a><a href="/about" class="" data-v-0305c0c7="">About</a><a href="/hire" class="" data-v-0305c0c7="">Hire</a></nav><div class="nav__end" data-v-0305c0c7=""><a href="/hire" class="btn btn--solid btn--sm nav__cta" data-v-0305c0c7="">Hire me</a><button class="iconbtn" type="button" aria-label="Use dark theme" data-v-0305c0c7=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-0305c0c7=""><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"></path></svg></button></div></div></header><main id="main" data-v-89c23350=""><article class="wrap page" data-v-89c23350="" data-v-97a09a5a=""><header class="head" data-v-97a09a5a=""><a href="/writing/" class="back" data-v-97a09a5a=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M19 12H5 M11 6l-6 6 6 6"></path></svg> Writing</a><h1 class="display" data-v-97a09a5a="">mTLS and OAuth2 on the same call, step by step</h1><p class="lede" data-v-97a09a5a="">Some partner APIs want a client certificate on the connection and a bearer token on the request. Every way that goes wrong, in the order it went wrong for me.</p><p class="date" data-v-97a09a5a=""><time datetime="2026-10-05" data-v-97a09a5a="">5 October 2026</time> · 4 min read</p></header><div class="prose" data-v-97a09a5a=""><p>Most APIs ask you to prove who you are once. Some cargo community systems ask twice: <strong>mutual TLS</strong> on the connection, so the server knows which machine is calling, and an <strong>OAuth2 bearer token</strong> on each request, so it knows which application. I built that integration for Kaede. None of the steps is hard on its own. The pain is that each one fails in a way that looks like a different problem.</p>
+<p>Here they are in the order they bit me.</p>
+<h2>1. The certificate request</h2>
+<p>The partner wants a certificate signed by a CA they trust, issued for a key only you hold. So you generate the key yourself and send them a CSR (certificate signing request), never the key:</p>
+<pre><code class="language-bash">openssl req -new -newkey rsa:4096 -nodes \
+  -keyout client.key -out client.csr \
+  -subj "/C=NP/O=Your Company/CN=your-system.example.com"
+</code></pre>
+<p><strong>Trap:</strong> the key never leaves your side. If a partner's onboarding form asks you to upload a private key, stop and ask why.</p>
+<h2>2. The certificate comes back, and it isn't the whole story</h2>
+<p>You get a PEM certificate. Sometimes it includes intermediate certificates, sometimes it doesn't. The server needs the chain to verify you, so the file you present should be the leaf followed by its intermediates.</p>
+<p><strong>Trap:</strong> a certificate and key that don't belong together fail the TLS handshake with an error that tells you nothing. So check the pair the moment it's entered, not on the first real call:</p>
+<pre><code class="language-php">$cert = openssl_x509_read($certPem);
+$key  = openssl_pkey_get_private($keyPem, $passphrase);
+if (! openssl_x509_check_private_key($cert, $key)) {
+    throw new InvalidCredential('This key does not belong to this certificate.');
+}
+</code></pre>
+<p>While you're there, read the expiry date and keep it. Certificates expire on a Saturday night, and you want a warning weeks ahead, not an outage.</p>
+<h2>3. Don't write the key to disk</h2>
+<p>The easy way to give curl a client certificate is a file path. That means a private key sitting in <code>/tmp</code>, in backups, maybe in a crash dump. Since curl 7.71 you can hand it the certificate and key as in-memory blobs instead:</p>
+<pre><code class="language-php">curl_setopt_array($ch, [
+    CURLOPT_SSLCERT_BLOB =&gt; $certPem,
+    CURLOPT_SSLKEY_BLOB  =&gt; $keyPem,
+    CURLOPT_SSLCERTTYPE  =&gt; 'PEM',
+]);
+</code></pre>
+<p>In Kaede the credentials live encrypted in the database, decrypted only for the request, and never touch the filesystem.</p>
+<h2>4. Trust only their CA</h2>
+<p>Partners, especially in test environments, often sit behind a private CA. The lazy fix is to turn verification off. Don't. Pin their CA bundle and turn the system store <strong>off</strong> for that request, so no public CA can vouch for an impostor:</p>
+<pre><code class="language-php">curl_setopt($ch, CURLOPT_CAINFO_BLOB, $partnerCaBundle);   // only this
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+</code></pre>
+<p><strong>Trap:</strong> the identity provider that issues tokens is often a <em>different</em> host with an ordinary public certificate. Pinning the partner's private CA there breaks the token call. The pin has to be configurable per endpoint.</p>
+<h2>5. The token request needs the certificate too</h2>
+<p>The OAuth2 client credentials grant (RFC 6749 §4.4) trades a client id and secret for an access token. What the docs rarely say: if the token endpoint sits behind the same mutual TLS gateway, <strong>it also wants your certificate</strong>. Without it, the handshake fails before your credentials are even read, and the error looks exactly like a bad certificate.</p>
+<p>So the certificate is a transport layer under every call, token request included. Configured with one and not the other is an error, never a silent fallback to a plain connection.</p>
+<h2>6. Three ways to send a client secret</h2>
+<p>RFC 6749 says send the id and secret with HTTP Basic auth. Some servers want them in the form body instead. Some want a JSON body:</p>
+<pre><code>Authorization: Basic base64(id:secret)        ← the RFC default
+grant_type=client_credentials&amp;client_id=…     ← form body
+{"grant_type":"client_credentials", …}         ← JSON, despite the RFC
+</code></pre>
+<p>All three exist in the wild. Make it a setting, default to the RFC, and expect to need the other two.</p>
+<h2>7. Cache the token, but not too long</h2>
+<p>Tokens last minutes to hours. Fetching one per message is slow and can trip rate limits, so cache it. Two rules:</p>
+<ul>
+<li><strong>Stop using it a minute early.</strong> A token that expires while the request is in flight fails the request.</li>
+<li><strong>Key the cache to the credentials that minted it.</strong> When someone rotates the secret, the old token must not outlive it.</li>
+</ul>
+<p>And when the API answers 401 to a cached token, drop it and fetch a new one once. Not in a loop.</p>
+<h2>8. Know what "it worked" looks like</h2>
+<p>The nastiest one. When mutual TLS is required and your certificate isn't accepted, a common gateway setup answers <strong>HTTP 400</strong> with an HTML page saying no client certificate was sent. A connection test that only checks "did we get a response?" reports success.</p>
+<p>So the connection test in Kaede reads the answer:</p>
+<ul>
+<li>any response means DNS, TCP and TLS worked;</li>
+<li>401 or 403 means the certificate was fine and the token was refused;</li>
+<li>that specific 400 page means the certificate wasn't taken, and says so in words.</li>
+</ul>
+<h2>9. Make every failure say which layer failed</h2>
+<p>By the end, every error in the integration names its layer: certificate unreadable, key mismatch, certificate expired, handshake refused, token endpoint refused, token rejected by the API, or the API refused the message itself. Most of these look identical from curl. Separating them turns a two-day support thread into a one-line answer.</p>
+<h2>The checklist</h2>
+<ol>
+<li>Generate the key yourself and send only the CSR.</li>
+<li>Validate the certificate, the key and the pair on entry, and record the expiry.</li>
+<li>Keep keys encrypted at rest and in memory on the wire.</li>
+<li>Pin the partner's CA per endpoint, and turn the system store off where you pin.</li>
+<li>Present the certificate on the token request too.</li>
+<li>Support all three ways of sending the client secret.</li>
+<li>Cache tokens with a safety margin, keyed to the credential.</li>
+<li>Test connections by reading the response, not just receiving one.</li>
+<li>Name the layer in every error.</li>
+</ol>
+</div><a href="/work/kaede" class="proj" data-v-97a09a5a=""><span class="proj__k" data-v-97a09a5a="">Case study</span><span class="proj__n" data-v-97a09a5a="">Kaede <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></span></a></article></main><footer class="foot" data-v-89c23350=""><div class="wrap foot__in" data-v-89c23350=""><span data-v-89c23350="">© 2026 Nobel Dahal · Kathmandu, Nepal</span><span class="foot__motto" lang="el" title="Find a way, or make one." data-v-89c23350="">Βρείτε έναν τρόπο ή φτιάξτε έναν</span></div></footer><!--]--></div>
+  
+
+</body></html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nobel Dahal">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="alternate" type="application/rss+xml" title="Nobel Dahal · Writing" href="/feed.xml">
+    <link rel="me" href="https://github.com/coderkoala">
+    <link rel="me" href="https://www.linkedin.com/in/coderkoala">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="author" href="/humans.txt">
+    <meta name="format-detection" content="telephone=no">
+    <script>
+      try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+      if (location.pathname === '/' && location.hash) {
+        const to = { '#portfolio': '/work/', '#experience': '/about', '#education': '/about', '#skills': '/about', '#contact': '/hire', '#feedback': '/hire' }[location.hash]
+        if (to) location.replace(to)
+      }
+    </script>
+    <script type="module" crossorigin="" src="/assets/app-BrV8zPfC.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-f56wxyu-.css">
+  <link rel="modulepreload" crossorigin="" href="/assets/Post-CfqK3yGU.js"><link rel="stylesheet" href="/assets/Post-BVo7xjkh.css"><title>Designing a multimodal freight rate engine · Nobel Dahal</title><link rel="canonical" href="https://nobeldahal.com.np/writing/designing-a-rate-engine"><meta name="description" content="How a multimodal freight rate engine works: chargeable weight, rate bands and minimums, surcharges, distribution chains and immutable rate cards."><meta name="robots" content="index, follow, max-image-preview:large"><meta property="og:type" content="article"><meta property="og:site_name" content="Nobel Dahal"><meta property="og:locale" content="en_GB"><meta property="og:title" content="Designing a multimodal freight rate engine · Nobel Dahal"><meta property="og:description" content="How a multimodal freight rate engine works: chargeable weight, rate bands and minimums, surcharges, distribution chains and immutable rate cards."><meta property="og:url" content="https://nobeldahal.com.np/writing/designing-a-rate-engine"><meta property="og:image" content="https://nobeldahal.com.np/og/writing/designing-a-rate-engine.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Designing a multimodal freight rate engine · Nobel Dahal"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Designing a multimodal freight rate engine · Nobel Dahal"><meta name="twitter:description" content="How a multimodal freight rate engine works: chargeable weight, rate bands and minimums, surcharges, distribution chains and immutable rate cards."><meta name="twitter:image" content="https://nobeldahal.com.np/og/writing/designing-a-rate-engine.png"><meta property="article:published_time" content="2026-07-02"><meta property="article:author" content="https://nobeldahal.com.np"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Designing a freight rate engine that four modes can share","description":"Air, sea, road and rail price freight in different units by different rules. How I built one engine for all four, and the rules that kept it correct.","datePublished":"2026-07-02","dateModified":"2026-07-02","wordCount":832,"inLanguage":"en","timeRequired":"PT4M","about":{"@type":"CreativeWork","name":"Kaede","url":"https://nobeldahal.com.np/work/kaede"},"url":"https://nobeldahal.com.np/writing/designing-a-rate-engine","mainEntityOfPage":"https://nobeldahal.com.np/writing/designing-a-rate-engine","image":"https://nobeldahal.com.np/og/writing/designing-a-rate-engine.png","author":{"@id":"https://nobeldahal.com.np/#person","name":"Nobel Dahal","url":"https://nobeldahal.com.np"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nobeldahal.com.np/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://nobeldahal.com.np/writing/"},{"@type":"ListItem","position":3,"name":"Designing a freight rate engine that four modes can share","item":"https://nobeldahal.com.np/writing/designing-a-rate-engine"}]}</script></head>
+  <body>
+    <div id="app" data-server-rendered="true"><!--[--><a class="skip" href="#main" data-v-89c23350="">Skip to content</a><header class="nav" data-v-89c23350="" data-v-0305c0c7=""><div class="wrap nav__in" data-v-0305c0c7=""><a href="/" class="brand" aria-label="Nobel Dahal, home" data-v-0305c0c7=""><span class="brand__mark" aria-hidden="true" data-v-0305c0c7="">ND</span><span class="brand__name" data-v-0305c0c7="">Nobel Dahal</span></a><nav class="links" aria-label="Main" data-v-0305c0c7=""><a href="/work/" class="" data-v-0305c0c7="">Work</a><a href="/writing/" class="" data-v-0305c0c7="">Writing</a><a href="/about" class="" data-v-0305c0c7="">About</a><a href="/hire" class="" data-v-0305c0c7="">Hire</a></nav><div class="nav__end" data-v-0305c0c7=""><a href="/hire" class="btn btn--solid btn--sm nav__cta" data-v-0305c0c7="">Hire me</a><button class="iconbtn" type="button" aria-label="Use dark theme" data-v-0305c0c7=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-0305c0c7=""><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"></path></svg></button></div></div></header><main id="main" data-v-89c23350=""><article class="wrap page" data-v-89c23350="" data-v-97a09a5a=""><header class="head" data-v-97a09a5a=""><a href="/writing/" class="back" data-v-97a09a5a=""><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M19 12H5 M11 6l-6 6 6 6"></path></svg> Writing</a><h1 class="display" data-v-97a09a5a="">Designing a freight rate engine that four modes can share</h1><p class="lede" data-v-97a09a5a="">Air, sea, road and rail price freight in different units by different rules. How I built one engine for all four, and the rules that kept it correct.</p><p class="date" data-v-97a09a5a=""><time datetime="2026-07-02" data-v-97a09a5a="">2 July 2026</time> · 4 min read</p></header><div class="prose" data-v-97a09a5a=""><p>Pricing freight sounds like a lookup: origin, destination, weight, price. It isn't. Air charges by the greater of actual and volumetric weight. Sea less-than-container charges by tonne or cubic metre, whichever is more. A full truck is a flat price. A US road shipment may be priced per hundred pounds. On top of that come minimums, weight breaks, fuel and security surcharges, and the margin each party in a chain of agents adds before the customer sees a number.</p>
+<p>Kaede's rate engine prices all of it with one calculator. This is how it's put together.</p>
+<h2>Start with "what are we charging for?"</h2>
+<p>Everything hangs off one question: what is the chargeable quantity? It's an enum, and the calculation dispatches on it:</p>
+<table>
+<thead>
+<tr>
+<th>Basis</th>
+<th>Used for</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Greater of gross and volumetric</td>
+<td>Air</td>
+<td>max(kg, L×W×H×pieces ÷ divisor)</td>
+</tr>
+<tr>
+<td>Weight or measure</td>
+<td>Sea LCL</td>
+<td>max(tonnes, m³)</td>
+</tr>
+<tr>
+<td>CBM</td>
+<td>Sea LCL</td>
+<td>cubic metres</td>
+</tr>
+<tr>
+<td>Per container</td>
+<td>Sea FCL, rail</td>
+<td>1 per container</td>
+</tr>
+<tr>
+<td>Flat</td>
+<td>Road FTL, door to door</td>
+<td>1 per shipment</td>
+</tr>
+<tr>
+<td>Per piece</td>
+<td>Courier</td>
+<td>piece count</td>
+</tr>
+<tr>
+<td>CWT</td>
+<td>US road LTL</td>
+<td>hundreds of pounds, rounded up</td>
+</tr>
+</tbody></table>
+<p>Getting this right first means everything after it, bands, minimums and surcharges, works in "units" without caring which mode it is.</p>
+<h2>The calculation, in order</h2>
+<pre><code>1. find the rate card    route first, then zone-to-zone as a fallback
+2. chargeable quantity   by the card's basis
+3. weight band           e.g. 0–45 kg, 45–100, 100–300… with a minimum charge
+4. round                 by the card's own rule
+5. surcharges            fuel, security, handling…
+6. distribution chain    each tier's margin, up to the buyer
+7. taxes, currency       pinned sell currency, tax lines
+→ a breakdown, line by line
+</code></pre>
+<p>The calculator is <strong>pure</strong>: given the same input and the same rate data, it returns the same breakdown, and it writes nothing. That makes it safe to call for a quick quote, for a booking, and for a waybill, and trivial to test with fixtures.</p>
+<h3>Find the card: specific beats general</h3>
+<p>A rate card applies to a route (airport to airport, port to port) or, failing that, to zones ("Kathmandu to any EU hub"). Route-specific wins. Zones exist so one card can cover hundreds of lanes without hundreds of rows.</p>
+<h3>Bands and minimums</h3>
+<p>Freight is priced in weight breaks: the rate per kilo drops as weight rises. A shipment is priced at its band's rate, then checked against the card's minimum charge, which can be a hard floor or a minimum that replaces the calculated price entirely.</p>
+<h3>Rounding is a business rule</h3>
+<p>Round half up, always round up, truncate, or round weight to the nearest half kilo: different carriers and markets do different things, and the difference is real money across thousands of shipments. So rounding is a setting on the card, never hard-coded.</p>
+<h3>Surcharges have their own basis</h3>
+<p>A fuel surcharge might be per chargeable kilo, a security fee per shipment, a handling charge a percentage of freight. Each surcharge type declares its own basis, and the engine applies it. One early bug: a "percentage of freight" surcharge calculated against a base that hadn't been set yet, so it came out as zero. Ordering the steps explicitly, and testing each one, is what found it.</p>
+<h3>The distribution chain</h3>
+<p>A rate often passes through several hands: a general agent, a forwarder, a sub-agent, the customer. Each link adds its margin. The engine walks the chain in order and stops at the buyer's position, so a sub-agent sees its own buy price and the customer sees theirs, from the same card.</p>
+<h2>Every price leaves a receipt</h2>
+<p>When a quote, booking or waybill uses a price, the full breakdown is stored as a snapshot: every line, every rate, every surcharge, the card version it came from. Later edits to the card don't change what a customer was quoted. Manual changes, such as an extra charge or a negotiated spot price, are recorded on top as adjustments with who and why, never written over the calculated number.</p>
+<h2>Published cards are immutable</h2>
+<p>Editing a published rate card creates a new version; the old one becomes "superseded". Deleting is for mistakes, not for expiry. This is what makes an audit possible: "what was the rate on 12 March, and why did we charge that?" always has an answer.</p>
+<h2>Mode-specific columns, enforced by the database</h2>
+<p>Air carriers and sea, road and rail carriers live in different tables. A card points at one or the other, never both, and a database check constraint enforces it. An early design had a <code>carrier_type</code> text column next to a single id. It drifted out of sync within weeks, and it went.</p>
+<h2>What I'd keep</h2>
+<ol>
+<li><strong>Model the unit first.</strong> Once "chargeable quantity" is right, the rest is arithmetic.</li>
+<li><strong>Keep the calculator pure</strong> and put persistence and permissions around it, not inside it.</li>
+<li><strong>Make rounding, bases and fallbacks data</strong>, because every market does them differently.</li>
+<li><strong>Snapshot every price you show,</strong> and record overrides alongside it, never instead of it.</li>
+<li><strong>Version, don't edit,</strong> anything a customer or an auditor might ask about later.</li>
+</ol>
+</div><a href="/work/kaede" class="proj" data-v-97a09a5a=""><span class="proj__k" data-v-97a09a5a="">Case study</span><span class="proj__n" data-v-97a09a5a="">Kaede <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex:none;" data-v-97a09a5a=""><path d="M5 12h14 M13 6l6 6-6 6"></path></svg></span></a></article></main><footer class="foot" data-v-89c23350=""><div class="wrap foot__in" data-v-89c23350=""><span data-v-89c23350="">© 2026 Nobel Dahal · Kathmandu, Nepal</span><span class="foot__motto" lang="el" title="Find a way, or make one." data-v-89c23350="">Βρείτε έναν τρόπο ή φτιάξτε έναν</span></div></footer><!--]--></div>
+  
+
+</body></html>

@@ -8,7 +8,11 @@
 - [GenericProperties](https://nobeldahal.com.np/work/generic-properties): Moved a US brokerage from Zoho to Microsoft Dynamics, then built what Dynamics was missing.
 
 ## Writing
-- [Why every edit in Kaede leaves a fingerprint](https://nobeldahal.com.np/writing/why-every-edit-is-chained): An air waybill is a contract. Here's how Kaede makes a quiet edit to its history show up, using nothing more exotic than SHA-256.
+- [What building IATA ONE Record taught me about linked data](https://nobeldahal.com.np/writing/what-one-record-taught-me): Air cargo is moving from messages to linked data. Lessons from serving ONE Record from a real cargo system, beyond what the spec tells you.
+- [Handing out air waybill numbers without handing out the same one twice](https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers): An air waybill number is a scarce, audited resource that two people will try to take at the same second. Check digits, stock states, and the locks that keep it honest.
+- [mTLS and OAuth2 on the same call, step by step](https://nobeldahal.com.np/writing/mtls-and-oauth2-together): Some partner APIs want a client certificate on the connection and a bearer token on the request. Every way that goes wrong, in the order it went wrong for me.
+- [Most waybills are the usual one](https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one): 3,142 air waybills used just 149 routings, and five of them covered 87%. How that one number turned a data-entry form into a learning engine, without a model.
+- [Designing a freight rate engine that four modes can share](https://nobeldahal.com.np/writing/designing-a-rate-engine): Air, sea, road and rail price freight in different units by different rules. How I built one engine for all four, and the rules that kept it correct.
 - [Teaching a UI library to speak Nepali](https://nobeldahal.com.np/writing/teaching-a-ui-library-nepali): I translated Syncfusion's Essential JS 2, 64 components and over four thousand strings, into Nepali. These are the choices that made it read like Nepali and not like a dictionary.
 - [Taking money on a government website](https://nobeldahal.com.np/writing/taking-money-on-a-government-website): How Kalimati's traders came to pay their dues from their phones through eSewa and Khalti, and the checks that keep a public payment page honest.
 - [One developer, one market, no ads](https://nobeldahal.com.np/writing/one-developer-one-market): Building the website and Android app for Kalimati, the market that sets vegetable prices for half of Kathmandu, on my own.

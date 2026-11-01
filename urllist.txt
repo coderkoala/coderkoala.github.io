@@ -6,7 +6,11 @@ https://nobeldahal.com.np/writing/
 https://nobeldahal.com.np/work/kaede
 https://nobeldahal.com.np/work/kalimati
 https://nobeldahal.com.np/work/generic-properties
-https://nobeldahal.com.np/writing/why-every-edit-is-chained
+https://nobeldahal.com.np/writing/what-one-record-taught-me
+https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers
+https://nobeldahal.com.np/writing/mtls-and-oauth2-together
+https://nobeldahal.com.np/writing/most-waybills-are-the-usual-one
+https://nobeldahal.com.np/writing/designing-a-rate-engine
 https://nobeldahal.com.np/writing/teaching-a-ui-library-nepali
 https://nobeldahal.com.np/writing/taking-money-on-a-government-website
 https://nobeldahal.com.np/writing/one-developer-one-market
