@@ -45,7 +45,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "\u0000vite/modulepreload-polyfill.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -93,7 +99,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "\u0000vite/preload-helper.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -141,7 +153,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/01-kaede.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -189,7 +207,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/02-kalimati.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -237,7 +261,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/03-generic-properties.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -285,7 +315,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/04-dynamics-plugins.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -333,7 +369,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/04a-syncfusion-nepali.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -381,7 +423,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/05-affiliatefeed.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -429,7 +477,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/05a-wpeverest-dev-docs.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -477,7 +531,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/06-everest-forms-pdf.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -525,7 +585,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/07-rapti-crm.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -573,7 +639,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/08-taskmon.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -621,7 +693,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/08a-gdg-dang.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -669,7 +747,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/09-pbs-ems.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -717,7 +801,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/09a-phpjasper.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -765,7 +855,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/10-nimbus.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -813,7 +909,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/11-loksewa-quiz.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -861,7 +963,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/12-debendra-manandhar.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -909,7 +1017,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/13-four-seasons.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -957,7 +1071,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/14-travel-time.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1005,7 +1125,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/15-indiabix-scraper.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1053,7 +1179,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/16-in-cod-we-trust.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1101,7 +1233,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/gallery/17-adventures-of-joy.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1149,10 +1287,16 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/now.md?raw": [
-    "/assets/Now-ujmw7xlR.js",
+    "/assets/Now-DUgoKwaz.js",
     "/assets/Now-BWaMw-6L.css"
   ],
   "content/work/generic-properties.md?raw": [
@@ -1201,7 +1345,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/work/kaede.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1249,7 +1399,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/work/kalimati.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1297,7 +1453,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/a-copilot-that-lives-in-bash.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1345,7 +1507,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/a-date-that-did-not-fit.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1393,7 +1561,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/designing-a-rate-engine.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1441,7 +1615,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/esewa-khalti-laravel.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1489,7 +1669,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/finding-the-nearest-agent.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1537,7 +1723,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/handing-out-air-waybill-numbers.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1585,7 +1777,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/maintaining-phpjasper.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1633,7 +1831,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/most-waybills-are-the-usual-one.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1681,7 +1885,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/mtls-and-oauth2-together.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1729,7 +1939,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/one-developer-one-market.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1777,7 +1993,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/taking-money-on-a-government-website.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1825,7 +2047,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/teaching-a-ui-library-nepali.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1873,7 +2101,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/the-check-that-only-lived-in-the-browser.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1921,7 +2155,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "content/writing/what-one-record-taught-me.md?raw": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -1969,7 +2209,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "index.html": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2017,7 +2263,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@fontsource/ibm-plex-mono/400.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2065,7 +2317,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@fontsource/ibm-plex-sans/400.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2113,7 +2371,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@fontsource/ibm-plex-sans/600.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2161,7 +2425,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@fontsource/ibm-plex-sans/700.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2209,7 +2479,175 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
+  ],
+  "node_modules/@fontsource/noto-sans-devanagari/devanagari-400.css": [
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-BTotfTJu.woff",
+    "/assets/ibm-plex-sans-greek-400-normal-_efipK4i.woff2",
+    "/assets/ibm-plex-sans-greek-400-normal-D9ESIMu3.woff",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-DG4YqDda.woff2",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-fK1oJ5dG.woff",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-C5H60-Va.woff2",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-RBey6euL.woff",
+    "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+    "/assets/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-DUMzJB7m.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-Bz0x94Yp.woff",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-71GNu3SW.woff2",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-BGq0mW3O.woff",
+    "/assets/ibm-plex-sans-greek-600-normal-DzTrcv_p.woff2",
+    "/assets/ibm-plex-sans-greek-600-normal-D-CqTdkO.woff",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DpPYBSTl.woff2",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DgdngZtN.woff",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DOrvGEcy.woff2",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DIrixKbi.woff",
+    "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+    "/assets/ibm-plex-sans-latin-600-normal-Cu4Hd6ag.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-BmRLXWpJ.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-DCQwxkRk.woff",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-D_uavGvn.woff2",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-RFb1v-CK.woff",
+    "/assets/ibm-plex-sans-greek-700-normal-wyJ6jzdA.woff2",
+    "/assets/ibm-plex-sans-greek-700-normal-CkZN0sRy.woff",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-CkEo6LDy.woff2",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-BV5B8Are.woff",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-aMgXseD4.woff2",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-DZH6Xh-4.woff",
+    "/assets/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2",
+    "/assets/ibm-plex-sans-latin-700-normal-Bth3BMcD.woff",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-xuaO2J-f.woff2",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-DMdlQ8Kv.woff",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-BSMlKf0J.woff2",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-CEL4l2ZJ.woff",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-BulugwFq.woff2",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-DDuiU_S-.woff",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
+    "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
+  ],
+  "node_modules/@fontsource/noto-sans-devanagari/devanagari-600.css": [
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-BTotfTJu.woff",
+    "/assets/ibm-plex-sans-greek-400-normal-_efipK4i.woff2",
+    "/assets/ibm-plex-sans-greek-400-normal-D9ESIMu3.woff",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-DG4YqDda.woff2",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-fK1oJ5dG.woff",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-C5H60-Va.woff2",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-RBey6euL.woff",
+    "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+    "/assets/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-DUMzJB7m.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-Bz0x94Yp.woff",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-71GNu3SW.woff2",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-BGq0mW3O.woff",
+    "/assets/ibm-plex-sans-greek-600-normal-DzTrcv_p.woff2",
+    "/assets/ibm-plex-sans-greek-600-normal-D-CqTdkO.woff",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DpPYBSTl.woff2",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DgdngZtN.woff",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DOrvGEcy.woff2",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DIrixKbi.woff",
+    "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+    "/assets/ibm-plex-sans-latin-600-normal-Cu4Hd6ag.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-BmRLXWpJ.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-DCQwxkRk.woff",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-D_uavGvn.woff2",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-RFb1v-CK.woff",
+    "/assets/ibm-plex-sans-greek-700-normal-wyJ6jzdA.woff2",
+    "/assets/ibm-plex-sans-greek-700-normal-CkZN0sRy.woff",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-CkEo6LDy.woff2",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-BV5B8Are.woff",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-aMgXseD4.woff2",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-DZH6Xh-4.woff",
+    "/assets/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2",
+    "/assets/ibm-plex-sans-latin-700-normal-Bth3BMcD.woff",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-xuaO2J-f.woff2",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-DMdlQ8Kv.woff",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-BSMlKf0J.woff2",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-CEL4l2ZJ.woff",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-BulugwFq.woff2",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-DDuiU_S-.woff",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
+    "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
+  ],
+  "node_modules/@fontsource/noto-sans-devanagari/devanagari-700.css": [
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-BTotfTJu.woff",
+    "/assets/ibm-plex-sans-greek-400-normal-_efipK4i.woff2",
+    "/assets/ibm-plex-sans-greek-400-normal-D9ESIMu3.woff",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-DG4YqDda.woff2",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-fK1oJ5dG.woff",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-C5H60-Va.woff2",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-RBey6euL.woff",
+    "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+    "/assets/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-DUMzJB7m.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-Bz0x94Yp.woff",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-71GNu3SW.woff2",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-BGq0mW3O.woff",
+    "/assets/ibm-plex-sans-greek-600-normal-DzTrcv_p.woff2",
+    "/assets/ibm-plex-sans-greek-600-normal-D-CqTdkO.woff",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DpPYBSTl.woff2",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DgdngZtN.woff",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DOrvGEcy.woff2",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DIrixKbi.woff",
+    "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+    "/assets/ibm-plex-sans-latin-600-normal-Cu4Hd6ag.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-BmRLXWpJ.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-DCQwxkRk.woff",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-D_uavGvn.woff2",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-RFb1v-CK.woff",
+    "/assets/ibm-plex-sans-greek-700-normal-wyJ6jzdA.woff2",
+    "/assets/ibm-plex-sans-greek-700-normal-CkZN0sRy.woff",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-CkEo6LDy.woff2",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-BV5B8Are.woff",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-aMgXseD4.woff2",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-DZH6Xh-4.woff",
+    "/assets/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2",
+    "/assets/ibm-plex-sans-latin-700-normal-Bth3BMcD.woff",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-xuaO2J-f.woff2",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-DMdlQ8Kv.woff",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-BSMlKf0J.woff2",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-CEL4l2ZJ.woff",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-BulugwFq.woff2",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-DDuiU_S-.woff",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
+    "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@unhead/vue/dist/client.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2257,7 +2695,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@unhead/vue/dist/shared/vue.Cd6dkybA.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2305,7 +2749,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@unhead/vue/dist/shared/vue.N9zWjxoK.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2353,7 +2803,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2401,7 +2857,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2449,7 +2911,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2497,7 +2965,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2545,7 +3019,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/hookable/dist/index.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2593,7 +3073,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/marked/lib/marked.esm.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2641,7 +3127,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/unhead/dist/client.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2689,7 +3181,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/unhead/dist/shared/unhead.AvDFlk_u.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2737,7 +3235,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/unhead/dist/shared/unhead.BrXkGDAU.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2785,7 +3289,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/unhead/dist/shared/unhead.ChXiQvI8.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2833,7 +3343,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/unhead/dist/shared/unhead.J7R8psSN.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2881,7 +3397,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/vite-ssg/dist/index.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2929,7 +3451,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/vite-ssg/dist/shared/vite-ssg.C6pK7rvr.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -2977,7 +3505,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/vite-ssg/dist/shared/vite-ssg.ETIvV-80.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3025,7 +3559,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/vue-router/dist/devtools-EWN81iOl.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3073,7 +3613,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "node_modules/vue-router/dist/vue-router.mjs": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3121,7 +3667,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/App.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3169,9 +3721,15 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
-  "src/App.vue?vue&type=style&index=0&scoped=ce3be6fc&lang.css": [
+  "src/App.vue?vue&type=style&index=0&scoped=2a9d9fc3&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
     "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
@@ -3217,7 +3775,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/A11yPanel.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3265,7 +3829,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/A11yPanel.vue?vue&type=style&index=0&scoped=743ef34f&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3313,7 +3883,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/AppIcon.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3361,7 +3937,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/AppToast.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3409,7 +3991,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/AppToast.vue?vue&type=style&index=0&scoped=74470497&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3457,7 +4045,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/CommandPalette.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3505,7 +4099,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/CommandPalette.vue?vue&type=style&index=0&scoped=91169747&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3553,7 +4153,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/MobileTabBar.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3601,9 +4207,15 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
-  "src/components/MobileTabBar.vue?vue&type=style&index=0&scoped=d9da7c1d&lang.css": [
+  "src/components/MobileTabBar.vue?vue&type=style&index=0&scoped=3e8c6f7a&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
     "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
@@ -3649,7 +4261,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/RouteProgress.vue": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3697,7 +4315,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/RouteProgress.vue?vue&type=style&index=0&scoped=a3604251&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3745,14 +4369,20 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/Showcase.vue": [
-    "/assets/Project-9mBCQyxN.js",
+    "/assets/Project-DZFEnOxa.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/components/Showcase.vue?vue&type=style&index=0&scoped=74e51d2b&lang.css": [
-    "/assets/Project-9mBCQyxN.js",
+    "/assets/Project-DZFEnOxa.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/components/SiteNav.vue": [
@@ -3801,9 +4431,15 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
-  "src/components/SiteNav.vue?vue&type=style&index=0&scoped=dd075877&lang.css": [
+  "src/components/SiteNav.vue?vue&type=style&index=0&scoped=a1e78dda&lang.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
     "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
@@ -3849,23 +4485,29 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/components/SmartImg.vue": [
-    "/assets/SmartImg-ClS0Dh9C.js",
+    "/assets/SmartImg-ObgimJ76.js",
     "/assets/SmartImg-DO-tLpu-.css"
   ],
   "src/components/SmartImg.vue?vue&type=style&index=0&scoped=17e50125&lang.css": [
-    "/assets/SmartImg-ClS0Dh9C.js",
+    "/assets/SmartImg-ObgimJ76.js",
     "/assets/SmartImg-DO-tLpu-.css"
   ],
   "src/components/TimeOverlap.vue": [
-    "/assets/Consult-CCCNTq37.js",
-    "/assets/Consult-D-cHJqBn.css"
+    "/assets/Consult-DJKnWJj0.js",
+    "/assets/Consult-B21rrpw1.css"
   ],
-  "src/components/TimeOverlap.vue?vue&type=style&index=0&scoped=18cd33f0&lang.css": [
-    "/assets/Consult-CCCNTq37.js",
-    "/assets/Consult-D-cHJqBn.css"
+  "src/components/TimeOverlap.vue?vue&type=style&index=0&scoped=c5810f66&lang.css": [
+    "/assets/Consult-DJKnWJj0.js",
+    "/assets/Consult-B21rrpw1.css"
   ],
   "src/lib/a11y.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3913,7 +4555,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/lib/cal.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -3961,7 +4609,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/lib/content.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4009,10 +4663,28 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
+  ],
+  "src/lib/copy/about.js": [
+    "/assets/About-CEDW03ZF.js",
+    "/assets/About-gxEDYpE8.css"
+  ],
+  "src/lib/copy/consult.js": [
+    "/assets/Consult-DJKnWJj0.js",
+    "/assets/Consult-B21rrpw1.css"
+  ],
+  "src/lib/copy/home.js": [
+    "/assets/Home-D59KG7ZY.js",
+    "/assets/Home-CDpxm6ti.css"
   ],
   "src/lib/cv.js": [
-    "/assets/Cv-B2L4Pkl-.js",
+    "/assets/Cv-D1uigwXk.js",
     "/assets/Cv-25iUBV5B.css"
   ],
   "src/lib/device.js": [
@@ -4061,7 +4733,67 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
+  ],
+  "src/lib/i18n.js": [
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-400-normal-Dsrv2Tcn.woff",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-DZqxrq2p.woff2",
+    "/assets/ibm-plex-sans-cyrillic-400-normal-BTotfTJu.woff",
+    "/assets/ibm-plex-sans-greek-400-normal-_efipK4i.woff2",
+    "/assets/ibm-plex-sans-greek-400-normal-D9ESIMu3.woff",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-DG4YqDda.woff2",
+    "/assets/ibm-plex-sans-vietnamese-400-normal-fK1oJ5dG.woff",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-C5H60-Va.woff2",
+    "/assets/ibm-plex-sans-latin-ext-400-normal-RBey6euL.woff",
+    "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+    "/assets/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-DUMzJB7m.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-600-normal-Bz0x94Yp.woff",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-71GNu3SW.woff2",
+    "/assets/ibm-plex-sans-cyrillic-600-normal-BGq0mW3O.woff",
+    "/assets/ibm-plex-sans-greek-600-normal-DzTrcv_p.woff2",
+    "/assets/ibm-plex-sans-greek-600-normal-D-CqTdkO.woff",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DpPYBSTl.woff2",
+    "/assets/ibm-plex-sans-vietnamese-600-normal-DgdngZtN.woff",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DOrvGEcy.woff2",
+    "/assets/ibm-plex-sans-latin-ext-600-normal-DIrixKbi.woff",
+    "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+    "/assets/ibm-plex-sans-latin-600-normal-Cu4Hd6ag.woff",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-BmRLXWpJ.woff2",
+    "/assets/ibm-plex-sans-cyrillic-ext-700-normal-DCQwxkRk.woff",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-D_uavGvn.woff2",
+    "/assets/ibm-plex-sans-cyrillic-700-normal-RFb1v-CK.woff",
+    "/assets/ibm-plex-sans-greek-700-normal-wyJ6jzdA.woff2",
+    "/assets/ibm-plex-sans-greek-700-normal-CkZN0sRy.woff",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-CkEo6LDy.woff2",
+    "/assets/ibm-plex-sans-vietnamese-700-normal-BV5B8Are.woff",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-aMgXseD4.woff2",
+    "/assets/ibm-plex-sans-latin-ext-700-normal-DZH6Xh-4.woff",
+    "/assets/ibm-plex-sans-latin-700-normal-Bxkt5Cjx.woff2",
+    "/assets/ibm-plex-sans-latin-700-normal-Bth3BMcD.woff",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-xuaO2J-f.woff2",
+    "/assets/ibm-plex-mono-cyrillic-ext-400-normal-DMdlQ8Kv.woff",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-BSMlKf0J.woff2",
+    "/assets/ibm-plex-mono-cyrillic-400-normal-CEL4l2ZJ.woff",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-BulugwFq.woff2",
+    "/assets/ibm-plex-mono-vietnamese-400-normal-DDuiU_S-.woff",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
+    "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
+    "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/lib/images.json": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4109,10 +4841,16 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/lib/seo.js": [
-    "/assets/seo-Cxr5dGKS.js"
+    "/assets/seo-ChMc_SeN.js"
   ],
   "src/lib/site.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4160,7 +4898,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/lib/toast.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4208,7 +4952,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/main.js": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4256,98 +5006,104 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/pages/About.vue": [
-    "/assets/About-BkaHZFMp.js",
-    "/assets/About-FsmmSRXE.css"
+    "/assets/About-CEDW03ZF.js",
+    "/assets/About-gxEDYpE8.css"
   ],
-  "src/pages/About.vue?vue&type=style&index=0&scoped=b69f9f91&lang.css": [
-    "/assets/About-BkaHZFMp.js",
-    "/assets/About-FsmmSRXE.css"
+  "src/pages/About.vue?vue&type=style&index=0&scoped=af751d1c&lang.css": [
+    "/assets/About-CEDW03ZF.js",
+    "/assets/About-gxEDYpE8.css"
   ],
   "src/pages/Colophon.vue": [
-    "/assets/Colophon-cZ7QpMGu.js",
+    "/assets/Colophon-CSgf57c0.js",
     "/assets/Colophon-DVfn-d6Z.css"
   ],
   "src/pages/Colophon.vue?vue&type=style&index=0&scoped=153fedba&lang.css": [
-    "/assets/Colophon-cZ7QpMGu.js",
+    "/assets/Colophon-CSgf57c0.js",
     "/assets/Colophon-DVfn-d6Z.css"
   ],
   "src/pages/Consult.vue": [
-    "/assets/Consult-CCCNTq37.js",
-    "/assets/Consult-D-cHJqBn.css"
+    "/assets/Consult-DJKnWJj0.js",
+    "/assets/Consult-B21rrpw1.css"
   ],
-  "src/pages/Consult.vue?vue&type=style&index=0&scoped=950fa7c6&lang.css": [
-    "/assets/Consult-CCCNTq37.js",
-    "/assets/Consult-D-cHJqBn.css"
+  "src/pages/Consult.vue?vue&type=style&index=0&scoped=ab9fb62f&lang.css": [
+    "/assets/Consult-DJKnWJj0.js",
+    "/assets/Consult-B21rrpw1.css"
   ],
   "src/pages/Cv.vue": [
-    "/assets/Cv-B2L4Pkl-.js",
+    "/assets/Cv-D1uigwXk.js",
     "/assets/Cv-25iUBV5B.css"
   ],
   "src/pages/Cv.vue?vue&type=style&index=0&scoped=3c6f3654&lang.css": [
-    "/assets/Cv-B2L4Pkl-.js",
+    "/assets/Cv-D1uigwXk.js",
     "/assets/Cv-25iUBV5B.css"
   ],
   "src/pages/Gallery.vue": [
-    "/assets/Gallery-C4E4GyH8.js",
+    "/assets/Gallery-DQB0ZEdr.js",
     "/assets/Gallery-CaMaC-3K.css"
   ],
   "src/pages/Gallery.vue?vue&type=style&index=0&scoped=c73ef673&lang.css": [
-    "/assets/Gallery-C4E4GyH8.js",
+    "/assets/Gallery-DQB0ZEdr.js",
     "/assets/Gallery-CaMaC-3K.css"
   ],
   "src/pages/Home.vue": [
-    "/assets/Home-CzSNx9T2.js",
-    "/assets/Home-CGEZtkCn.css"
+    "/assets/Home-D59KG7ZY.js",
+    "/assets/Home-CDpxm6ti.css"
   ],
-  "src/pages/Home.vue?vue&type=style&index=0&scoped=06c31c10&lang.css": [
-    "/assets/Home-CzSNx9T2.js",
-    "/assets/Home-CGEZtkCn.css"
+  "src/pages/Home.vue?vue&type=style&index=0&scoped=f62e298c&lang.css": [
+    "/assets/Home-D59KG7ZY.js",
+    "/assets/Home-CDpxm6ti.css"
   ],
   "src/pages/Home.vue?vue&type=style&index=1&lang.css": [
-    "/assets/Home-CzSNx9T2.js",
-    "/assets/Home-CGEZtkCn.css"
+    "/assets/Home-D59KG7ZY.js",
+    "/assets/Home-CDpxm6ti.css"
   ],
   "src/pages/NotFound.vue": [
-    "/assets/NotFound-Af4lrC_i.js",
+    "/assets/NotFound-beLOvP59.js",
     "/assets/NotFound-Cr_wQFex.css"
   ],
   "src/pages/NotFound.vue?vue&type=style&index=0&scoped=c1fc66e8&lang.css": [
-    "/assets/NotFound-Af4lrC_i.js",
+    "/assets/NotFound-beLOvP59.js",
     "/assets/NotFound-Cr_wQFex.css"
   ],
   "src/pages/Now.vue": [
-    "/assets/Now-ujmw7xlR.js",
+    "/assets/Now-DUgoKwaz.js",
     "/assets/Now-BWaMw-6L.css"
   ],
   "src/pages/Now.vue?vue&type=style&index=0&scoped=87d849df&lang.css": [
-    "/assets/Now-ujmw7xlR.js",
+    "/assets/Now-DUgoKwaz.js",
     "/assets/Now-BWaMw-6L.css"
   ],
   "src/pages/Post.vue": [
-    "/assets/Post-CijaC_RH.js",
+    "/assets/Post-hzYuvD2-.js",
     "/assets/Post-KBJ79dg7.css"
   ],
   "src/pages/Post.vue?vue&type=style&index=0&scoped=9f7981a0&lang.css": [
-    "/assets/Post-CijaC_RH.js",
+    "/assets/Post-hzYuvD2-.js",
     "/assets/Post-KBJ79dg7.css"
   ],
   "src/pages/Project.vue": [
-    "/assets/Project-9mBCQyxN.js",
+    "/assets/Project-DZFEnOxa.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/pages/Project.vue?vue&type=style&index=0&scoped=d17a0dc0&lang.css": [
-    "/assets/Project-9mBCQyxN.js",
+    "/assets/Project-DZFEnOxa.js",
     "/assets/Project-EdMa7CdU.css"
   ],
   "src/pages/Writing.vue": [
-    "/assets/Writing-D2P2C3uc.js",
+    "/assets/Writing-CmEY9u-E.js",
     "/assets/Writing-DyxIALO6.css"
   ],
   "src/pages/Writing.vue?vue&type=style&index=0&scoped=d7eb182e&lang.css": [
-    "/assets/Writing-D2P2C3uc.js",
+    "/assets/Writing-CmEY9u-E.js",
     "/assets/Writing-DyxIALO6.css"
   ],
   "src/routes.js": [
@@ -4396,7 +5152,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/styles/base.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4444,7 +5206,13 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ],
   "src/styles/tokens.css": [
     "/assets/ibm-plex-sans-cyrillic-ext-400-normal-g30qAdWV.woff2",
@@ -4492,6 +5260,12 @@
     "/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2",
     "/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff",
     "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff"
+    "/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-BlDd6KY1.woff2",
+    "/assets/noto-sans-devanagari-devanagari-400-normal-CdOJmQ4E.woff",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-BeyktMLo.woff2",
+    "/assets/noto-sans-devanagari-devanagari-600-normal-B5tDaqnD.woff",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-v9jliTCB.woff2",
+    "/assets/noto-sans-devanagari-devanagari-700-normal-h2KXAbYG.woff"
   ]
 }
