@@ -1,6 +1,7 @@
 <script setup>
 defineProps({ name: String, size: { type: Number, default: 16 } })
 const paths = {
+  calendar: 'M4 6h16v14H4z M4 10h16 M8 3v4 M16 3v4',
   person: 'M12 5.2a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4z M5 8l7 1.5L19 8 M12 9.5V14 M12 14l-3 7 M12 14l3 7',
   search: 'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14z M20 20l-4-4',
   copy: 'M9 9h10v10H9z M5 15V5h10',

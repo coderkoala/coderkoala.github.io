@@ -3,6 +3,8 @@ import AppIcon from '../components/AppIcon.vue'
 import { site, crumbs } from '../lib/site.js'
 import TimeOverlap from '../components/TimeOverlap.vue'
 import { copy } from '../lib/toast.js'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { inlineCal, openCal } from '../lib/cal.js'
 import { useSeo } from '../lib/seo.js'
 
 const services = [
@@ -17,6 +19,16 @@ const services = [
 ]
 
 const book = site.booking || `mailto:${site.email}?subject=Free%20systems%20review`
+function onBook(e) { if (site.booking) { e.preventDefault(); openCal() } }
+const calEl = ref(null)
+const calOn = ref(false)
+let io
+onMounted(() => {
+  if (!site.booking || !calEl.value) return
+  io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { io.disconnect(); calOn.value = true; inlineCal(calEl.value) } }, { rootMargin: '600px 0px' })
+  io.observe(calEl.value)
+})
+onBeforeUnmount(() => io?.disconnect())
 const steps = [
   { title: 'A conversation', text: 'You describe the problem, not a feature list. Thirty minutes usually tells us both whether I’m the right fit.' },
   { title: 'A written proposal', text: 'What I recommend, what it costs and when, as a fixed quote or a monthly retainer, in plain words.' },
@@ -74,7 +86,8 @@ useSeo({
         <h2 id="review" class="review__t">Start with a free systems review</h2>
         <p>Thirty minutes about how your business runs today: the software, the spreadsheets, the parts that keep you up at night. Afterwards you get one written page: what's risky, what's fine, and what I'd do first. Yours to keep, whether or not we work together.</p>
       </div>
-      <a class="btn btn--solid" :href="book" :target="site.booking ? '_blank' : undefined" rel="noopener"><AppIcon name="arrow" /> {{ site.booking ? 'Book a review slot' : 'Request a review' }}</a>
+      <a class="btn btn--solid" :href="book" target="_blank" rel="noopener" @click="onBook"><AppIcon name="arrow" /> {{ site.booking ? 'Book a review slot' : 'Request a review' }}</a>
+      <div v-if="site.booking" ref="calEl" class="cal" :class="{ 'cal--on': calOn }" aria-label="Booking calendar"></div>
     </section>
 
     <section aria-labelledby="what" class="block">
@@ -132,7 +145,10 @@ useSeo({
 .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }
 .block { display: grid; gap: 24px; }
 .review { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px; padding: 28px 32px; border: 1px solid var(--ui-ink); border-radius: 14px; background: var(--ui-surface); }
-.review > div { display: grid; gap: 8px; max-width: 64ch; }
+.review > div:first-child { display: grid; gap: 8px; max-width: 64ch; }
+.cal { flex-basis: 100%; min-height: 560px; border-top: 1px solid var(--ui-border); padding-top: 20px; position: relative; overflow: hidden; }
+.cal:not(.cal--on)::before { content: ''; position: absolute; inset: 20px 0 0; border-radius: 10px; background: linear-gradient(100deg, var(--ui-surface-sunken) 30%, var(--ui-hover) 50%, var(--ui-surface-sunken) 70%) 0 0 / 200% 100%; animation: calsh 1.4s linear infinite; }
+@keyframes calsh { to { background-position: -200% 0; } }
 .review__t { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
 .review p { color: var(--ui-ink-soft); }
 .avail { display: inline-flex; align-items: center; gap: 8px; width: fit-content; font-size: 14px; font-weight: 600; }

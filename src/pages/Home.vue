@@ -2,6 +2,7 @@
 import AppIcon from '../components/AppIcon.vue'
 import { work, writing, gallery } from '../lib/content.js'
 import { site, personLd, websiteLd } from '../lib/site.js'
+import { openCal, loadCal } from '../lib/cal.js'
 import { useSeo } from '../lib/seo.js'
 
 useSeo({
@@ -19,6 +20,7 @@ useSeo({
         <p class="lede">I built Kaede, a cargo ERP that speaks IATA ONE Record and learns from an office's own history. Before it: CRMs, payment platforms and web apps, from the database up.</p>
         <div class="hero__cta">
           <RouterLink class="btn btn--solid" :to="`/work/${work[0].slug}`">See how Kaede works <AppIcon name="arrow" /></RouterLink>
+          <a v-if="site.booking" class="btn" :href="site.booking" target="_blank" rel="noopener" @click.prevent="openCal()" @pointerenter.once="loadCal()" @focus.once="loadCal()"><AppIcon name="calendar" /> Book a free review</a>
           <a class="btn" :href="site.cv" download><AppIcon name="download" /> Résumé</a>
         </div>
         <ul class="checks">

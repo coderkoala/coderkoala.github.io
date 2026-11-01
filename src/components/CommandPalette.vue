@@ -6,6 +6,7 @@ import { work, writing, gallery } from '../lib/content.js'
 import { site } from '../lib/site.js'
 import { copy } from '../lib/toast.js'
 import { languages, translateUrl } from '../lib/a11y.js'
+import { openCal } from '../lib/cal.js'
 
 const router = useRouter()
 const open = ref(false)
@@ -33,6 +34,7 @@ const items = computed(() => [
   ...work.map((w) => ({ group: 'Case studies', label: w.title, hint: w.kind, to: w.url })),
   ...writing.map((p) => ({ group: 'Writing', label: p.title, to: p.url })),
   ...gallery.filter((g) => !g.featured).map((g) => ({ group: 'Gallery', label: g.title, hint: `${g.kind} · ${g.year}`, to: '/work/' })),
+  ...(site.booking ? [{ group: 'Actions', label: 'Book a free systems review', hint: '30 min', run: () => openCal() }] : []),
   { group: 'Actions', label: 'Copy email address', hint: site.email, run: () => copy(site.email, 'Email address copied') },
   { group: 'Actions', label: 'Download résumé (PDF)', run: () => { location.href = site.cv } },
   { group: 'Actions', label: 'Switch light / dark', run: toggleTheme },
