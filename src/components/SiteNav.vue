@@ -60,8 +60,14 @@ function toggle() {
 }
 .brand__name { font-weight: 700; font-size: 17px; }
 .links { display: flex; gap: 28px; }
-.links a { color: var(--ui-ink-soft); text-decoration: none; font-size: 15px; }
+.links a { position: relative; color: var(--ui-ink-soft); text-decoration: none; font-size: 15px; padding: 4px 0; transition: color var(--ui-duration) var(--ui-ease); }
+.links a::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 1.5px; background: currentColor;
+  transform: scaleX(0); transform-origin: right; transition: transform 260ms cubic-bezier(.2, .7, .2, 1);
+}
+.links a:hover::after, .links a:focus-visible::after { transform: scaleX(1); transform-origin: left; }
 .links a:hover, .links a.router-link-active { color: var(--ui-ink); }
+.links a.router-link-active::after { transform: scaleX(1); }
 .nav__end { margin-left: auto; display: flex; align-items: center; gap: 12px; }
 .kbtn { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 10px 0 12px; border: 1px solid var(--ui-border); border-radius: 999px; background: var(--ui-surface); color: var(--ui-ink-soft); cursor: pointer; }
 .kbtn:hover { color: var(--ui-ink); background: var(--ui-hover); }

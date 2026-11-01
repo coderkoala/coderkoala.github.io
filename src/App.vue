@@ -31,7 +31,11 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
   <a class="skip" href="#main">Skip to content</a>
   <RouteProgress />
   <SiteNav />
-  <main id="main"><RouterView /></main>
+  <main id="main">
+    <RouterView v-slot="{ Component, route }">
+      <Transition name="page" mode="out-in"><component :is="Component" :key="route.path" /></Transition>
+    </RouterView>
+  </main>
   <footer class="foot">
     <div class="wrap foot__in">
       <span>© {{ new Date(builtAt).getFullYear() }} {{ site.name }} · {{ site.place }} · Updated <time :datetime="builtAt">{{ builtLabel }}</time></span>
@@ -75,6 +79,12 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
 @media (prefers-reduced-motion: reduce) { .bd { transform: none !important; animation: none !important; } }
 @media (max-width: 767.98px) { .backdrop { height: 600px; } .bd--far, .bd--land { -webkit-mask-position: 68% 60%; mask-position: 68% 60%; } }
 @media print { .backdrop { display: none; } }
+/* Between pages: a short cross-fade with a slight rise. */
+.page-leave-active { transition: opacity 160ms cubic-bezier(.4, 0, 1, 1), transform 160ms cubic-bezier(.4, 0, 1, 1); }
+.page-enter-active { transition: opacity 300ms cubic-bezier(.16, 1, .3, 1), transform 360ms cubic-bezier(.16, 1, .3, 1); }
+.page-enter-from { opacity: 0; transform: translateY(10px); }
+.page-leave-to { opacity: 0; transform: translateY(-3px); }
+@media (prefers-reduced-motion: reduce) { .page-enter-active, .page-leave-active { transition: none; } }
 .skip { position: absolute; left: -999px; top: 8px; }
 .skip:focus { left: 16px; z-index: 10; background: var(--ui-surface); padding: 8px 12px; }
 .foot { border-top: 1px solid var(--ui-border); color: var(--ui-ink-faint); font-size: var(--ui-text-xs); }

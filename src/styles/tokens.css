@@ -39,6 +39,7 @@
   --ui-duration: 120ms;
   --ui-ease: cubic-bezier(0.2, 0, 0, 1);
   --ui-ring: 0 0 0 2px var(--ui-surface), 0 0 0 4px var(--ui-primary);
+  --ui-shimmer: rgb(255 255 255 / .7);
   --ui-backdrop-ink: #141414;
   --ui-backdrop-far: .07;
   --ui-backdrop-land: .16;
@@ -59,6 +60,7 @@
     --ui-primary-hover: #ffffff;
     --ui-primary-soft: #202020;
     --ui-on-fill: #0c0c0c;
+    --ui-shimmer: rgb(255 255 255 / .06);
     --ui-backdrop-ink: #000;
     --ui-backdrop-far: .35;
     --ui-backdrop-land: .7;
@@ -78,6 +80,7 @@
   --ui-primary-hover: #ffffff;
   --ui-primary-soft: #202020;
   --ui-on-fill: #0c0c0c;
+  --ui-shimmer: rgb(255 255 255 / .06);
   --ui-backdrop-ink: #000;
   --ui-backdrop-far: .35;
   --ui-backdrop-land: .7;

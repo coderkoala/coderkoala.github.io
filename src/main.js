@@ -10,9 +10,21 @@ import { routes } from './routes.js'
 
 export const createApp = ViteSSG(App, {
   routes,
-  scrollBehavior: (to, from, saved) => saved || (to.hash ? { el: to.hash, top: 88 } : { top: 0 }),
+  // Wait for the old page to fade before jumping to the top, so the switch never looks abrupt.
+  scrollBehavior: (to, from, saved) => {
+    const where = saved || (to.hash ? { el: to.hash, top: 88, behavior: 'smooth' } : { top: 0 })
+    if (to.path === from.path) return where
+    return new Promise((done) => setTimeout(() => done(where), 170))
+  },
 }, ({ router, isClient }) => {
   if (!isClient) return
+  // Fade images in when they have truly loaded; already-cached ones are marked straight away.
+  const mark = (img) => img.classList.add('is-loaded')
+  document.addEventListener('load', (e) => { if (e.target.tagName === 'IMG') mark(e.target) }, true)   // image load events stop at document, never window
+  document.addEventListener('error', (e) => { if (e.target.tagName === 'IMG') mark(e.target) }, true)
+  const sweep = () => document.querySelectorAll('img').forEach((i) => { if (i.complete && i.naturalWidth) mark(i) })
+  router.afterEach(() => requestAnimationFrame(() => requestAnimationFrame(sweep)))
+  if (document.readyState !== 'loading') sweep(); else addEventListener('DOMContentLoaded', sweep, { once: true })
   const done = new Set()
   const load = (c) => { if (typeof c === 'function' && !done.has(c)) { done.add(c); c().catch(() => {}) } }
   // Hover or focus a link: fetch that page's code before the click lands.

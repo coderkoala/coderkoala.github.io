@@ -62,7 +62,7 @@ if (p.value) useSeo({
     </section>
 
     <figure v-if="p.loop" class="film wrap">
-      <div class="film__frame">
+      <div class="film__frame shimmer">
         <video :poster="`${p.loop}-poster.jpg`" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="auto" aria-label="Silent demo recording">
           <source :src="`${p.loop}.webm`" type="video/webm" />
           <source :src="`${p.loop}.mp4`" type="video/mp4" />
@@ -72,10 +72,10 @@ if (p.value) useSeo({
     </figure>
 
     <figure v-if="!p.loop && p.cover" class="hero-shot wrap">
-      <div class="browser">
+      <div class="browser"><div class="shimmer shimmer--block">
         <div class="browser__bar" aria-hidden="true"><span class="dots"><i /><i /><i /></span><span class="browser__url mono">{{ p.linkLabel }}</span></div>
         <img :src="p.cover" :alt="`${p.title}, the live product`" fetchpriority="high" decoding="async" width="1440" height="840" />
-      </div>
+      </div></div>
     </figure>
 
     <Showcase v-if="p.shots.length" :shots="p.shots" :title="p.title" />
