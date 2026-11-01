@@ -1,6 +1,8 @@
 <script setup>
 import AppIcon from '../components/AppIcon.vue'
 import { site, crumbs } from '../lib/site.js'
+import TimeOverlap from '../components/TimeOverlap.vue'
+import { copy } from '../lib/toast.js'
 import { useSeo } from '../lib/seo.js'
 
 const services = [
@@ -57,8 +59,10 @@ useSeo({
       <p class="lede">I'm Nobel. I build web applications and business systems for companies in Nepal and abroad, from the database to the screen, and I stay to run them.</p>
       <div class="cta">
         <a class="btn btn--solid" :href="`mailto:${site.email}?subject=Project%20enquiry`"><AppIcon name="mail" /> {{ site.email }}</a>
+        <button class="btn" type="button" @click="copy(site.email, 'Email address copied')"><AppIcon name="copy" /> Copy email</button>
         <a class="btn" :href="site.cv" download><AppIcon name="download" /> Résumé</a>
       </div>
+      <TimeOverlap />
     </header>
 
     <section aria-labelledby="what" class="block">

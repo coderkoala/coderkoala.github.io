@@ -55,3 +55,13 @@ a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; 
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 @media print { .nav, .no-print { display: none !important; } }
+
+/* Post headings: a quiet anchor on hover. Code blocks: a copy button. */
+.prose h2, .prose h3 { position: relative; scroll-margin-top: 88px; }
+.prose .anchor { position: absolute; left: -1.1em; width: 1em; color: var(--ui-ink-faint); text-decoration: none; opacity: 0; transition: opacity var(--ui-duration) var(--ui-ease); }
+.prose h2:hover .anchor, .prose h3:hover .anchor, .prose .anchor:focus { opacity: 1; }
+.prose pre { position: relative; font-size: 14px; line-height: 1.55; }
+.prose pre code { line-height: inherit; }
+.codecopy { position: absolute; top: 8px; right: 8px; padding: 3px 9px; border: 1px solid var(--ui-border); border-radius: 6px; background: var(--ui-surface); color: var(--ui-ink-soft); font: 600 12px var(--ui-font-sans); cursor: pointer; opacity: 0; transition: opacity var(--ui-duration) var(--ui-ease); }
+.prose pre:hover .codecopy, .codecopy:focus { opacity: 1; }
+@media (hover: none) { .codecopy { opacity: 1; } }

@@ -1,5 +1,18 @@
 import { marked } from 'marked'
 
+// Headings get stable ids and a hover anchor, so any section can be linked to.
+const slugify = (t) => t.toLowerCase().replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+marked.use({
+  renderer: {
+    heading({ tokens, depth }) {
+      const text = this.parser.parseInline(tokens)
+      if (depth > 3) return `<h${depth}>${text}</h${depth}>`
+      const id = slugify(text)
+      return `<h${depth} id="${id}"><a class="anchor" href="#${id}" aria-label="Link to this section">#</a>${text}</h${depth}>`
+    },
+  },
+})
+
 // Tiny front-matter reader: `key: value`, and lists as `key:` then `  - item`.
 function parse(raw) {
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
@@ -25,7 +38,9 @@ function load(files, dir) {
     .map(([path, raw]) => {
       const slug = path.split('/').pop().replace(/\.md$/, '')
       const { data, body } = parse(raw)
-      return { ...data, slug, url: `/${dir}/${slug}`, html: marked.parse(body) }
+      const html = marked.parse(body)
+      const toc = [...html.matchAll(/<h2 id="([^"]+)">.*?<\/a>(.*?)<\/h2>/g)].map((m) => ({ id: m[1], text: m[2].replace(/<[^>]+>/g, '') }))
+      return { ...data, slug, url: `/${dir}/${slug}`, html, toc }
     })
     .filter((e) => !e.draft || import.meta.env.DEV)
 }

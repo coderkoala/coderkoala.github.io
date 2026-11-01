@@ -40,6 +40,7 @@ function close() { dlg.value?.close() }
   background: var(--ui-surface-sunken); cursor: zoom-in; display: block; width: 100%;
 }
 .tile__btn img {
+  opacity: 0; animation: settle 500ms var(--ui-ease) 80ms forwards;
   width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block;
   transition: transform 700ms var(--ui-ease);
 }
@@ -60,4 +61,6 @@ function close() { dlg.value?.close() }
 
 @media (max-width: 991.98px) { .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 180px; } .tile { grid-column: span 2; grid-row: span 2; } }
 @media (max-width: 767.98px) { .bento { grid-auto-rows: 120px; gap: 28px; } }
+@keyframes settle { to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { img { animation: none !important; opacity: 1 !important; } }
 </style>

@@ -79,6 +79,7 @@ const isInternal = (l) => l && l.startsWith('/')
   border: 1px solid var(--ui-border); background: var(--ui-surface-sunken);
 }
 .cover img {
+  opacity: 0; animation: settle 500ms var(--ui-ease) 80ms forwards;
   width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;
   filter: grayscale(1) contrast(1.05); transform: scale(1.001);
   transition: filter 400ms var(--ui-ease), transform 600ms var(--ui-ease);
@@ -123,4 +124,6 @@ a.card:hover .cover img, .card:hover .cover img { filter: none; transform: scale
 @media (hover: none) { .cover img { filter: none; } }
 @media (max-width: 991.98px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 767.98px) { .page { padding-block: 40px 64px; } .grid { grid-template-columns: 1fr; gap: 40px; } }
+@keyframes settle { to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { img { animation: none !important; opacity: 1 !important; } }
 </style>
