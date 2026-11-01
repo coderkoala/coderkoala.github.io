@@ -29,11 +29,11 @@ export const projects = [
 ]
 
 export const roles = [
-  { org: 'Independent', title: 'Software Engineer and Consultant · Freelance', when: 'Jan 2020 – present', points: [
+  { org: 'Independent', title: 'Software Consultant · Own practice', when: 'Jan 2020 – present', points: [
     'Design, build and run ERP, CRM and operations systems for clients, from schema to deployment. Kaede and Kalimati Market above.',
   ] },
   { org: 'Code for Nepal', title: 'Data Science Fellow · Part-time', when: 'Dec 2021 – May 2022', points: [] },
-  { org: 'United Real Estate (US)', title: 'Software Engineer · Freelance', when: 'May 2020 – Apr 2021', points: [
+  { org: 'United Real Estate (US)', title: 'Software Engineer · Contract', when: 'May 2020 – Apr 2021', points: [
     'Migrated the brokerage from Zoho CRM to Microsoft Dynamics 365, with tooling for records and the document store (to SharePoint).',
     'Node.js microservice over the Dynamics Web API (Azure AD) that finds agents near a lead among millions of records and maps them in seconds.',
     'C# plugins (Leads, Opportunity, Super Obituaries), schema tooling to replay customisations, Power Automate flows for mail and Planner.',

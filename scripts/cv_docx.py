@@ -50,7 +50,7 @@ def bullets(items):
 
 
 para(s['name'], bold=True, size=22, space=0)
-para('Full-Stack Developer and Software Engineer · Freelance', size=11, color=GREY, space=2)
+para('Independent Software Consultant · Full-Stack Developer', size=11, color=GREY, space=2)
 para(f"Kathmandu, Nepal (UTC+5:45) · {s['email']} · nobeldahal.com.np · github.com/coderkoala · linkedin.com/in/coderkoala", size=9, color=GREY, space=8)
 para("Built Kaede, a cargo ERP for freight forwarders, end to end: IATA ONE Record and Cargo-XML, AWB stock under concurrency, carrier-portal automation, and a learning engine that suggests from the office's own history. Laravel contributor; author of Syncfusion's Nepali locale. Full-stack developer in Kathmandu, shipping production software since 2018.", space=4)
 

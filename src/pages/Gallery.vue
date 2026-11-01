@@ -18,6 +18,12 @@ useSeo({
 const tag = ref('All')
 const shown = computed(() => tag.value === 'All' ? gallery : gallery.filter((g) => g.tag === tag.value))
 const isInternal = (l) => l && l.startsWith('/')
+
+// Tiles without a link open their screenshot full size, so every tile is clickable.
+const viewing = ref(null)
+const dlg = ref(null)
+function view(g) { viewing.value = g; dlg.value?.showModal() }
+function close() { dlg.value?.close() }
 </script>
 
 <template>
@@ -33,6 +39,8 @@ const isInternal = (l) => l && l.startsWith('/')
     <TransitionGroup tag="ul" name="g" class="grid">
       <li v-for="g in shown" :key="g.slug" :class="['item', { 'item--feature': g.featured }]">
         <component :is="!g.link ? 'div' : isInternal(g.link) ? 'RouterLink' : 'a'"
+          :role="!g.link ? 'button' : undefined" :tabindex="!g.link ? 0 : undefined" :aria-label="!g.link ? `View ${g.title} screenshot` : undefined"
+          @click="!g.link && view(g)" @keydown.enter.prevent="!g.link && view(g)" @keydown.space.prevent="!g.link && view(g)"
           :to="isInternal(g.link) ? g.link : undefined" :href="g.link && !isInternal(g.link) ? g.link : undefined"
           :rel="g.link && !isInternal(g.link) ? 'noopener' : undefined" class="card">
           <div class="cover">
@@ -58,6 +66,14 @@ const isInternal = (l) => l && l.startsWith('/')
         </component>
       </li>
     </TransitionGroup>
+
+    <dialog ref="dlg" class="lb" aria-label="Project screenshot" @click.self="close" @close="viewing = null">
+      <figure v-if="viewing">
+        <SmartImg :src="viewing.image" :alt="`${viewing.title}, ${viewing.kind}`" eager sizes="94vw" fit="contain" position="center" />
+        <figcaption><strong>{{ viewing.title }}</strong> · {{ viewing.kind }} · {{ viewing.year }}<br />{{ viewing.summary }}</figcaption>
+      </figure>
+      <button type="button" class="lb__x" @click="close" aria-label="Close">×</button>
+    </dialog>
   </section>
 </template>
 
@@ -74,7 +90,13 @@ const isInternal = (l) => l && l.startsWith('/')
 .filter[aria-pressed='true'] { background: var(--ui-ink); border-color: var(--ui-ink); color: var(--ui-surface); }
 
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px 32px; }
-.card { display: grid; gap: 16px; text-decoration: none; color: inherit; }
+.card { display: grid; gap: 16px; text-decoration: none; color: inherit; cursor: pointer; width: 100%; padding: 0; border: 0; background: none; font: inherit; text-align: left; }
+.lb { border: 0; padding: 0; background: transparent; max-width: min(1200px, 94vw); width: 94vw; overflow: visible; }
+.lb::backdrop { background: rgb(10 10 10 / .82); backdrop-filter: blur(4px); }
+.lb figure { display: grid; gap: 14px; }
+.lb :deep(.si) { max-height: 78vh; border-radius: 10px; background-color: transparent; }
+.lb figcaption { color: #e6e6e3; font-size: 14px; text-align: center; line-height: 1.5; }
+.lb__x { position: fixed; top: 16px; right: 20px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: #f5f5f4; color: #141414; font-size: 24px; line-height: 1; cursor: pointer; }
 .cover {
   aspect-ratio: 16 / 10; overflow: hidden; border-radius: 10px;
   border: 1px solid var(--ui-border); background: var(--ui-surface-sunken);

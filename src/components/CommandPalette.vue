@@ -5,6 +5,7 @@ import { useRouter } from 'vue-router'
 import { work, writing, gallery } from '../lib/content.js'
 import { site } from '../lib/site.js'
 import { copy } from '../lib/toast.js'
+import { languages, translateUrl } from '../lib/a11y.js'
 
 const router = useRouter()
 const open = ref(false)
@@ -25,7 +26,7 @@ const items = computed(() => [
   { group: 'Pages', label: 'Work', hint: 'Everything since 2017', to: '/work/' },
   { group: 'Pages', label: 'Writing', to: '/writing/' },
   { group: 'Pages', label: 'About', to: '/about' },
-  { group: 'Pages', label: 'Hire', hint: 'Services, process, questions', to: '/hire' },
+  { group: 'Pages', label: 'Consult', hint: 'How I help, how we work, questions', to: '/consult' },
   { group: 'Pages', label: 'Résumé', hint: 'as a page', to: '/cv' },
   ...work.map((w) => ({ group: 'Case studies', label: w.title, hint: w.kind, to: w.url })),
   ...writing.map((p) => ({ group: 'Writing', label: p.title, to: p.url })),
@@ -33,6 +34,8 @@ const items = computed(() => [
   { group: 'Actions', label: 'Copy email address', hint: site.email, run: () => copy(site.email, 'Email address copied') },
   { group: 'Actions', label: 'Download résumé (PDF)', run: () => { location.href = site.cv } },
   { group: 'Actions', label: 'Switch light / dark', run: toggleTheme },
+  { group: 'Actions', label: 'Accessibility settings', hint: 'text size, contrast, motion', run: () => dispatchEvent(new Event('a11y:open')) },
+  ...languages.map(([code, name, en]) => ({ group: 'Read in', label: `Read in ${en}`, hint: name, run: () => { location.href = translateUrl(code) } })),
   { group: 'Actions', label: 'GitHub', hint: 'coderkoala', run: () => window.open(site.github, '_blank', 'noopener') },
   { group: 'Actions', label: 'LinkedIn', hint: 'coderkoala', run: () => window.open(site.linkedin, '_blank', 'noopener') },
 ])

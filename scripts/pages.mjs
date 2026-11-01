@@ -53,7 +53,7 @@ export function pages() {
       { path: '/', title: 'Nobel Dahal', kind: 'Full-stack developer in Nepal', og: 'default', lastmod: today, priority: '1.0' },
       { path: '/work/', title: 'Work', kind: 'Everything since 2017', lastmod: today, priority: '0.9' },
       { path: '/cv', title: 'Résumé', kind: 'Full-stack developer · Kathmandu', lastmod: today, priority: '0.8' },
-      { path: '/hire', title: 'Hire a full-stack developer in Nepal', kind: 'Freelance · Kathmandu', lastmod: today, priority: '0.9' },
+      { path: '/consult', title: 'An IT department you can call on', kind: 'Independent consultant · Kathmandu', lastmod: today, priority: '0.9' },
       { path: '/about', title: 'About', kind: 'Experience, open source, certifications', lastmod: today, priority: '0.8' },
       { path: '/writing/', title: 'Writing', kind: 'Case studies and notes', lastmod: posts[0]?.lastmod || today, priority: '0.7' },
       ...work.map((w) => ({ ...w, kind: `${w.kind} · ${w.years}`, priority: '0.9' })),

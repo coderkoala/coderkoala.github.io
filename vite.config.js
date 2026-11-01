@@ -28,7 +28,7 @@ function writeLlms({ work, posts }) {
     '',
     '## More',
     `- [All work since 2017](${SITE}/work/)`,
-    `- [Hire: services, process and FAQ](${SITE}/hire)`,
+    `- [Consult: how I help, how we work, FAQ](${SITE}/consult)`,
     `- [About, experience, open source and certifications](${SITE}/about)`,
     `- [Résumé (PDF)](${SITE}/download/resume.pdf)`,
     '- [GitHub](https://github.com/coderkoala)',

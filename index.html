@@ -18,6 +18,8 @@
     <script>
       document.documentElement.classList.remove('no-js')
       try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch (e) {}
+      try { const a = JSON.parse(localStorage.getItem('a11y') || '{}'), d = { text: 'md', contrast: 'normal', motion: 'auto', links: 'auto', spacing: 'normal' }
+        for (const k in a) if (a[k] !== d[k]) document.documentElement.dataset['a11y' + k[0].toUpperCase() + k.slice(1)] = a[k] } catch (e) {}
       if (location.pathname === '/' && location.hash) {
         const to = { '#portfolio': '/work/', '#experience': '/about', '#education': '/about', '#skills': '/about', '#contact': '/hire', '#feedback': '/hire' }[location.hash]
         if (to) location.replace(to)

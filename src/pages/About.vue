@@ -28,7 +28,7 @@ useSeo({
       </div>
       <dl class="facts">
         <div><dt>Based in</dt><dd>Kathmandu, Nepal <span class="soft">· UTC+5:45</span></dd></div>
-        <div><dt>Working as</dt><dd>Freelance full-stack developer and consultant</dd></div>
+        <div><dt>Working as</dt><dd>Independent software consultant</dd></div>
         <div><dt>Shipping since</dt><dd>2018</dd></div>
         <div><dt>Speaks</dt><dd>English, Nepali</dd></div>
         <div><dt>Builds with</dt><dd>Laravel, Vue, PostgreSQL</dd></div>

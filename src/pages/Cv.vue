@@ -19,7 +19,7 @@ useSeo({
     <header class="cv__head">
       <div>
         <h1 class="display">{{ site.name }}</h1>
-        <p class="cv__role">Full-stack developer and software engineer · Kathmandu, Nepal · UTC+5:45</p>
+        <p class="cv__role">Independent software consultant · Kathmandu, Nepal · UTC+5:45</p>
       </div>
       <div class="cv__actions no-print">
         <a class="btn btn--solid btn--sm" :href="site.cv" download><AppIcon name="download" /> PDF</a>

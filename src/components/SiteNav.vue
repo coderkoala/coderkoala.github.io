@@ -5,6 +5,7 @@ import { site } from '../lib/site.js'
 
 const dark = ref(false)
 const mod = ref('Ctrl ')
+const openA11y = () => dispatchEvent(new Event('a11y:open'))
 function openPalette() { window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true, metaKey: true })) }
 onMounted(() => {
   if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) mod.value = '⌘'
@@ -30,12 +31,15 @@ function toggle() {
         <RouterLink to="/work/">Work</RouterLink>
         <RouterLink to="/writing/">Writing</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/hire">Hire</RouterLink>
+        <RouterLink to="/consult">Consult</RouterLink>
       </nav>
       <div class="nav__end">
-        <RouterLink class="btn btn--solid btn--sm nav__cta" to="/hire">Hire me</RouterLink>
+        <RouterLink class="btn btn--solid btn--sm nav__cta" to="/consult">Book a consultation</RouterLink>
         <button class="kbtn" type="button" @click="openPalette" aria-label="Go to (Ctrl K)" title="Go to (Ctrl K)">
           <AppIcon name="search" /><kbd class="kbtn__k">{{ mod }}K</kbd>
+        </button>
+        <button class="iconbtn" type="button" @click="openA11y" aria-label="Accessibility and languages" title="Accessibility and languages">
+          <AppIcon name="person" />
         </button>
         <button class="iconbtn" type="button" @click="toggle" :aria-label="dark ? 'Use light theme' : 'Use dark theme'">
           <AppIcon :name="dark ? 'sun' : 'moon'" />

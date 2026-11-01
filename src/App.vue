@@ -3,10 +3,13 @@ import SiteNav from './components/SiteNav.vue'
 import RouteProgress from './components/RouteProgress.vue'
 import CommandPalette from './components/CommandPalette.vue'
 import AppToast from './components/AppToast.vue'
+import A11yPanel from './components/A11yPanel.vue'
+import { apply as applyA11y } from './lib/a11y.js'
 import { onMounted } from 'vue'
 
 // Subtle parallax: the far mountain drifts with scroll and pointer; the land barely moves.
 onMounted(() => {
+  applyA11y()
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
   const root = document.documentElement
   let sy = 0, mx = 0, queued = false
@@ -18,6 +21,7 @@ onMounted(() => {
 import { site } from './lib/site.js'
 /* global __BUILT_AT__ */
 const builtAt = __BUILT_AT__
+const openA11y = () => dispatchEvent(new Event('a11y:open'))
 const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kathmandu' })
 </script>
 
@@ -39,10 +43,12 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
   <footer class="foot">
     <div class="wrap foot__in">
       <span>© {{ new Date(builtAt).getFullYear() }} {{ site.name }} · {{ site.place }} · Updated <time :datetime="builtAt">{{ builtLabel }}</time></span>
+      <button type="button" class="foot__a11y" @click="openA11y">Accessibility and languages</button>
       <span class="foot__motto" lang="el" title="Find a way, or make one.">Βρείτε έναν τρόπο ή φτιάξτε έναν</span>
     </div>
   </footer>
   <CommandPalette />
+  <A11yPanel />
   <AppToast />
 </template>
 
@@ -90,4 +96,6 @@ const builtLabel = new Date(builtAt).toLocaleDateString('en-GB', { day: 'numeric
 .foot { border-top: 1px solid var(--ui-border); color: var(--ui-ink-faint); font-size: var(--ui-text-xs); }
 .foot__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-block: 20px; }
 .foot__motto { font-style: italic; }
+.foot__a11y { border: 0; background: none; padding: 0; color: inherit; font: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.foot__a11y:hover { color: var(--ui-ink); }
 </style>

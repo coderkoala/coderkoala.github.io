@@ -44,7 +44,7 @@ li::marker{color:#9a9994}
 
 const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Nobel Dahal · Résumé</title><style>${css}</style></head><body>
 <header>
-  <div><h1>${site.name}</h1><p class="role">Full-Stack Developer and Software Engineer · Freelance</p></div>
+  <div><h1>${site.name}</h1><p class="role">Independent Software Consultant · Full-Stack Developer</p></div>
   <div class="contact">
     Kathmandu, Nepal · UTC+5:45<br>
     <a href="mailto:${site.email}">${site.email}</a> · <a href="${site.url}">${host(site.url)}</a><br>

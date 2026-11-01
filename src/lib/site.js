@@ -11,9 +11,9 @@ export const site = {
 }
 
 export const experience = [
-  { org: 'Independent', title: 'Software engineer and consultant', type: 'Freelance', when: '2020–now' },
+  { org: 'Independent', title: 'Software consultant', type: 'Own practice', when: '2020–now' },
   { org: 'Code for Nepal', title: 'Data science fellow', type: 'Part-time', when: '2021–22' },
-  { org: 'United Real Estate', title: 'Software engineer', type: 'Freelance', when: '2020–21' },
+  { org: 'United Real Estate', title: 'Software engineer', type: 'Contract', when: '2020–21' },
   { org: 'Proshore', title: 'Software engineer', type: 'Full-time', when: '2020–21' },
   { org: 'TechSathi', title: 'Platform architect', type: 'Part-time', when: '2020' },
   { org: 'ThemeGrill', title: 'WordPress plugin developer', type: 'Full-time', when: '2019–20' },
@@ -61,7 +61,7 @@ export const personLd = {
   familyName: 'Dahal',
   url: site.url,
   image: `${site.url}/og/default.png`,
-  jobTitle: 'Full-Stack Developer and Software Engineer',
+  jobTitle: 'Independent Software Consultant',
   hasOccupation: { '@type': 'Occupation', name: 'Full-stack web developer', occupationLocation: { '@type': 'Country', name: 'Nepal' }, skills: 'Laravel, PHP, Vue.js, Node.js, PostgreSQL, MySQL, WordPress, ERP, CRM' },
   description: 'Built Kaede, a cargo ERP for freight forwarders (IATA ONE Record, AWB stock, learning suggestions). Full-stack developer in Kathmandu, Nepal: Laravel, Vue, PostgreSQL.',
   email: `mailto:${site.email}`,

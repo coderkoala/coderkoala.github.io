@@ -14,8 +14,8 @@ useSeo({
   <div class="home">
     <section class="hero wrap">
       <div class="hero__copy">
-        <p class="eyebrow">Full-stack developer and consultant · Kathmandu, Nepal</p>
-        <h1 class="display">I build the software businesses count on.</h1>
+        <p class="eyebrow">Independent software consultant · Kathmandu, Nepal</p>
+        <h1 class="display">I build software businesses <span class="flare">count on</span>.</h1>
         <p class="lede">I built Kaede, a cargo ERP that speaks IATA ONE Record and learns from an office's own history. Before it: CRMs, payment platforms and web apps, from the database up.</p>
         <div class="hero__cta">
           <RouterLink class="btn btn--solid" :to="`/work/${work[0].slug}`">See how Kaede works <AppIcon name="arrow" /></RouterLink>
@@ -62,6 +62,15 @@ useSeo({
   padding-block: clamp(24px, 5vh, 64px);
 }
 .hero__copy { display: grid; gap: 24px; }
+.flare { position: relative; white-space: nowrap; }
+/* A single confident stroke under the claim: drawn once, then left alone. */
+.flare::after {
+  content: ''; position: absolute; left: 2%; right: -2%; bottom: .04em; height: .09em; border-radius: 1px;
+  background: currentColor; transform: scaleX(0) rotate(-1.2deg); transform-origin: left;
+  animation: flare 720ms cubic-bezier(.65, 0, .35, 1) 420ms forwards;
+}
+@keyframes flare { to { transform: scaleX(1) rotate(-1.2deg); } }
+@media (prefers-reduced-motion: reduce) { .flare::after { animation: none; transform: rotate(-1.2deg); } }
 .hero__copy .display { max-width: 15ch; text-wrap: balance; }
 .hero__copy .lede { max-width: 44ch; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px; }

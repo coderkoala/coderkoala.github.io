@@ -31,7 +31,7 @@ const browser = await chromium.launch({ executablePath: findChrome() })
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } })
 const all = pages().all
 for (const p of all) {
-  const title = p.path === '/' ? 'I build the software businesses count on.' : p.title
+  const title = p.path === '/' ? 'I build software businesses count on.' : p.title
   await page.setContent(`<style>${css}</style>
     <div class="top"><span class="m">ND</span>Nobel Dahal</div>
     <div><p class="k">${esc(p.kind)}</p><h1 style="font-size:${title.length > 30 ? 72 : 96}px">${esc(title)}</h1></div>

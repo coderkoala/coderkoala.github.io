@@ -126,4 +126,4 @@ Sometimes a wallet or bank wants to build the payment into its own app and call 
 5. Respect your business day boundary, in Nepal time.
 6. Make the return handler safe to hit twice.
 
-If you'd like this built into your Laravel app, [I do this for a living](/hire).
+If you'd like this built into your Laravel app, [let's talk](/consult).
