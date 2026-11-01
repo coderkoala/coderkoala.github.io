@@ -8,6 +8,7 @@
 - [GenericProperties](https://nobeldahal.com.np/work/generic-properties): Moved a US brokerage from Zoho to Microsoft Dynamics, then built what Dynamics was missing.
 
 ## Writing
+- [Integrating eSewa and Khalti in Laravel without trusting the redirect](https://nobeldahal.com.np/writing/esewa-khalti-laravel): Most eSewa and Khalti tutorials stop when the success page loads. That's exactly where the fraud starts. A production pattern from a government payment page, for any Laravel app in Nepal.
 - [What building IATA ONE Record taught me about linked data](https://nobeldahal.com.np/writing/what-one-record-taught-me): Air cargo is moving from messages to linked data. Lessons from serving ONE Record from a real cargo system, beyond what the spec tells you.
 - [Handing out air waybill numbers without handing out the same one twice](https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers): An air waybill number is a scarce, audited resource that two people will try to take at the same second. Check digits, stock states, and the locks that keep it honest.
 - [mTLS and OAuth2 on the same call, step by step](https://nobeldahal.com.np/writing/mtls-and-oauth2-together): Some partner APIs want a client certificate on the connection and a bearer token on the request. Every way that goes wrong, in the order it went wrong for me.

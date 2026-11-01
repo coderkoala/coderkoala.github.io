@@ -6,6 +6,7 @@ https://nobeldahal.com.np/writing/
 https://nobeldahal.com.np/work/kaede
 https://nobeldahal.com.np/work/kalimati
 https://nobeldahal.com.np/work/generic-properties
+https://nobeldahal.com.np/writing/esewa-khalti-laravel
 https://nobeldahal.com.np/writing/what-one-record-taught-me
 https://nobeldahal.com.np/writing/handing-out-air-waybill-numbers
 https://nobeldahal.com.np/writing/mtls-and-oauth2-together
