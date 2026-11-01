@@ -45,13 +45,13 @@ const shown = ref(work[0])
           </RouterLink>
         </li>
         <li>
-          <RouterLink to="/work" class="tile">
+          <RouterLink to="/work/" class="tile">
             <span class="tile__kind">{{ gallery.length }} projects since 2017</span>
             <span class="tile__name">Everything else <AppIcon name="arrow" /></span>
           </RouterLink>
         </li>
         <li v-if="writing.length">
-          <RouterLink to="/writing" class="tile">
+          <RouterLink to="/writing/" class="tile">
             <span class="tile__kind">{{ writing.length }} case studies</span>
             <span class="tile__name">Writing <AppIcon name="arrow" /></span>
           </RouterLink>

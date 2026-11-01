@@ -2,7 +2,7 @@
 import { writing, formatDate } from '../lib/content.js'
 import { useSeo } from '../lib/seo.js'
 import { crumbs } from '../lib/site.js'
-useSeo({ title: 'Writing and case studies', description: 'Case studies and notes by Nobel Dahal on building ERPs, CRMs and cargo software.', path: '/writing', ld: crumbs([{ name: 'Writing', path: '/writing' }]) })
+useSeo({ title: 'Writing and case studies', description: 'Case studies and notes by Nobel Dahal on building ERPs, CRMs and cargo software.', path: '/writing/', ld: crumbs([{ name: 'Writing', path: '/writing/' }]) })
 </script>
 
 <template>

@@ -24,8 +24,8 @@ function toggle() {
         <span class="brand__name">Nobel Dahal</span>
       </RouterLink>
       <nav class="links" aria-label="Main">
-        <RouterLink to="/work">Work</RouterLink>
-        <RouterLink to="/writing">Writing</RouterLink>
+        <RouterLink to="/work/">Work</RouterLink>
+        <RouterLink to="/writing/">Writing</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
       <div class="nav__end">

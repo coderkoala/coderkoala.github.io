@@ -34,7 +34,7 @@ export function imagesFor(page) {
     ...(page.cover ? [[page.cover, `${page.title}, the live product`]] : []),
     ...shots.map(([src, cap]) => [src, cap]),
   ]
-  if (page.path === '/work') {
+  if (page.path === '/work/') {
     for (const f of fs.readdirSync('content/gallery').filter((f) => f.endsWith('.md'))) {
       const g = frontmatter(path.join('content/gallery', f))
       for (const k of ['image', 'logo']) if (typeof g[k] === 'string' && g[k]) list.push([g[k], `${g.title}, ${g.kind}`])
@@ -51,9 +51,9 @@ export function pages() {
     work, posts,
     all: [
       { path: '/', title: 'Nobel Dahal', kind: 'Freelance software engineer and consultant', og: 'default', lastmod: today, priority: '1.0' },
-      { path: '/work', title: 'Work', kind: 'Everything since 2017', lastmod: today, priority: '0.9' },
+      { path: '/work/', title: 'Work', kind: 'Everything since 2017', lastmod: today, priority: '0.9' },
       { path: '/about', title: 'About', kind: 'Experience, open source, certifications', lastmod: today, priority: '0.8' },
-      { path: '/writing', title: 'Writing', kind: 'Case studies and notes', lastmod: posts[0]?.lastmod || today, priority: '0.7' },
+      { path: '/writing/', title: 'Writing', kind: 'Case studies and notes', lastmod: posts[0]?.lastmod || today, priority: '0.7' },
       ...work.map((w) => ({ ...w, kind: `${w.kind} · ${w.years}`, priority: '0.9' })),
       ...posts.map((p) => ({ ...p, kind: 'Writing', priority: '0.7' })),
     ],

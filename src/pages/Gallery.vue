@@ -8,11 +8,11 @@ import { site, crumbs } from '../lib/site.js'
 useSeo({
   title: 'Projects and portfolio',
   description: 'Everything Nobel Dahal has built since 2017: ERPs, CRMs, government and business websites, WordPress plugins and games.',
-  path: '/work',
+  path: '/work/',
   ld: [{
-    '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Work by Nobel Dahal', url: `${site.url}/work`,
+    '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Work by Nobel Dahal', url: `${site.url}/work/`,
     mainEntity: { '@type': 'ItemList', itemListElement: gallery.map((g, i) => ({ '@type': 'ListItem', position: i + 1, name: g.title, ...(g.link ? { url: g.link.startsWith('/') ? site.url + g.link : g.link } : {}) })) },
-  }, crumbs([{ name: 'Work', path: '/work' }])],
+  }, crumbs([{ name: 'Work', path: '/work/' }])],
 })
 const tag = ref('All')
 const shown = computed(() => tag.value === 'All' ? gallery : gallery.filter((g) => g.tag === tag.value))

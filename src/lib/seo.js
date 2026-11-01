@@ -5,7 +5,7 @@ import { site } from './site.js'
 export function useSeo({ title, description, path = '/', type = 'website', image, ld = [], published, noindex }) {
   const full = title ? `${title} · ${site.name}` : `${site.name} · Freelance software engineer in Kathmandu, Nepal`
   const url = site.url + (path === '/' ? '/' : path)
-  const og = site.url + (image || `/og${path === '/' ? '/default' : path}.png`)
+  const og = site.url + (image || `/og${path === '/' ? '/default' : path.replace(/\/$/, '')}.png`)
   const graphs = Array.isArray(ld) ? ld : [ld]
   useHead({
     title: full,

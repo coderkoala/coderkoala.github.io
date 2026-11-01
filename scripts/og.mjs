@@ -37,7 +37,7 @@ for (const p of all) {
     <div><p class="k">${esc(p.kind)}</p><h1 style="font-size:${title.length > 30 ? 72 : 96}px">${esc(title)}</h1></div>
     <div class="b"><span>nobeldahal.com.np</span><span>Kathmandu, Nepal</span></div>`)
   await page.evaluate(() => document.fonts.ready)
-  const out = path.join('public/og', (p.og || p.path.slice(1)) + '.png')
+  const out = path.join('public/og', (p.og || p.path.replace(/^\/|\/$/g, '')) + '.png')
   fs.mkdirSync(path.dirname(out), { recursive: true })
   await page.screenshot({ path: out })
 }

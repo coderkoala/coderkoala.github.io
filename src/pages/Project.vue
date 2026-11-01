@@ -29,7 +29,7 @@ if (p.value) useSeo({
     ...(p.value.link && !p.value.link.includes('github.com') ? { sameAs: p.value.link } : {}),
     ...(p.value.loop ? { video: { '@type': 'VideoObject', name: `${p.value.title} demo`, description: p.value.summary, contentUrl: `${site.url}${p.value.loop}.mp4`, thumbnailUrl: `${site.url}${p.value.loop}-poster.jpg`, uploadDate: '2021-05-25', ...(p.value.youtube ? { embedUrl: `https://www.youtube.com/embed/${p.value.youtube}` } : {}) } } : {}),
     creator: { '@id': `${site.url}/#person` }, author: { '@id': `${site.url}/#person` },
-  }, crumbs([{ name: 'Work', path: '/work' }, { name: p.value.title, path: p.value.url }])],
+  }, crumbs([{ name: 'Work', path: '/work/' }, { name: p.value.title, path: p.value.url }])],
 })
 </script>
 
@@ -38,7 +38,7 @@ if (p.value) useSeo({
   <article v-else :key="p.slug">
     <header class="hero wrap">
       <div class="hero__copy">
-        <RouterLink to="/work" class="back"><AppIcon name="back" /> All work</RouterLink>
+        <RouterLink to="/work/" class="back"><AppIcon name="back" /> All work</RouterLink>
         <p class="eyebrow">{{ p.kind }} · {{ p.years }}</p>
         <h1 class="display">{{ p.title }}</h1>
         <p class="lede">{{ p.summary }}</p>

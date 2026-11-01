@@ -20,7 +20,7 @@ if (p.value) useSeo({
     ...(proj.value ? { about: { '@type': 'CreativeWork', name: proj.value.title, url: site.url + proj.value.url } } : {}),
     url: site.url + p.value.url, mainEntityOfPage: site.url + p.value.url, image: `${site.url}/og${p.value.url}.png`,
     author: { '@id': `${site.url}/#person`, name: site.name, url: site.url },
-  }, crumbs([{ name: 'Writing', path: '/writing' }, { name: p.value.title, path: p.value.url }])],
+  }, crumbs([{ name: 'Writing', path: '/writing/' }, { name: p.value.title, path: p.value.url }])],
 })
 </script>
 
@@ -28,7 +28,7 @@ if (p.value) useSeo({
   <NotFound v-if="!p" />
   <article v-else class="wrap page">
     <header class="head">
-      <RouterLink to="/writing" class="back"><AppIcon name="back" /> Writing</RouterLink>
+      <RouterLink to="/writing/" class="back"><AppIcon name="back" /> Writing</RouterLink>
       <h1 class="display">{{ p.title }}</h1>
       <p class="lede">{{ p.summary }}</p>
       <p class="date"><time :datetime="p.date">{{ formatDate(p.date) }}</time> · {{ Math.max(1, Math.round(words / 220)) }} min read</p>

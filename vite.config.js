@@ -27,7 +27,7 @@ function writeLlms({ work, posts }) {
     ...posts.map((p) => `- [${p.title}](${SITE}${p.path}): ${p.summary}`),
     '',
     '## More',
-    `- [All work since 2017](${SITE}/work)`,
+    `- [All work since 2017](${SITE}/work/)`,
     `- [About, experience, open source and certifications](${SITE}/about)`,
     `- [Résumé (PDF)](${SITE}/download/resume.pdf)`,
     '- [GitHub](https://github.com/coderkoala)',
@@ -47,7 +47,7 @@ export default defineConfig({
   server: { port: 9000, strictPort: true, host: true },
   preview: { port: 9000 },
   ssgOptions: {
-    dirStyle: 'nested',
+    dirStyle: 'flat', // work/kaede.html: GitHub Pages serves it at /work/kaede with no redirect
     formatting: 'none',
     includedRoutes: () => [...pages().all.map((p) => p.path), '/404'],
     onFinished() {
@@ -55,8 +55,7 @@ export default defineConfig({
       writeSitemap(data)
       writeFeed(data)
       writeLlms(data)
-      fs.renameSync('dist/404/index.html', 'dist/404.html') // Netlify serves this for unknown paths
-      fs.rmSync('dist/404', { recursive: true })
+      fs.writeFileSync('dist/.nojekyll', '') // serve .well-known and friends as-is
     },
   },
 })
